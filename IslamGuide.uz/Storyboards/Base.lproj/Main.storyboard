@@ -7,6 +7,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,7 +84,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCG-6T-lgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="216"/>
+            <point key="canvasLocation" x="1460" y="70"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iwe-SK-LpX">
+            <objects>
+                <viewController id="6Ot-M3-R3N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9v-Js-upE">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="foX-HJ-8MQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="gear" catalog="system" id="ZfT-LN-iFd">
+                        <color key="badgeColor" name="tintColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-bt-hzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="715"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
@@ -101,6 +120,7 @@
                     <connections>
                         <segue destination="PDl-iZ-dgw" kind="relationship" relationship="viewControllers" id="ivJ-VA-y1f"/>
                         <segue destination="zZB-wg-kRq" kind="relationship" relationship="viewControllers" id="4Yz-zC-fGY"/>
+                        <segue destination="6Ot-M3-R3N" kind="relationship" relationship="viewControllers" id="oK1-Fc-CPa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwW-Bh-U3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,9 +170,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="background"/>
                         <color key="separatorColor" name="background"/>
+                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" id="AFR-Aj-Vdh">
+                            <rect key="frame" x="0.0" y="0.0" width="430" height="132"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="72" id="fIU-aC-ONM" customClass="QuranCell" customModule="IslamGuide_uz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="430" height="72"/>
+                                <rect key="frame" x="0.0" y="182" width="430" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fIU-aC-ONM" id="rhH-gj-nlW">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="72"/>
@@ -236,14 +260,16 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiX-JS-csL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160.8695652173915" y="-573.09782608695662"/>
+            <point key="canvasLocation" x="2160" y="-573.6051502145923"/>
         </scene>
     </scenes>
     <resources>
         <image name="Button" width="185" height="60"/>
         <image name="Group 36" width="314" height="450"/>
+        <image name="bg" width="326" height="131"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
         <image name="octagon" catalog="system" width="128" height="112"/>
         <namedColor name="SubtitleColor">
             <color red="0.52941176470588236" green="0.53725490196078429" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -260,5 +286,8 @@
         <namedColor name="tintColor">
             <color red="0.40392156862745099" green="0.17254901960784313" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
