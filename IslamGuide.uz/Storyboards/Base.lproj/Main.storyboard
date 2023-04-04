@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,7 +35,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-d2-rev">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-d2-rev" customClass="SpringImageView" customModule="SpringAnimation">
                                 <rect key="frame" x="40" y="255.33333333333337" width="350" height="450"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-fO-jrk">
@@ -61,12 +61,15 @@
                             <constraint firstItem="Tck-d2-rev" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="wFK-Bj-rVq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Tck-d2-rev" id="Jpl-8N-hqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-227" y="-70"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="mle-Fq-cOb">
             <objects>
                 <viewController id="zZB-wg-kRq" sceneMemberID="viewController">
@@ -76,7 +79,7 @@
                         <viewLayoutGuide key="safeArea" id="Akp-IZ-7zU"/>
                         <color key="backgroundColor" name="background"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="bookmark" catalog="system" id="5oZ-DG-Ylz"/>
+                    <tabBarItem key="tabBarItem" title="" image="bookmark" catalog="system" id="5oZ-DG-Ylz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCG-6T-lgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,8 +92,11 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n4A-dJ-0gW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background"/>
                         <color key="selectedImageTintColor" name="tintColor"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="background"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="PDl-iZ-dgw" kind="relationship" relationship="viewControllers" id="ivJ-VA-y1f"/>
@@ -112,12 +118,19 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="BRa-0v-hku">
                         <rect key="frame" x="0.0" y="59" width="430" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="background"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="Titleblue"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" name="Titleblue"/>
                         </textAttributes>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="background"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="background"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -138,7 +151,7 @@
                         <color key="backgroundColor" name="background"/>
                         <color key="separatorColor" name="background"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="fIU-aC-ONM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="72" id="fIU-aC-ONM" customClass="QuranCell" customModule="IslamGuide_uz" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="430" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fIU-aC-ONM" id="rhH-gj-nlW">
@@ -148,7 +161,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8h-0k-jb0">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="72"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pentagon" catalog="system" id="5Rj-pL-jcd">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="octagon" catalog="system" id="5Rj-pL-jcd">
                                                     <rect key="frame" x="5" y="8" width="59" height="59"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" name="tintColor"/>
@@ -169,22 +182,22 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8r-8V-MuC">
-                                            <rect key="frame" x="315.66666666666669" y="0.0" width="114.33333333333331" height="72"/>
+                                            <rect key="frame" x="300.66666666666669" y="0.0" width="114.33333333333331" height="72"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" name="tintColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="17S-pc-RI0">
-                                            <rect key="frame" x="78.999999999999986" y="0.0" width="226.66666666666663" height="72"/>
+                                            <rect key="frame" x="78.999999999999986" y="0.0" width="211.66666666666663" height="72"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al-Fatiah          " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-wc-3Ft">
-                                                    <rect key="frame" x="0.0" y="0.0" width="226.66666666666666" height="29.666666666666668"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="211.66666666666666" height="29.666666666666668"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                     <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 verses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XF-YQ-Mrc">
-                                                    <rect key="frame" x="0.0" y="42.666666666666664" width="226.66666666666666" height="29.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="42.666666666666664" width="211.66666666666666" height="29.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                     <color key="textColor" name="SubtitleColor"/>
                                                     <nil key="highlightedColor"/>
@@ -198,7 +211,7 @@
                                         <constraint firstAttribute="bottom" secondItem="G8h-0k-jb0" secondAttribute="bottom" id="NnZ-o5-BhE"/>
                                         <constraint firstItem="F8r-8V-MuC" firstAttribute="top" secondItem="rhH-gj-nlW" secondAttribute="top" id="QfJ-l4-igg"/>
                                         <constraint firstItem="17S-pc-RI0" firstAttribute="top" secondItem="rhH-gj-nlW" secondAttribute="top" id="WHa-wU-MaD"/>
-                                        <constraint firstAttribute="trailing" secondItem="F8r-8V-MuC" secondAttribute="trailing" id="WOw-Hq-kUh"/>
+                                        <constraint firstAttribute="trailing" secondItem="F8r-8V-MuC" secondAttribute="trailing" constant="15" id="WOw-Hq-kUh"/>
                                         <constraint firstItem="G8h-0k-jb0" firstAttribute="top" secondItem="rhH-gj-nlW" secondAttribute="top" id="X6l-63-rxO"/>
                                         <constraint firstAttribute="bottom" secondItem="17S-pc-RI0" secondAttribute="bottom" id="b5T-SX-7TB"/>
                                         <constraint firstItem="G8h-0k-jb0" firstAttribute="leading" secondItem="rhH-gj-nlW" secondAttribute="leading" id="e4L-zt-wlc"/>
@@ -207,6 +220,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="background"/>
+                                <connections>
+                                    <outlet property="number" destination="LOG-RH-9lA" id="Y0d-pa-Rj8"/>
+                                    <outlet property="titleArabic" destination="F8r-8V-MuC" id="szf-JR-Vhn"/>
+                                    <outlet property="titleEn" destination="WHm-wc-3Ft" id="Qzf-fu-9yk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -226,7 +244,7 @@
         <image name="Group 36" width="314" height="450"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
-        <image name="pentagon" catalog="system" width="128" height="112"/>
+        <image name="octagon" catalog="system" width="128" height="112"/>
         <namedColor name="SubtitleColor">
             <color red="0.52941176470588236" green="0.53725490196078429" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

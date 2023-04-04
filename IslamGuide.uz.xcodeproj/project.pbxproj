@@ -9,25 +9,33 @@
 /* Begin PBXBuildFile section */
 		8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96329DBFB2400BC69C5 /* AppDelegate.swift */; };
 		8020D96629DBFB2400BC69C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96529DBFB2400BC69C5 /* SceneDelegate.swift */; };
-		8020D96829DBFB2400BC69C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96729DBFB2400BC69C5 /* ViewController.swift */; };
+		8020D96829DBFB2400BC69C5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96729DBFB2400BC69C5 /* StartViewController.swift */; };
 		8020D96B29DBFB2400BC69C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D96929DBFB2400BC69C5 /* Main.storyboard */; };
 		8020D96E29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96C29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld */; };
 		8020D97029DBFB2700BC69C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8020D96F29DBFB2700BC69C5 /* Assets.xcassets */; };
 		8020D97329DBFB2700BC69C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D97129DBFB2700BC69C5 /* LaunchScreen.storyboard */; };
 		8020D97F29DC154300BC69C5 /* QuranTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */; };
+		8020D98229DC165600BC69C5 /* QuranCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D98129DC165600BC69C5 /* QuranCell.swift */; };
+		8020D98529DC1A0000BC69C5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8020D98429DC1A0000BC69C5 /* Alamofire */; };
+		8020D98829DC1A1700BC69C5 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 8020D98729DC1A1700BC69C5 /* SpringAnimation */; };
+		8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */; };
+		8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D98D29DC1F5800BC69C5 /* Quran.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8020D96029DBFB2400BC69C5 /* IslamGuide.uz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslamGuide.uz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8020D96329DBFB2400BC69C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8020D96529DBFB2400BC69C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8020D96729DBFB2400BC69C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8020D96729DBFB2400BC69C5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8020D96A29DBFB2400BC69C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8020D96D29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IslamGuide_uz.xcdatamodel; sourceTree = "<group>"; };
 		8020D96F29DBFB2700BC69C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8020D97229DBFB2700BC69C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8020D97429DBFB2700BC69C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranTableViewController.swift; sourceTree = "<group>"; };
+		8020D98129DC165600BC69C5 /* QuranCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranCell.swift; sourceTree = "<group>"; };
+		8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8020D98D29DC1F5800BC69C5 /* Quran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8020D98829DC1A1700BC69C5 /* SpringAnimation in Frameworks */,
+				8020D98529DC1A0000BC69C5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +71,12 @@
 			isa = PBXGroup;
 			children = (
 				8020D97A29DBFD8A00BC69C5 /* App */,
+				8020D98029DC163A00BC69C5 /* Views */,
 				8020D97B29DBFD9300BC69C5 /* ViewControllers */,
 				8020D97C29DBFDA400BC69C5 /* Storyboards */,
 				8020D97D29DBFDB400BC69C5 /* Resources */,
+				8020D98C29DC1F3E00BC69C5 /* Services */,
+				8020D98F29DC1F5D00BC69C5 /* Models */,
 			);
 			path = IslamGuide.uz;
 			sourceTree = "<group>";
@@ -81,7 +94,7 @@
 		8020D97B29DBFD9300BC69C5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8020D96729DBFB2400BC69C5 /* ViewController.swift */,
+				8020D96729DBFB2400BC69C5 /* StartViewController.swift */,
 				8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -105,6 +118,30 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8020D98029DC163A00BC69C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8020D98129DC165600BC69C5 /* QuranCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8020D98C29DC1F3E00BC69C5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8020D98F29DC1F5D00BC69C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8020D98D29DC1F5800BC69C5 /* Quran.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +158,10 @@
 			dependencies = (
 			);
 			name = IslamGuide.uz;
+			packageProductDependencies = (
+				8020D98429DC1A0000BC69C5 /* Alamofire */,
+				8020D98729DC1A1700BC69C5 /* SpringAnimation */,
+			);
 			productName = IslamGuide.uz;
 			productReference = 8020D96029DBFB2400BC69C5 /* IslamGuide.uz.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +190,10 @@
 				Base,
 			);
 			mainGroup = 8020D95729DBFB2400BC69C5;
+			packageReferences = (
+				8020D98329DC1A0000BC69C5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8020D98629DC1A1700BC69C5 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 8020D96129DBFB2400BC69C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,7 +223,10 @@
 			files = (
 				8020D97F29DC154300BC69C5 /* QuranTableViewController.swift in Sources */,
 				8020D96E29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld in Sources */,
-				8020D96829DBFB2400BC69C5 /* ViewController.swift in Sources */,
+				8020D96829DBFB2400BC69C5 /* StartViewController.swift in Sources */,
+				8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */,
+				8020D98229DC165600BC69C5 /* QuranCell.swift in Sources */,
+				8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */,
 				8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */,
 				8020D96629DBFB2400BC69C5 /* SceneDelegate.swift in Sources */,
 			);
@@ -406,6 +454,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8020D98329DC1A0000BC69C5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+		8020D98629DC1A1700BC69C5 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8020D98429DC1A0000BC69C5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8020D98329DC1A0000BC69C5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8020D98729DC1A1700BC69C5 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8020D98629DC1A1700BC69C5 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8020D96C29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld */ = {
