@@ -14,6 +14,7 @@
 		8020D96E29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96C29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld */; };
 		8020D97029DBFB2700BC69C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8020D96F29DBFB2700BC69C5 /* Assets.xcassets */; };
 		8020D97329DBFB2700BC69C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D97129DBFB2700BC69C5 /* LaunchScreen.storyboard */; };
+		8020D97F29DC154300BC69C5 /* QuranTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8020D96F29DBFB2700BC69C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8020D97229DBFB2700BC69C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8020D97429DBFB2700BC69C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		8020D96229DBFB2400BC69C5 /* IslamGuide.uz */ = {
 			isa = PBXGroup;
 			children = (
-				8020D96329DBFB2400BC69C5 /* AppDelegate.swift */,
-				8020D96529DBFB2400BC69C5 /* SceneDelegate.swift */,
-				8020D96729DBFB2400BC69C5 /* ViewController.swift */,
-				8020D96929DBFB2400BC69C5 /* Main.storyboard */,
-				8020D96F29DBFB2700BC69C5 /* Assets.xcassets */,
-				8020D97129DBFB2700BC69C5 /* LaunchScreen.storyboard */,
-				8020D97429DBFB2700BC69C5 /* Info.plist */,
-				8020D96C29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld */,
+				8020D97A29DBFD8A00BC69C5 /* App */,
+				8020D97B29DBFD9300BC69C5 /* ViewControllers */,
+				8020D97C29DBFDA400BC69C5 /* Storyboards */,
+				8020D97D29DBFDB400BC69C5 /* Resources */,
 			);
 			path = IslamGuide.uz;
+			sourceTree = "<group>";
+		};
+		8020D97A29DBFD8A00BC69C5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8020D96329DBFB2400BC69C5 /* AppDelegate.swift */,
+				8020D96529DBFB2400BC69C5 /* SceneDelegate.swift */,
+				8020D97429DBFB2700BC69C5 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8020D97B29DBFD9300BC69C5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8020D96729DBFB2400BC69C5 /* ViewController.swift */,
+				8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8020D97C29DBFDA400BC69C5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8020D96929DBFB2400BC69C5 /* Main.storyboard */,
+				8020D97129DBFB2700BC69C5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8020D97D29DBFDB400BC69C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8020D96F29DBFB2700BC69C5 /* Assets.xcassets */,
+				8020D96C29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8020D97F29DC154300BC69C5 /* QuranTableViewController.swift in Sources */,
 				8020D96E29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld in Sources */,
 				8020D96829DBFB2400BC69C5 /* ViewController.swift in Sources */,
 				8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */,
@@ -293,12 +329,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IslamGuide.uz/Info.plist;
+				INFOPLIST_FILE = IslamGuide.uz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.bektemur.IslamGuide-uz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,12 +361,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7VP863SW97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = IslamGuide.uz/Info.plist;
+				INFOPLIST_FILE = IslamGuide.uz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "co.bektemur.IslamGuide-uz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
