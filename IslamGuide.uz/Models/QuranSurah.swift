@@ -20,6 +20,8 @@ struct SurahData: Codable {
     let englishName: String
     let englishNameTranslation: String
     let revelationType: String
+    let numberOfAyahs: Int
 }
+
 
 

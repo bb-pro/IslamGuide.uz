@@ -18,29 +18,27 @@ final class NetworkManager {
     static let shared = NetworkManager()
     
     private init() {}
-
-    func fetchQuranData(completion: @escaping (Result<QuranSurah, Error>) -> Void) {
-        let url = URL(string: "https://api.alquran.cloud/v1/surah")!
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data else {
-                completion(.failure(error ?? NSError(domain: "", code: -1, userInfo: nil)))
+    
+    func fetch<T: Decodable>(_ type: T.Type, from url: URL, completion: @escaping(Result<T, NetworkError>)->Void) {
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data else {
+                completion(.failure(.noData))
+                print(error?.localizedDescription ?? "No error description")
                 return
             }
-
+            let decoder = JSONDecoder()
+            
             do {
-                let quranResponse = try JSONDecoder().decode(QuranSurah.self, from: data)
-    
+                let dataModel = try decoder.decode(T.self, from: data)
                 DispatchQueue.main.async {
-                    completion(.success(quranResponse))
+                    completion(.success(dataModel))
                 }
             } catch {
-                completion(.failure(error))
+                completion(.failure(.decodingError))
+                print(error.localizedDescription)
             }
-        }
-
-        task.resume()
+        }.resume()
     }
-   
 
 
 }
