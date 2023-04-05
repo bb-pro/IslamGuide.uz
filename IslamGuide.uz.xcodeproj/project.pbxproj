@@ -21,6 +21,7 @@
 		8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */; };
 		8020D98E29DC1F5800BC69C5 /* QuranSurah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D98D29DC1F5800BC69C5 /* QuranSurah.swift */; };
 		80D8BB0029DD582200712543 /* QuranAyah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BAFF29DD582200712543 /* QuranAyah.swift */; };
+		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8020D98D29DC1F5800BC69C5 /* QuranSurah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranSurah.swift; sourceTree = "<group>"; };
 		80D8BAFF29DD582200712543 /* QuranAyah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranAyah.swift; sourceTree = "<group>"; };
+		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				8020D96729DBFB2400BC69C5 /* StartViewController.swift */,
 				8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */,
+				80D8BB0129DD617300712543 /* AyahTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */,
 				80D8BB0029DD582200712543 /* QuranAyah.swift in Sources */,
 				8020D98229DC165600BC69C5 /* QuranCell.swift in Sources */,
+				80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */,
 				8020D98E29DC1F5800BC69C5 /* QuranSurah.swift in Sources */,
 				8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */,
 				8020D96629DBFB2400BC69C5 /* SceneDelegate.swift in Sources */,

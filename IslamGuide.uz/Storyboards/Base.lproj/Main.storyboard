@@ -80,7 +80,7 @@
                         <viewLayoutGuide key="safeArea" id="Akp-IZ-7zU"/>
                         <color key="backgroundColor" name="background"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="bookmark" catalog="system" id="5oZ-DG-Ylz"/>
+                    <tabBarItem key="tabBarItem" title="" image="bookmark.circle.fill" catalog="system" id="5oZ-DG-Ylz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCG-6T-lgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,13 +96,11 @@
                         <viewLayoutGuide key="safeArea" id="foX-HJ-8MQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="gear" catalog="system" id="ZfT-LN-iFd">
-                        <color key="badgeColor" name="tintColor"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="P9R-eC-gHk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-bt-hzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="715"/>
+            <point key="canvasLocation" x="1738.6046511627908" y="721.67381974248929"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
@@ -120,7 +118,7 @@
                     <connections>
                         <segue destination="PDl-iZ-dgw" kind="relationship" relationship="viewControllers" id="ivJ-VA-y1f"/>
                         <segue destination="zZB-wg-kRq" kind="relationship" relationship="viewControllers" id="4Yz-zC-fGY"/>
-                        <segue destination="6Ot-M3-R3N" kind="relationship" relationship="viewControllers" id="oK1-Fc-CPa"/>
+                        <segue destination="fGu-4r-cWR" kind="relationship" relationship="viewControllers" id="oK1-Fc-CPa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwW-Bh-U3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -135,8 +133,8 @@
                         <imageReference key="image" image="book" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="BRa-0v-hku">
-                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BRa-0v-hku">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="background"/>
                         <color key="barTintColor" name="tintColor"/>
@@ -306,6 +304,7 @@
                                     <outlet property="numberOfVerses" destination="2XF-YQ-Mrc" id="q9g-yB-hH0"/>
                                     <outlet property="titleArabic" destination="F8r-8V-MuC" id="szf-JR-Vhn"/>
                                     <outlet property="titleEn" destination="WHm-wc-3Ft" id="Qzf-fu-9yk"/>
+                                    <segue destination="c0O-t5-zA1" kind="show" id="LZL-pO-qQd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -320,28 +319,114 @@
             </objects>
             <point key="canvasLocation" x="2160" y="-573.6051502145923"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="UIC-8O-e02">
+        <!--Al-Fatiah-->
+        <scene sceneID="yRo-rg-VZl">
             <objects>
-                <viewController id="hzS-xq-LMm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hhK-RT-1uC">
+                <tableViewController id="c0O-t5-zA1" customClass="AyahTableViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="q42-6M-SGU">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="bM2-CJ-r9D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xzb-P3-Zkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" rowHeight="311" id="2qE-92-JoC">
+                                <rect key="frame" x="0.0" y="50" width="430" height="311"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2qE-92-JoC" id="Ww0-VG-fVa">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="311"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card" translatesAutoresizingMaskIntoConstraints="NO" id="W3t-Bz-pcD">
+                                            <rect key="frame" x="40" y="31" width="350" height="249"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سُورَةُ ٱلْفَاتِحَةِ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhs-AR-qnR">
+                                            <rect key="frame" x="145" y="185.33333333333334" width="140.33333333333337" height="34.666666666666657"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                            <color key="textColor" name="background"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="BYm-Gu-28H">
+                                            <rect key="frame" x="154.66666666666666" y="61" width="120.66666666666666" height="58.666666666666657"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al-Fatiah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3K-ul-7xW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="33.666666666666664"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                    <color key="textColor" name="background"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 VERSES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wan-N7-cvj">
+                                                    <rect key="frame" x="26.333333333333343" y="40.666666666666671" width="68" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" name="background"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yhs-AR-qnR" firstAttribute="centerX" secondItem="Ww0-VG-fVa" secondAttribute="centerX" id="Bz6-PY-NKj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="W3t-Bz-pcD" secondAttribute="trailing" constant="20" id="FyD-3J-OeR"/>
+                                        <constraint firstItem="W3t-Bz-pcD" firstAttribute="leading" secondItem="Ww0-VG-fVa" secondAttribute="leadingMargin" constant="20" id="Qop-oc-KKa"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yhs-AR-qnR" secondAttribute="bottom" constant="80" id="TZc-w2-wPA"/>
+                                        <constraint firstItem="W3t-Bz-pcD" firstAttribute="top" secondItem="Ww0-VG-fVa" secondAttribute="topMargin" constant="20" id="ZlI-mJ-NHh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="W3t-Bz-pcD" secondAttribute="bottom" constant="20" id="a8B-1p-P2Y"/>
+                                        <constraint firstItem="BYm-Gu-28H" firstAttribute="centerX" secondItem="Ww0-VG-fVa" secondAttribute="centerX" id="r80-oJ-cYC"/>
+                                        <constraint firstItem="BYm-Gu-28H" firstAttribute="top" secondItem="Ww0-VG-fVa" secondAttribute="topMargin" constant="50" id="t9k-1G-oKj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="background"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ayahCell" id="LFp-fc-aa2">
+                                <rect key="frame" x="0.0" y="361" width="430" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LFp-fc-aa2" id="Xq2-Wc-vPH">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c0O-t5-zA1" id="sbf-ef-7D6"/>
+                            <outlet property="delegate" destination="c0O-t5-zA1" id="Itd-vJ-gzZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Al-Fatiah" id="iRT-bi-eoO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ILn-Yr-4e3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3056" y="-574"/>
+            <point key="canvasLocation" x="2993.0232558139533" y="-574.24892703862668"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o7M-Xe-7Lv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fGu-4r-cWR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="ZfT-LN-iFd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3f8-Bc-Rf1">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Ot-M3-R3N" kind="relationship" relationship="rootViewController" id="asI-t6-cP2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtl-ax-GvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="721.67381974248929"/>
         </scene>
     </scenes>
     <resources>
         <image name="Button" width="185" height="60"/>
+        <image name="Card" width="375" height="315"/>
         <image name="Group 36" width="314" height="450"/>
         <image name="bg" width="326" height="131"/>
         <image name="book" catalog="system" width="128" height="99"/>
-        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="bookmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="octagon" catalog="system" width="128" height="112"/>
         <namedColor name="SubtitleColor">
@@ -351,7 +436,7 @@
             <color red="0.40400001406669617" green="0.17299999296665192" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="background">
-            <color red="0.84705882352941175" green="0.87058823529411766" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.84700000286102295" green="0.87099999189376831" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="cellTitle">
             <color red="0.14117647058823529" green="0.058823529411764705" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -10,9 +10,16 @@ import UIKit
 final class QuranTableViewController: UITableViewController {
     private let networkManager = NetworkManager.shared
     var data: [SurahData] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchSurah()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let ayahVC = segue.destination as? AyahTableViewController else { return }
+        guard let index = tableView.indexPathForSelectedRow?.row else { return }
+        ayahVC.surah = data[index]
     }
 
 }
@@ -21,8 +28,7 @@ final class QuranTableViewController: UITableViewController {
 
 private extension QuranTableViewController {
     func fetchSurah() {
-        let url = URL(string: "https://api.alquran.cloud/v1/surah")!
-        networkManager.fetch(QuranSurah.self, from: url) { result in
+        networkManager.fetch(QuranSurah.self, from: Link.surah.url) { result in
             switch result {
                 case .success(let response):
                     self.data = response.data
@@ -33,8 +39,8 @@ private extension QuranTableViewController {
         }
     }
     func fetchAyah() {
-        let url = URL(string: "https://api.alquran.cloud/v1/ayah/2:255/en.asad")!
-        networkManager.fetch(QuranAyah.self, from: url) { result in
+        
+        networkManager.fetch(QuranAyah.self, from: Link.ayah.url) { result in
             switch result {
                 case .success(let response):
                     print(response.data.text)
@@ -101,6 +107,7 @@ extension QuranTableViewController {
 extension QuranTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
         fetchAyah()
     }
 }

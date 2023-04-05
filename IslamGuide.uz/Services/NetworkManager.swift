@@ -6,8 +6,20 @@
 //
 
 import Foundation
-import Alamofire
 
+enum Link {
+    case surah
+    case ayah
+    
+    var url: URL {
+        switch self {
+            case .surah:
+                return URL(string: "https://api.alquran.cloud/v1/surah")!
+            case .ayah:
+                return URL(string: "https://api.alquran.cloud/v1/ayah/2:255/en.asad")!
+        }
+    }
+}
 enum NetworkError: Error {
     case invalidURL
     case noData
@@ -39,6 +51,6 @@ final class NetworkManager {
             }
         }.resume()
     }
-
-
+    
+    
 }
