@@ -8,6 +8,8 @@
 import Foundation
 
 enum Link {
+    case quranUz
+    case quranAr
     case surah
     case ayah
     
@@ -16,10 +18,19 @@ enum Link {
             case .surah:
                 return URL(string: "https://api.alquran.cloud/v1/surah")!
             case .ayah:
-                return URL(string: "https://api.alquran.cloud/v1/ayah/2:255/en.asad")!
+                return URL(string: "https://api.alquran.cloud/v1/ayah")!
+            case .quranUz:
+                return URL(string: "https://api.alquran.cloud/v1/quran/uz.sodik")!
+            case .quranAr:
+                return URL(string: "https://api.alquran.cloud/v1/quran/ar.alafasy")!
         }
     }
 }
+
+enum Edition: String {
+    case english = "en.asad"
+}
+
 enum NetworkError: Error {
     case invalidURL
     case noData
