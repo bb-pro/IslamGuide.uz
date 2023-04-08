@@ -12,8 +12,9 @@ final class AyahTableViewController: UITableViewController {
     var arabicAyahs: [Ayah] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 300
+        tableView.estimatedRowHeight = 400
     }
 }
 
