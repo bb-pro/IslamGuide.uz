@@ -14,7 +14,7 @@ final class AyahTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 400
+        tableView.estimatedRowHeight = 800
     }
 }
 

@@ -421,25 +421,22 @@
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xJQ-l6-JWp">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xJQ-l6-JWp">
                                             <rect key="frame" x="30" y="21" width="370" height="258"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh2-6s-lte">
-                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="112.33333333333333"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL3-AW-7cJ">
-                                                    <rect key="frame" x="0.0" y="117.33333333333336" width="370" height="140.66666666666663"/>
+                                                    <rect key="frame" x="0.0" y="241" width="370" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="258" id="UeJ-wi-zh2"/>
-                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
