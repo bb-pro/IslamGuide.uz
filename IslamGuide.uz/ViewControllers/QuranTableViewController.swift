@@ -43,7 +43,6 @@ private extension QuranTableViewController {
                     self?.response = data
                     self?.tableView.reloadData()
                     self?.activityIndicator.removeFromSuperview()
-                    print(self?.response?.data.surahs[0].ayahs[0].text)
                 case .failure(let error):
                     print(error)
             }
@@ -55,7 +54,6 @@ private extension QuranTableViewController {
                 case .success(let data):
                     self?.arabicResponse = data
                     self?.activityIndicator.removeFromSuperview()
-                    print(self?.response?.data.surahs[0].ayahs[0].text)
                 case .failure(let error):
                     print(error)
             }
@@ -136,7 +134,6 @@ extension QuranTableViewController {
 extension QuranTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let loadingVC = LoadingViewController()
     }
     
 }
