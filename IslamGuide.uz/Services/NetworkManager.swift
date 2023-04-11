@@ -58,9 +58,21 @@ final class NetworkManager {
                 }
             } catch {
                 completion(.failure(.decodingError))
-                print(error.localizedDescription)
+                print(error)
             }
         }.resume()
+    }
+    func getData(for filePath: String, completion: @escaping(Result<QuranResponse, NetworkError>) -> Void) {
+        if let path = Bundle.main.path(forResource: filePath, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let response = try JSONDecoder().decode(QuranResponse.self, from: data)
+                completion(.success(response))
+            } catch {
+                completion(.failure(.decodingError))
+                print(error)
+            }
+        }
     }
     
     

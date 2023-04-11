@@ -18,7 +18,10 @@ final class QuranTableViewController: UITableViewController {
         super.viewDidLoad()
         activityIndicator.startAnimating()
         fetchArabic()
-        fetchData()
+        fetchDataUzbek()
+
+        parseData()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,8 +36,8 @@ final class QuranTableViewController: UITableViewController {
 //MARK: - Private Methods
 
 private extension QuranTableViewController {
-    func fetchData() {
-        networkManager.fetch(QuranResponse.self, from: Link.quranUz.url) { [weak self] result in
+    func fetchDataUzbek() {
+        networkManager.getData(for: "uz.sodik") { [weak self] result in
             switch result {
                 case .success(let data):
                     self?.response = data
@@ -47,12 +50,24 @@ private extension QuranTableViewController {
         }
     }
     func fetchArabic() {
-        networkManager.fetch(QuranResponse.self, from: Link.quranAr.url) { [weak self] result in
+        networkManager.getData(for: "quran") { [weak self] result in
             switch result {
-                case .success(let success):
-                    self?.arabicResponse = success
+                case .success(let data):
+                    self?.arabicResponse = data
+                    self?.activityIndicator.removeFromSuperview()
+                    print(self?.response?.data.surahs[0].ayahs[0].text)
                 case .failure(let error):
                     print(error)
+            }
+        }
+    }
+    func parseData() {
+        networkManager.getData(for: "uz.sodik") { result in
+            switch result {
+                case .success(let success):
+                    print(success.data.surahs[0].ayahs[0].text)
+                case .failure(let failure):
+                    print(failure)
             }
         }
     }
