@@ -173,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-bt-hzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738.6046511627908" y="721.67381974248929"/>
+            <point key="canvasLocation" x="2206" y="780"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
@@ -191,6 +191,7 @@
                     <connections>
                         <segue destination="sQp-Pj-gcv" kind="relationship" relationship="viewControllers" id="6SW-nD-sDe"/>
                         <segue destination="zZB-wg-kRq" kind="relationship" relationship="viewControllers" id="S1h-rY-yy8"/>
+                        <segue destination="fGu-4r-cWR" kind="relationship" relationship="viewControllers" id="IIM-Rr-irT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwW-Bh-U3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -463,11 +464,11 @@
             </objects>
             <point key="canvasLocation" x="3891.6279069767443" y="-574.24892703862668"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Settings-->
         <scene sceneID="o7M-Xe-7Lv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fGu-4r-cWR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="ZfT-LN-iFd"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="ZfT-LN-iFd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3f8-Bc-Rf1">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
@@ -480,7 +481,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtl-ax-GvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840" y="721.67381974248929"/>
+            <point key="canvasLocation" x="1157" y="780"/>
         </scene>
         <!--Quran-->
         <scene sceneID="dvD-lG-77G">
