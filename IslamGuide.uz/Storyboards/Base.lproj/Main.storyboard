@@ -111,16 +111,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="fw1-g5-RpW">
-                                <rect key="frame" x="181" y="562.33333333333337" width="68" height="92.333333333333371"/>
+                                <rect key="frame" x="183" y="563.33333333333337" width="64.333333333333314" height="91.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-To-fBH">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="38.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="37.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
                                         <color key="textColor" name="tintColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-2K-bbp">
-                                        <rect key="frame" x="0.0" y="69.333333333333258" width="68" height="23"/>
+                                        <rect key="frame" x="0.0" y="68.333333333333258" width="64.333333333333329" height="23"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" name="tintColor"/>
                                         <nil key="highlightedColor"/>
@@ -149,7 +149,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasbih" image="moon" catalog="system" id="5oZ-DG-Ylz"/>
                     <connections>
-                        <outletCollection property="buttons" destination="KBI-jc-zYV" id="vmB-Fi-bM2"/>
+                        <outletCollection property="buttons" destination="KBI-jc-zYV" collectionClass="NSMutableArray" id="vmB-Fi-bM2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCG-6T-lgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
