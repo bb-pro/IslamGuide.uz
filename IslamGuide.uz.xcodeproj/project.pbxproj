@@ -23,6 +23,8 @@
 		804EBD9429E53F6900355646 /* uz.sodik.json in Resources */ = {isa = PBXBuildFile; fileRef = 804EBD9329E53F6900355646 /* uz.sodik.json */; };
 		804EBD9629E5430F00355646 /* quran.json in Resources */ = {isa = PBXBuildFile; fileRef = 804EBD9529E5430F00355646 /* quran.json */; };
 		804EBD9829E54DFA00355646 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804EBD9729E54DF900355646 /* TasbihViewController.swift */; };
+		80548C9F29E8065D001B23A7 /* PrayingTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80548C9E29E8065D001B23A7 /* PrayingTimeViewController.swift */; };
+		80548CA129E80809001B23A7 /* Praying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80548CA029E80809001B23A7 /* Praying.swift */; };
 		8081A63629DFDE5800E06DC4 /* AyahCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081A63529DFDE5800E06DC4 /* AyahCell.swift */; };
 		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		804EBD9329E53F6900355646 /* uz.sodik.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uz.sodik.json; sourceTree = "<group>"; };
 		804EBD9529E5430F00355646 /* quran.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quran.json; sourceTree = "<group>"; };
 		804EBD9729E54DF900355646 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
+		80548C9E29E8065D001B23A7 /* PrayingTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayingTimeViewController.swift; sourceTree = "<group>"; };
+		80548CA029E80809001B23A7 /* Praying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Praying.swift; sourceTree = "<group>"; };
 		8081A63529DFDE5800E06DC4 /* AyahCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahCell.swift; sourceTree = "<group>"; };
 		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +113,7 @@
 				8020D97E29DC154300BC69C5 /* QuranTableViewController.swift */,
 				80D8BB0129DD617300712543 /* AyahTableViewController.swift */,
 				804EBD9729E54DF900355646 /* TasbihViewController.swift */,
+				80548C9E29E8065D001B23A7 /* PrayingTimeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				8020D98D29DC1F5800BC69C5 /* Quran.swift */,
+				80548CA029E80809001B23A7 /* Praying.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +254,7 @@
 			files = (
 				8020D97F29DC154300BC69C5 /* QuranTableViewController.swift in Sources */,
 				8020D96E29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld in Sources */,
+				80548C9F29E8065D001B23A7 /* PrayingTimeViewController.swift in Sources */,
 				8081A63629DFDE5800E06DC4 /* AyahCell.swift in Sources */,
 				8020D96829DBFB2400BC69C5 /* StartViewController.swift in Sources */,
 				8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */,
@@ -257,6 +264,7 @@
 				8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */,
 				8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */,
 				8020D96629DBFB2400BC69C5 /* SceneDelegate.swift in Sources */,
+				80548CA129E80809001B23A7 /* Praying.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

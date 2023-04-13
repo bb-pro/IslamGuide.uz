@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -156,21 +155,55 @@
             </objects>
             <point key="canvasLocation" x="2119.5348837209303" y="70.815450643776828"/>
         </scene>
-        <!--View Controller-->
+        <!--Praying times-->
         <scene sceneID="iwe-SK-LpX">
             <objects>
-                <viewController id="6Ot-M3-R3N" sceneMemberID="viewController">
+                <viewController id="6Ot-M3-R3N" customClass="PrayingTimeViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o9v-Js-upE">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-7r-Jxq">
+                                <rect key="frame" x="30" y="580" width="370" height="269"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" id="47H-Ra-YHd">
+                                        <rect key="frame" x="0.0" y="50" width="370" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="47H-Ra-YHd" id="RCW-Bo-NGp">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="background"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:41:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVj-bW-FRd">
+                                <rect key="frame" x="171" y="321" width="88" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="foX-HJ-8MQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="bottom" secondItem="foX-HJ-8MQ" secondAttribute="bottom" id="4aP-Sd-AgA"/>
+                            <constraint firstItem="fVj-bW-FRd" firstAttribute="top" secondItem="foX-HJ-8MQ" secondAttribute="top" constant="218" id="9zV-DS-oKb"/>
+                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.288627" id="MSz-2V-sGa"/>
+                            <constraint firstItem="foX-HJ-8MQ" firstAttribute="trailing" secondItem="FpQ-7r-Jxq" secondAttribute="trailing" constant="30" id="UX9-A2-R0m"/>
+                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="leading" secondItem="foX-HJ-8MQ" secondAttribute="leading" constant="30" id="lPJ-gO-FKu"/>
+                            <constraint firstItem="fVj-bW-FRd" firstAttribute="centerX" secondItem="o9v-Js-upE" secondAttribute="centerX" id="oWH-jX-EL6"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="P9R-eC-gHk"/>
+                    <navigationItem key="navigationItem" title="Praying times" id="P9R-eC-gHk"/>
+                    <connections>
+                        <outlet property="tableView" destination="FpQ-7r-Jxq" id="Qra-X7-IJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-bt-hzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2206" y="780"/>
+            <point key="canvasLocation" x="2119.5348837209303" y="708.79828326180257"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
@@ -461,11 +494,11 @@
             </objects>
             <point key="canvasLocation" x="3891.6279069767443" y="-574.24892703862668"/>
         </scene>
-        <!--Settings-->
+        <!--Praying Time-->
         <scene sceneID="o7M-Xe-7Lv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fGu-4r-cWR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="ZfT-LN-iFd"/>
+                    <tabBarItem key="tabBarItem" title="Praying Time" image="clock" catalog="system" id="ZfT-LN-iFd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3f8-Bc-Rf1">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
@@ -478,7 +511,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtl-ax-GvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1157" y="780"/>
+            <point key="canvasLocation" x="1239" y="710"/>
         </scene>
         <!--Quran-->
         <scene sceneID="dvD-lG-77G">
@@ -508,7 +541,7 @@
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
         <image name="bg" width="326" height="131"/>
         <image name="book" catalog="system" width="128" height="99"/>
-        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
         <image name="moon" catalog="system" width="128" height="123"/>
         <image name="octagon" catalog="system" width="128" height="112"/>
         <image name="speaker.wave.2.fill" catalog="system" width="128" height="88"/>
@@ -527,8 +560,5 @@
         <namedColor name="tintColor">
             <color red="0.40400001406669617" green="0.17299999296665192" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
