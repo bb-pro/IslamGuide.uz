@@ -175,13 +175,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="background"/>
+                                        <color key="tintColor" name="tintColor"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:41:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVj-bW-FRd">
                                 <rect key="frame" x="171" y="321" width="88" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Titleblue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

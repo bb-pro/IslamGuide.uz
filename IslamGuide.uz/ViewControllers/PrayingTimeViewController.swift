@@ -17,6 +17,7 @@ final class PrayingTimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         fetchData()
     }
     
@@ -68,5 +69,11 @@ extension PrayingTimeViewController: UITableViewDataSource {
         
         cell.contentConfiguration = content
         return cell
+    }
+}
+//MARK: - UITableViewDelegate
+extension PrayingTimeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
