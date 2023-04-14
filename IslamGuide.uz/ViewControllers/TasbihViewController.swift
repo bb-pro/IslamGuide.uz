@@ -8,10 +8,12 @@
 import UIKit
 
 final class TasbihViewController: UIViewController {
+    
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet var countLabel: UILabel!
     
     private var count = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
