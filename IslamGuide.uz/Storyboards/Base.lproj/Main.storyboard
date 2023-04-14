@@ -106,6 +106,9 @@
                                         <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system" title="">
                                             <color key="baseForegroundColor" name="tintColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="refreshButtonPressed" destination="zZB-wg-kRq" eventType="touchUpInside" id="uGB-KM-fq5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -182,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCG-6T-lgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2119.5348837209303" y="70.815450643776828"/>
+            <point key="canvasLocation" x="2160" y="84"/>
         </scene>
         <!--Namoz vaqtlari-->
         <scene sceneID="iwe-SK-LpX">
@@ -272,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-bt-hzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2119.5348837209303" y="708.79828326180257"/>
+            <point key="canvasLocation" x="2160" y="738"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
@@ -580,7 +583,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtl-ax-GvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="710"/>
+            <point key="canvasLocation" x="1239" y="738"/>
         </scene>
         <!--Quran-->
         <scene sceneID="dvD-lG-77G">

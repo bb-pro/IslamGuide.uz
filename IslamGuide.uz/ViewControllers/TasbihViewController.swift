@@ -24,4 +24,10 @@ final class TasbihViewController: UIViewController {
         }
         countLabel.text = count.formatted()
     }
+    
+    
+    @IBAction func refreshButtonPressed() {
+        count = 0
+        countLabel.text = count.formatted()
+    }
 }
