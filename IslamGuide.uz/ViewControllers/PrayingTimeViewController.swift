@@ -47,26 +47,29 @@ extension PrayingTimeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath)
-        var content = cell.defaultContentConfiguration()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath) as! PrayingTimeCell
         guard let prayingTime else { return cell }
         
         switch indexPath.row {
             case 0:
-                content.text = "Bomdod: " + prayingTime.today.fajr
+                cell.nameLabel.text = "Bomdod: "
+                cell.timeLabel.text = prayingTime.today.fajr
             case 1:
-                content.text = "Quyosh chiqishi: " + prayingTime.today.sunrise
+                cell.nameLabel.text = "Quyosh chiqishi: "
+                cell.timeLabel.text = prayingTime.today.sunrise
             case 2:
-                content.text = "Peshin: " + prayingTime.today.dhuhr
+                cell.nameLabel.text = "Peshin: "
+                cell.timeLabel.text = prayingTime.today.dhuhr
             case 3:
-                content.text = "Asr: " + prayingTime.today.asr
+                cell.nameLabel.text = "Asr: "
+                cell.timeLabel.text = prayingTime.today.asr
             case 4:
-                content.text = "Shom: " + prayingTime.today.maghrib
+                cell.nameLabel.text = "Shom: "
+                cell.timeLabel.text = prayingTime.today.maghrib
             default:
-                content.text = "Xufton: " + prayingTime.today.isha
+                cell.nameLabel.text = "Xufton: "
+                cell.timeLabel.text = prayingTime.today.isha
         }
-        cell.tintColor = UIColor(named: "tintColor")
-        cell.contentConfiguration = content
         return cell
     }
 }

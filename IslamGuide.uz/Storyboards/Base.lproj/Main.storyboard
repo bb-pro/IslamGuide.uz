@@ -167,15 +167,42 @@
                                 <rect key="frame" x="30" y="401" width="370" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" id="47H-Ra-YHd">
-                                        <rect key="frame" x="0.0" y="50" width="370" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" rowHeight="80" id="47H-Ra-YHd" customClass="PrayingTimeCell" customModule="IslamGuide_uz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="370" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="47H-Ra-YHd" id="RCW-Bo-NGp">
-                                            <rect key="frame" x="0.0" y="0.0" width="370" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37G-24-Vtg">
+                                                    <rect key="frame" x="40" y="31" width="0.0" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="tintColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-7b-lnz">
+                                                    <rect key="frame" x="330" y="31" width="0.0" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="tintColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="37G-24-Vtg" firstAttribute="leading" secondItem="RCW-Bo-NGp" secondAttribute="leadingMargin" constant="20" id="073-46-YSk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ar2-7b-lnz" secondAttribute="trailing" constant="20" id="0pA-lo-0pD"/>
+                                                <constraint firstItem="ar2-7b-lnz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="37G-24-Vtg" secondAttribute="trailing" constant="8" symbolic="YES" id="34z-ok-3dY"/>
+                                                <constraint firstItem="37G-24-Vtg" firstAttribute="top" secondItem="RCW-Bo-NGp" secondAttribute="topMargin" constant="20" id="LVX-vm-F78"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="37G-24-Vtg" secondAttribute="bottom" constant="20" id="R8s-CE-x3E"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ar2-7b-lnz" secondAttribute="bottom" constant="20" id="ShO-qr-nQZ"/>
+                                                <constraint firstItem="ar2-7b-lnz" firstAttribute="top" secondItem="RCW-Bo-NGp" secondAttribute="topMargin" constant="20" id="cHZ-Jn-xlJ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="background"/>
                                         <color key="tintColor" name="tintColor"/>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="37G-24-Vtg" id="a5v-Mh-ohC"/>
+                                            <outlet property="timeLabel" destination="ar2-7b-lnz" id="7qQ-d7-aRM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

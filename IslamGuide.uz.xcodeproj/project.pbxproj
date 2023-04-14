@@ -26,6 +26,7 @@
 		80548C9F29E8065D001B23A7 /* PrayingTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80548C9E29E8065D001B23A7 /* PrayingTimeViewController.swift */; };
 		80548CA129E80809001B23A7 /* Praying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80548CA029E80809001B23A7 /* Praying.swift */; };
 		8081A63629DFDE5800E06DC4 /* AyahCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081A63529DFDE5800E06DC4 /* AyahCell.swift */; };
+		808EF3DE29E941F00037A609 /* PrayingTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EF3DD29E941F00037A609 /* PrayingTimeCell.swift */; };
 		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		80548C9E29E8065D001B23A7 /* PrayingTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayingTimeViewController.swift; sourceTree = "<group>"; };
 		80548CA029E80809001B23A7 /* Praying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Praying.swift; sourceTree = "<group>"; };
 		8081A63529DFDE5800E06DC4 /* AyahCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahCell.swift; sourceTree = "<group>"; };
+		808EF3DD29E941F00037A609 /* PrayingTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayingTimeCell.swift; sourceTree = "<group>"; };
 		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 			children = (
 				8020D98129DC165600BC69C5 /* QuranCell.swift */,
 				8081A63529DFDE5800E06DC4 /* AyahCell.swift */,
+				808EF3DD29E941F00037A609 /* PrayingTimeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				8020D96829DBFB2400BC69C5 /* StartViewController.swift in Sources */,
 				8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */,
 				8020D98229DC165600BC69C5 /* QuranCell.swift in Sources */,
+				808EF3DE29E941F00037A609 /* PrayingTimeCell.swift in Sources */,
 				80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */,
 				804EBD9829E54DFA00355646 /* TasbihViewController.swift in Sources */,
 				8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */,
