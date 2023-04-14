@@ -180,7 +180,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:41:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVj-bW-FRd">
-                                <rect key="frame" x="171" y="321" width="88" height="28"/>
+                                <rect key="frame" x="171" y="283" width="88" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" name="Titleblue"/>
                                 <nil key="highlightedColor"/>
@@ -191,7 +191,7 @@
                         <constraints>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="bottom" secondItem="foX-HJ-8MQ" secondAttribute="bottom" id="4aP-Sd-AgA"/>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.480687" id="9va-PD-JwE"/>
-                            <constraint firstItem="fVj-bW-FRd" firstAttribute="top" secondItem="foX-HJ-8MQ" secondAttribute="top" constant="218" id="9zV-DS-oKb"/>
+                            <constraint firstItem="fVj-bW-FRd" firstAttribute="top" secondItem="foX-HJ-8MQ" secondAttribute="top" constant="180" id="9zV-DS-oKb"/>
                             <constraint firstItem="foX-HJ-8MQ" firstAttribute="trailing" secondItem="FpQ-7r-Jxq" secondAttribute="trailing" constant="30" id="UX9-A2-R0m"/>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="leading" secondItem="foX-HJ-8MQ" secondAttribute="leading" constant="30" id="lPJ-gO-FKu"/>
                             <constraint firstItem="fVj-bW-FRd" firstAttribute="centerX" secondItem="o9v-Js-upE" secondAttribute="centerX" id="oWH-jX-EL6"/>
