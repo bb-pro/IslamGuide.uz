@@ -155,7 +155,7 @@
             </objects>
             <point key="canvasLocation" x="2119.5348837209303" y="70.815450643776828"/>
         </scene>
-        <!--Praying times-->
+        <!--Namoz vaqtlari-->
         <scene sceneID="iwe-SK-LpX">
             <objects>
                 <viewController id="6Ot-M3-R3N" customClass="PrayingTimeViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,13 +180,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37G-24-Vtg">
                                                     <rect key="frame" x="40" y="31" width="0.0" height="18"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-7b-lnz">
                                                     <rect key="frame" x="330" y="31" width="0.0" height="18"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -222,7 +222,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="foX-HJ-8MQ"/>
-                        <color key="backgroundColor" name="background"/>
+                        <color key="backgroundColor" name="SubtitleColor"/>
                         <constraints>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="bottom" secondItem="foX-HJ-8MQ" secondAttribute="bottom" id="4aP-Sd-AgA"/>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.480687" id="9va-PD-JwE"/>
@@ -236,7 +236,7 @@
                             <constraint firstItem="fVj-bW-FRd" firstAttribute="centerX" secondItem="o9v-Js-upE" secondAttribute="centerX" id="oWH-jX-EL6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Praying times" id="P9R-eC-gHk"/>
+                    <navigationItem key="navigationItem" title="Namoz vaqtlari" id="P9R-eC-gHk"/>
                     <connections>
                         <outlet property="tableView" destination="FpQ-7r-Jxq" id="Qra-X7-IJy"/>
                     </connections>
