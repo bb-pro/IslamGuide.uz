@@ -49,7 +49,7 @@ extension PrayingTimeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        guard let prayingTime else { return cell}
+        guard let prayingTime else { return cell }
         
         switch indexPath.row {
             case 0:
@@ -65,7 +65,7 @@ extension PrayingTimeViewController: UITableViewDataSource {
             default:
                 content.text = "Xufton: " + prayingTime.today.isha
         }
-        
+        cell.tintColor = UIColor(named: "tintColor")
         cell.contentConfiguration = content
         return cell
     }

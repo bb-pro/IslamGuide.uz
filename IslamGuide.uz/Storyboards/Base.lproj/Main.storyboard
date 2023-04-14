@@ -164,7 +164,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-7r-Jxq">
-                                <rect key="frame" x="30" y="580" width="370" height="269"/>
+                                <rect key="frame" x="30" y="401" width="370" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" id="47H-Ra-YHd">
@@ -190,8 +190,8 @@
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="bottom" secondItem="foX-HJ-8MQ" secondAttribute="bottom" id="4aP-Sd-AgA"/>
+                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.480687" id="9va-PD-JwE"/>
                             <constraint firstItem="fVj-bW-FRd" firstAttribute="top" secondItem="foX-HJ-8MQ" secondAttribute="top" constant="218" id="9zV-DS-oKb"/>
-                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.288627" id="MSz-2V-sGa"/>
                             <constraint firstItem="foX-HJ-8MQ" firstAttribute="trailing" secondItem="FpQ-7r-Jxq" secondAttribute="trailing" constant="30" id="UX9-A2-R0m"/>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="leading" secondItem="foX-HJ-8MQ" secondAttribute="leading" constant="30" id="lPJ-gO-FKu"/>
                             <constraint firstItem="fVj-bW-FRd" firstAttribute="centerX" secondItem="o9v-Js-upE" secondAttribute="centerX" id="oWH-jX-EL6"/>
