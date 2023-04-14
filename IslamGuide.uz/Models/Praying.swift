@@ -10,7 +10,8 @@ import Foundation
 struct Praying: Decodable {
     let city: String
     let date: String
-    let today: PrayingTime
+    var today: PrayingTime
+    var tomorrow: PrayingTime
 }
 
 struct PrayingTime: Decodable {
@@ -20,4 +21,15 @@ struct PrayingTime: Decodable {
     let asr: String
     let maghrib: String
     let isha: String
+    
+    enum CodingKeys: String, CodingKey {
+        case fajr = "Fajr"
+        case sunrise = "Sunrise"
+        case dhuhr = "Dhuhr"
+        case asr = "Asr"
+        case maghrib = "Maghrib"
+        case isha = "Isha'a"
+    }
 }
+
+

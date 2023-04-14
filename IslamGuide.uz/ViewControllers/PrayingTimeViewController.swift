@@ -28,7 +28,7 @@ private extension PrayingTimeViewController {
         networkManager.fetch(Praying.self, from: url) { result in
             switch result {
                 case .success(let data):
-                    print(data.today.asr)
+                    print(data)
                 case .failure(let error):
                     print(error)
             }
