@@ -110,16 +110,36 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="fw1-g5-RpW">
-                                <rect key="frame" x="183" y="563.33333333333337" width="64.333333333333314" height="91.333333333333371"/>
+                                <rect key="frame" x="125.33333333333333" y="415.33333333333331" width="179.33333333333337" height="101.66666666666669"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-To-fBH">
-                                        <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="37.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
-                                        <color key="textColor" name="tintColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M2M-Wj-WP4">
+                                        <rect key="frame" x="0.0" y="0.0" width="179.33333333333334" height="47.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-To-fBH">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="47.666666666666664"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="xOO-af-oyD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="41"/>
+                                                <color key="textColor" name="tintColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/  33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mck-AF-dGy">
+                                                <rect key="frame" x="94.666666666666657" y="0.0" width="84.666666666666657" height="47.666666666666664"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="VXi-Ov-4o9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="41"/>
+                                                <color key="textColor" name="tintColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-2K-bbp">
-                                        <rect key="frame" x="0.0" y="68.333333333333258" width="64.333333333333329" height="23"/>
+                                        <rect key="frame" x="0.0" y="78.666666666666686" width="179.33333333333334" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="kpZ-Au-KD8"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" name="tintColor"/>
                                         <nil key="highlightedColor"/>
@@ -127,27 +147,36 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-nh-19u">
-                                <rect key="frame" x="189.33333333333334" y="804.66666666666663" width="51.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="182" y="764.66666666666663" width="66.333333333333314" height="34.333333333333371"/>
                                 <color key="backgroundColor" name="SubtitleColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Tap">
+                                <buttonConfiguration key="configuration" style="plain" title="Press">
                                     <color key="baseForegroundColor" name="tintColor"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="countButtonPressed" destination="zZB-wg-kRq" eventType="touchUpInside" id="ste-rW-jyW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Akp-IZ-7zU"/>
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="elw-gs-Zdz" firstAttribute="top" secondItem="Akp-IZ-7zU" secondAttribute="top" constant="60" id="5RL-VZ-rbo"/>
-                            <constraint firstItem="fw1-g5-RpW" firstAttribute="centerX" secondItem="ba0-xu-UKn" secondAttribute="centerX" id="AAt-wq-FsQ"/>
+                            <constraint firstItem="fw1-g5-RpW" firstAttribute="centerX" secondItem="ba0-xu-UKn" secondAttribute="centerX" id="IpS-IJ-dJI"/>
                             <constraint firstItem="elw-gs-Zdz" firstAttribute="centerX" secondItem="ba0-xu-UKn" secondAttribute="centerX" id="RVM-2M-OBN"/>
-                            <constraint firstItem="uoj-nh-19u" firstAttribute="top" secondItem="fw1-g5-RpW" secondAttribute="bottom" constant="150" id="doU-xY-UM4"/>
-                            <constraint firstItem="Akp-IZ-7zU" firstAttribute="bottom" secondItem="uoj-nh-19u" secondAttribute="bottom" constant="10" id="kvq-zK-H4N"/>
+                            <constraint firstItem="fw1-g5-RpW" firstAttribute="centerY" secondItem="ba0-xu-UKn" secondAttribute="centerY" id="fxO-ky-5LZ"/>
+                            <constraint firstItem="Akp-IZ-7zU" firstAttribute="bottom" secondItem="uoj-nh-19u" secondAttribute="bottom" constant="50" id="kvq-zK-H4N"/>
                             <constraint firstItem="uoj-nh-19u" firstAttribute="centerX" secondItem="ba0-xu-UKn" secondAttribute="centerX" id="xBT-RQ-BS5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasbih" image="moon" catalog="system" id="5oZ-DG-Ylz"/>
                     <connections>
+                        <outlet property="countLabel" destination="c4l-To-fBH" id="leL-M6-Ui5"/>
                         <outletCollection property="buttons" destination="KBI-jc-zYV" collectionClass="NSMutableArray" id="vmB-Fi-bM2"/>
                     </connections>
                 </viewController>
@@ -584,7 +613,7 @@
         <image name="clock" catalog="system" width="128" height="123"/>
         <image name="moon" catalog="system" width="128" height="123"/>
         <image name="octagon" catalog="system" width="128" height="112"/>
-        <image name="praying" width="3277" height="4096"/>
+        <image name="praying" width="2886" height="5131"/>
         <image name="speaker.wave.2.fill" catalog="system" width="128" height="88"/>
         <namedColor name="SubtitleColor">
             <color red="0.52941176470588236" green="0.53725490196078429" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
