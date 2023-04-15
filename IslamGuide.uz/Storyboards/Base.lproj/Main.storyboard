@@ -268,7 +268,11 @@
                             <constraint firstItem="fVj-bW-FRd" firstAttribute="centerX" secondItem="o9v-Js-upE" secondAttribute="centerX" id="oWH-jX-EL6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Namoz vaqtlari" id="P9R-eC-gHk"/>
+                    <navigationItem key="navigationItem" title="Namoz vaqtlari" id="P9R-eC-gHk">
+                        <barButtonItem key="rightBarButtonItem" image="gear" catalog="system" id="rSk-Wh-8nv">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="FpQ-7r-Jxq" id="Qra-X7-IJy"/>
                     </connections>
@@ -575,6 +579,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3f8-Bc-Rf1">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -614,6 +624,7 @@
         <image name="bg" width="326" height="131"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
         <image name="moon" catalog="system" width="128" height="123"/>
         <image name="octagon" catalog="system" width="128" height="112"/>
         <image name="praying" width="2886" height="5131"/>
