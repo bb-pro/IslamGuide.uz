@@ -30,7 +30,6 @@ private extension PrayingTimeViewController {
         networkManager.fetch(Praying.self, from: url) { [weak self] result in
             switch result {
                 case .success(let data):
-                    print(data)
                     self?.prayingTime = data
                     self?.tableView.reloadData()
                 case .failure(let error):
