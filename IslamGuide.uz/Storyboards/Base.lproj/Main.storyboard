@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -271,6 +272,9 @@
                     <navigationItem key="navigationItem" title="Namoz vaqtlari" id="P9R-eC-gHk">
                         <barButtonItem key="rightBarButtonItem" image="gear" catalog="system" id="rSk-Wh-8nv">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="Blq-tQ-J9o" kind="presentation" id="loB-VB-mdX"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -280,6 +284,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-bt-hzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2160" y="738"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KnF-qg-pJP">
+            <objects>
+                <viewController id="Blq-tQ-J9o" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bvc-yV-CaD">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1o0-W3-5hZ">
+                                <rect key="frame" x="55" y="324" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-3e-gxW">
+                                <rect key="frame" x="184.66666666666666" y="748" width="61" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Ll-2d-PHr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ll-2d-PHr" firstAttribute="bottom" secondItem="sQl-3e-gxW" secondAttribute="bottom" constant="80" id="C2M-PK-vQo"/>
+                            <constraint firstItem="1o0-W3-5hZ" firstAttribute="centerY" secondItem="Bvc-yV-CaD" secondAttribute="centerY" id="FA2-T0-Dvo"/>
+                            <constraint firstItem="sQl-3e-gxW" firstAttribute="centerX" secondItem="Bvc-yV-CaD" secondAttribute="centerX" id="IOj-wv-nS4"/>
+                            <constraint firstItem="1o0-W3-5hZ" firstAttribute="centerX" secondItem="Bvc-yV-CaD" secondAttribute="centerX" id="mjL-MQ-S7G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="h5V-5c-ALA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdv-wv-iBo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2886" y="738"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
@@ -644,5 +680,8 @@
         <namedColor name="tintColor">
             <color red="0.40400001406669617" green="0.17299999296665192" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

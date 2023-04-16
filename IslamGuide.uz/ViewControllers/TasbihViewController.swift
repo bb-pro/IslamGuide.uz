@@ -23,6 +23,10 @@ final class TasbihViewController: UIViewController {
             count += 1
         }
         countLabel.text = count.formatted()
+        let currentDate = Date()
+       
+        let calendar = Calendar.current
+        print(calendar.component(.day, from: currentDate))
     }
     
     
