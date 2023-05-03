@@ -136,10 +136,10 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-nh-19u">
                                 <rect key="frame" x="182" y="764.66666666666663" width="66.333333333333314" height="34.333333333333371"/>
-                                <color key="backgroundColor" name="SubtitleColor"/>
+                                <color key="backgroundColor" name="tintColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Press">
-                                    <color key="baseForegroundColor" name="tintColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Press" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

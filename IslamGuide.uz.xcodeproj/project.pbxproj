@@ -86,7 +86,7 @@
 		8020D96229DBFB2400BC69C5 /* IslamGuide.uz */ = {
 			isa = PBXGroup;
 			children = (
-				804EBD9229E53F5400355646 /* DataStore */,
+				804EBD9229E53F5400355646 /* Source */,
 				8020D97A29DBFD8A00BC69C5 /* App */,
 				8020D98029DC163A00BC69C5 /* Views */,
 				8020D97B29DBFD9300BC69C5 /* ViewControllers */,
@@ -165,13 +165,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		804EBD9229E53F5400355646 /* DataStore */ = {
+		804EBD9229E53F5400355646 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				804EBD9329E53F6900355646 /* uz.sodik.json */,
 				804EBD9529E5430F00355646 /* quran.json */,
 			);
-			path = DataStore;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
