@@ -483,9 +483,6 @@
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card" translatesAutoresizingMaskIntoConstraints="NO" id="W3t-Bz-pcD">
                                             <rect key="frame" x="40" y="31" width="350" height="160"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="160" id="SC5-Ff-zv8"/>
-                                            </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <integer key="value" value="10"/>
