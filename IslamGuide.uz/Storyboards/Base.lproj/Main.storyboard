@@ -38,31 +38,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-d2-rev" customClass="SpringImageView" customModule="SpringAnimation">
                                 <rect key="frame" x="40" y="255.33333333333337" width="350" height="450"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-fO-jrk">
-                                <rect key="frame" x="110.66666666666669" y="665.33333333333337" width="209" height="74"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="Button" title=""/>
-                                <connections>
-                                    <segue destination="hRk-1K-42A" kind="presentation" modalPresentationStyle="fullScreen" id="IgS-Of-zG1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="background"/>
                         <constraints>
-                            <constraint firstItem="ze0-fO-jrk" firstAttribute="top" secondItem="Tck-d2-rev" secondAttribute="bottom" constant="-40" id="08I-si-ZZD"/>
                             <constraint firstItem="Tck-d2-rev" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.482833" id="HdP-Hu-h9q"/>
                             <constraint firstItem="OMD-jJ-ULX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="Lfs-bW-Q3Q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tck-d2-rev" secondAttribute="trailing" constant="40" id="RCb-BN-sUv"/>
                             <constraint firstItem="OMD-jJ-ULX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="RpI-nE-boB"/>
                             <constraint firstItem="Tck-d2-rev" firstAttribute="top" secondItem="OMD-jJ-ULX" secondAttribute="bottom" constant="30" id="j8D-nE-8cz"/>
-                            <constraint firstItem="ze0-fO-jrk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jN7-y5-Y1f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OMD-jJ-ULX" secondAttribute="trailing" constant="90" id="mkW-H7-17U"/>
                             <constraint firstItem="Tck-d2-rev" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="wFK-Bj-rVq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Tck-d2-rev" id="Jpl-8N-hqf"/>
+                        <segue destination="hRk-1K-42A" kind="presentation" identifier="showMain" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Nz8-CZ-ddS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -314,6 +305,7 @@
         <scene sceneID="dsJ-RT-pcY">
             <objects>
                 <tabBarController id="hRk-1K-42A" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tSd-FV-yBr"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n4A-dJ-0gW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -343,13 +335,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="background"/>
                         <color key="separatorColor" name="background"/>
-                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="haZ-HV-ewl">
-                            <rect key="frame" x="0.0" y="0.0" width="430" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="titleCell" rowHeight="176" id="AeC-PJ-MlN">
-                                <rect key="frame" x="0.0" y="71" width="430" height="176"/>
+                                <rect key="frame" x="0.0" y="50" width="430" height="176"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AeC-PJ-MlN" id="LYG-KW-6V8">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="176"/>
@@ -361,20 +349,14 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="EV8-ru-DKe">
                                             <rect key="frame" x="83" y="44.999999999999993" width="118.33333333333331" height="80.333333333333314"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📖 Last Read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dh-39-byA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="102.66666666666667" height="20.666666666666668"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="background"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXG-ee-dUF">
-                                                    <rect key="frame" x="0.0" y="29.666666666666671" width="58" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="58" height="35.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" name="background"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="114 surahs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRv-aR-Nfp">
-                                                    <rect key="frame" x="0.0" y="59.666666666666664" width="73" height="20.666666666666664"/>
+                                                    <rect key="frame" x="0.0" y="44.666666666666671" width="73" height="35.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" name="background"/>
                                                     <nil key="highlightedColor"/>
@@ -396,7 +378,7 @@
                                 <color key="backgroundColor" name="background"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="72" id="fIU-aC-ONM" customClass="QuranCell" customModule="IslamGuide_uz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="247" width="430" height="72"/>
+                                <rect key="frame" x="0.0" y="226" width="430" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fIU-aC-ONM" id="rhH-gj-nlW">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="72"/>
@@ -478,9 +460,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Quran" id="4Kt-xb-B94"/>
-                    <connections>
-                        <outlet property="activityIndicator" destination="haZ-HV-ewl" id="fMG-G3-UuS"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiX-JS-csL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -722,7 +701,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Button" width="185" height="60"/>
         <image name="Card" width="375" height="315"/>
         <image name="Group 36" width="314" height="450"/>
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>

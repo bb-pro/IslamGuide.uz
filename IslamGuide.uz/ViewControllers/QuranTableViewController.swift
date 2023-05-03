@@ -9,19 +9,14 @@ import UIKit
 
 final class QuranTableViewController: UITableViewController {
     
-    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     private let networkManager = NetworkManager.shared
     var response: QuranResponse?
     private var arabicResponse: QuranResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndicator.startAnimating()
         fetchArabic()
         fetchDataUzbek()
-
-        parseData()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -42,7 +37,6 @@ private extension QuranTableViewController {
                 case .success(let data):
                     self?.response = data
                     self?.tableView.reloadData()
-                    self?.activityIndicator.removeFromSuperview()
                 case .failure(let error):
                     print(error)
             }
@@ -53,22 +47,12 @@ private extension QuranTableViewController {
             switch result {
                 case .success(let data):
                     self?.arabicResponse = data
-                    self?.activityIndicator.removeFromSuperview()
                 case .failure(let error):
                     print(error)
             }
         }
     }
-    func parseData() {
-        networkManager.getData(for: "uz.sodik") { result in
-            switch result {
-                case .success(let success):
-                    print(success.data.surahs[0].ayahs[0].text)
-                case .failure(let failure):
-                    print(failure)
-            }
-        }
-    }
+  
     
 }
 
@@ -103,7 +87,7 @@ extension QuranTableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 300
+            return 176
         } else {
             return 72
         }
