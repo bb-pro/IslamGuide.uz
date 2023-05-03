@@ -19,6 +19,7 @@ final class PrayingTimeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         fetchData()
+        
     }
     
 }
