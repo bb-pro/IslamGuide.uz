@@ -20,6 +20,8 @@
 		8020D98829DC1A1700BC69C5 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 8020D98729DC1A1700BC69C5 /* SpringAnimation */; };
 		8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */; };
 		8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D98D29DC1F5800BC69C5 /* Quran.swift */; };
+		80334AC42A039DC3004886A8 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80334AC32A039DC3004886A8 /* SettingCell.swift */; };
+		80334AC62A03E64F004886A8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80334AC52A03E64F004886A8 /* SettingsViewController.swift */; };
 		804EBD9429E53F6900355646 /* uz.sodik.json in Resources */ = {isa = PBXBuildFile; fileRef = 804EBD9329E53F6900355646 /* uz.sodik.json */; };
 		804EBD9629E5430F00355646 /* quran.json in Resources */ = {isa = PBXBuildFile; fileRef = 804EBD9529E5430F00355646 /* quran.json */; };
 		804EBD9829E54DFA00355646 /* TasbihViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804EBD9729E54DF900355646 /* TasbihViewController.swift */; };
@@ -44,6 +46,8 @@
 		8020D98129DC165600BC69C5 /* QuranCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranCell.swift; sourceTree = "<group>"; };
 		8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8020D98D29DC1F5800BC69C5 /* Quran.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quran.swift; sourceTree = "<group>"; };
+		80334AC32A039DC3004886A8 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		80334AC52A03E64F004886A8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		804EBD9329E53F6900355646 /* uz.sodik.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uz.sodik.json; sourceTree = "<group>"; };
 		804EBD9529E5430F00355646 /* quran.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quran.json; sourceTree = "<group>"; };
 		804EBD9729E54DF900355646 /* TasbihViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				80D8BB0129DD617300712543 /* AyahTableViewController.swift */,
 				804EBD9729E54DF900355646 /* TasbihViewController.swift */,
 				80548C9E29E8065D001B23A7 /* PrayingTimeViewController.swift */,
+				80334AC52A03E64F004886A8 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				8020D98129DC165600BC69C5 /* QuranCell.swift */,
 				8081A63529DFDE5800E06DC4 /* AyahCell.swift */,
 				808EF3DD29E941F00037A609 /* PrayingTimeCell.swift */,
+				80334AC32A039DC3004886A8 /* SettingCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 				8020D96829DBFB2400BC69C5 /* StartViewController.swift in Sources */,
 				8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */,
 				8020D98229DC165600BC69C5 /* QuranCell.swift in Sources */,
+				80334AC62A03E64F004886A8 /* SettingsViewController.swift in Sources */,
 				808EF3DE29E941F00037A609 /* PrayingTimeCell.swift in Sources */,
+				80334AC42A039DC3004886A8 /* SettingCell.swift in Sources */,
 				80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */,
 				804EBD9829E54DFA00355646 /* TasbihViewController.swift in Sources */,
 				8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */,

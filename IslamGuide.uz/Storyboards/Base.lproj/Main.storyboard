@@ -578,7 +578,7 @@
         <!--Settings-->
         <scene sceneID="WJK-41-WPb">
             <objects>
-                <viewController id="TNW-MP-d0Q" sceneMemberID="viewController">
+                <viewController id="TNW-MP-d0Q" customClass="SettingsViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29N-F4-sUS">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -587,15 +587,18 @@
                                 <rect key="frame" x="30" y="203" width="370" height="193"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="G9x-8j-rMJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" id="G9x-8j-rMJ" customClass="SettingCell" customModule="IslamGuide_uz" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="370" height="43.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G9x-8j-rMJ" id="ghF-G4-Brh">
                                             <rect key="frame" x="0.0" y="0.0" width="370" height="43.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-fK-Z17">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-fK-Z17">
                                                     <rect key="frame" x="311" y="5.9999999999999982" width="51" height="31.333333333333329"/>
+                                                    <connections>
+                                                        <action selector="switchChanged:" destination="G9x-8j-rMJ" eventType="valueChanged" id="vUL-vd-VgR"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-0B-8yf">
                                                     <rect key="frame" x="30" y="10.999999999999998" width="84" height="21.333333333333329"/>
@@ -605,6 +608,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="bTi-fK-Z17" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iCn-0B-8yf" secondAttribute="trailing" constant="8" symbolic="YES" id="AUh-nS-op9"/>
                                                 <constraint firstItem="bTi-fK-Z17" firstAttribute="top" secondItem="ghF-G4-Brh" secondAttribute="top" constant="6" id="AtA-5e-HQp"/>
                                                 <constraint firstAttribute="bottom" secondItem="bTi-fK-Z17" secondAttribute="bottom" constant="6" id="Hwe-xF-IGz"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="iCn-0B-8yf" secondAttribute="bottom" id="UHR-EJ-CWA"/>
@@ -627,6 +631,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="2Be-GI-Wce"/>
+                    <connections>
+                        <outlet property="tableView" destination="NY9-U4-6Ud" id="eKQ-Ey-eVF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBO-s7-4qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
