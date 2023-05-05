@@ -21,7 +21,6 @@ final class PrayingTimeViewController: UIViewController {
         fetchData()
         
     }
-    
 }
 
 //MARK: - Networking
