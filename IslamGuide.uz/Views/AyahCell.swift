@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AyahCell: UITableViewCell {
+final class AyahCell: UITableViewCell {
 
     @IBOutlet var arabicLabel: UILabel!
     @IBOutlet var englishLabel: UILabel!
