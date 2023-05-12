@@ -84,6 +84,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="numberButtonPressed" destination="zZB-wg-kRq" eventType="touchUpInside" id="4t9-6S-T91"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJC-yq-gLd">
                                         <rect key="frame" x="79" y="0.0" width="50" height="50"/>
@@ -165,7 +168,9 @@
                     <tabBarItem key="tabBarItem" title="Tasbih" image="moon" catalog="system" id="5oZ-DG-Ylz"/>
                     <connections>
                         <outlet property="countLabel" destination="c4l-To-fBH" id="leL-M6-Ui5"/>
-                        <outletCollection property="buttons" destination="KBI-jc-zYV" collectionClass="NSMutableArray" id="vmB-Fi-bM2"/>
+                        <outlet property="numberButton" destination="KBI-jc-zYV" id="O08-qV-dOX"/>
+                        <outlet property="numberLabel" destination="mck-AF-dGy" id="K6d-4f-Lok"/>
+                        <outlet property="refreshButton" destination="fJC-yq-gLd" id="cEt-Oa-br4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCG-6T-lgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
