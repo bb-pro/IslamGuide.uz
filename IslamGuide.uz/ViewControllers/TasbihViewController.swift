@@ -10,8 +10,8 @@ import SpringAnimation
 
 final class TasbihViewController: UIViewController {
     
-    @IBOutlet var numberButton: UIButton!
-    @IBOutlet var refreshButton: UIButton!
+    @IBOutlet var numberButton: SpringButton!
+    @IBOutlet var refreshButton: SpringButton!
     
     @IBOutlet var countLabel: SpringLabel!
     @IBOutlet var numberLabel: UILabel!
@@ -35,9 +35,11 @@ final class TasbihViewController: UIViewController {
     @IBAction func refreshButtonPressed() {
         count = 0
         countLabel.text = count.formatted()
+        animateButton(sender: refreshButton)
     }
     
     @IBAction func numberButtonPressed() {
+        animateButton(sender: numberButton)
         if largestCount == 33 {
             largestCount = 99
         } else {
@@ -49,8 +51,13 @@ final class TasbihViewController: UIViewController {
     }
     
     private func animateCountLabel() {
-        countLabel.animation = "slideUp"
-        countLabel.duration = 1.5
+        countLabel.animation = "zoomIn"
+        countLabel.duration = 1
         countLabel.animate()
+    }
+    private func animateButton(sender: SpringButton) {
+        sender.animation = "zoomIn"
+        sender.duration = 1.6
+        sender.animate()
     }
 }
