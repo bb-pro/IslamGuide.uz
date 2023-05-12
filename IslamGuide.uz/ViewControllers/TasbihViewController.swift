@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import SpringAnimation
 
 final class TasbihViewController: UIViewController {
     
     @IBOutlet var numberButton: UIButton!
     @IBOutlet var refreshButton: UIButton!
     
-    @IBOutlet var countLabel: UILabel!
+    @IBOutlet var countLabel: SpringLabel!
     @IBOutlet var numberLabel: UILabel!
     
     private var count = 0
@@ -26,6 +27,7 @@ final class TasbihViewController: UIViewController {
         if count < largestCount {
             count += 1
         }
+        animateCountLabel()
         countLabel.text = count.formatted()
     }
     
@@ -44,5 +46,11 @@ final class TasbihViewController: UIViewController {
         
         numberButton.setTitle(largestCount.formatted(), for: .normal)
         numberLabel.text = "/  \(largestCount)"
+    }
+    
+    private func animateCountLabel() {
+        countLabel.animation = "slideUp"
+        countLabel.duration = 1.5
+        countLabel.animate()
     }
 }
