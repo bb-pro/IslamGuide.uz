@@ -8,16 +8,22 @@
 import UIKit
 
 final class QuranTableViewController: UITableViewController {
-    
-    private let networkManager = NetworkManager.shared
     var response: QuranResponse?
     private var arabicResponse: QuranResponse?
+    private var quranVersion: String!
+    private let networkManager = NetworkManager.shared
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let preferredLanguage = Locale.preferredLanguages.first
         fetchArabic()
         fetchTranslation()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let preferredLanguage = Locale.preferredLanguages.first else { return }
+       
+        print(preferredLanguage)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,7 +39,7 @@ final class QuranTableViewController: UITableViewController {
 
 private extension QuranTableViewController {
     func fetchTranslation() {
-        networkManager.getData(for: "ru.kuliev") { [weak self] result in
+        networkManager.getData(for: "en.asad") { [weak self] result in
             switch result {
                 case .success(let data):
                     self?.response = data
