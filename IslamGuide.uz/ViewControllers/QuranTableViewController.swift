@@ -32,7 +32,7 @@ final class QuranTableViewController: UITableViewController {
 
 private extension QuranTableViewController {
     func fetchDataUzbek() {
-        networkManager.getData(for: "uz.sodik") { [weak self] result in
+        networkManager.getData(for: "en.asad") { [weak self] result in
             switch result {
                 case .success(let data):
                     self?.response = data
@@ -106,7 +106,6 @@ extension QuranTableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
             return cell
         } else {
-            
             guard let surah = response?.data.surahs[indexPath.row] else {
                       // Return an empty cell if response is nil
                       return UITableViewCell()
