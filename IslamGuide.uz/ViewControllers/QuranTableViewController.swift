@@ -15,8 +15,9 @@ final class QuranTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let preferredLanguage = Locale.preferredLanguages.first
         fetchArabic()
-        fetchDataUzbek()
+        fetchTranslation()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,8 +32,8 @@ final class QuranTableViewController: UITableViewController {
 //MARK: - Private Methods
 
 private extension QuranTableViewController {
-    func fetchDataUzbek() {
-        networkManager.getData(for: "en.asad") { [weak self] result in
+    func fetchTranslation() {
+        networkManager.getData(for: "ru.kuliev") { [weak self] result in
             switch result {
                 case .success(let data):
                     self?.response = data
