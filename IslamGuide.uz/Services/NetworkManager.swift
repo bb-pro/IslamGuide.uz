@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum Link {
     case quranUz
@@ -42,6 +43,17 @@ final class NetworkManager {
     
     private init() {}
     
+    func playAudioFromAPI(apiURL: URL, completion: @escaping (Result<Data, Error>) -> Void) {
+           AF.download(apiURL).responseData { response in
+               switch response.result {
+               case .success(let audioData):
+                   completion(.success(audioData))
+               case .failure(let error):
+                   completion(.failure(error))
+               }
+           }
+       }
+   
     func fetch<T: Decodable>(_ type: T.Type, from url: URL, completion: @escaping(Result<T, NetworkError>)->Void) {
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data else {
@@ -62,6 +74,9 @@ final class NetworkManager {
             }
         }.resume()
     }
+    
+    
+    
     func getData(for filePath: String, completion: @escaping(Result<QuranResponse, NetworkError>) -> Void) {
         if let path = Bundle.main.path(forResource: filePath, ofType: "json") {
             do {

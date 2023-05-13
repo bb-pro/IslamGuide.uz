@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import AVFAudio
+import AVFoundation
 
 final class AyahTableViewController: UITableViewController {
     var ayahs: [Ayah] = []
     var arabicAyahs: [Ayah] = []
+    private let networkManager = NetworkManager.shared
+    private var player: AVPlayer?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,8 +63,20 @@ extension AyahTableViewController {
 //MARK: - UITableViewDelegate
 extension AyahTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let link = arabicAyahs[indexPath.row].audio
-        print(link)
+        
+        guard let urlString = arabicAyahs[indexPath.row].audio else { return }
+        guard let audioLink = URL(string: urlString) else { return }
+        print(audioLink)
+        playAudioFromURL(url: audioLink)
+    }
+}
+
+//MARK: - Networking and AudioPlaying
+private extension AyahTableViewController {
+    
+    func playAudioFromURL(url: URL) {
+        let playerItem = AVPlayerItem(url: url)
+        player = AVPlayer(playerItem: playerItem)
+        player?.play()
     }
 }
