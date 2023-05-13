@@ -32,6 +32,7 @@
 		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
 		80F6B20E2A0FE36B00DEB97D /* en.asad.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20D2A0FE36B00DEB97D /* en.asad.json */; };
 		80F6B2102A0FE57700DEB97D /* ru.kuliev.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */; };
+		80F6B2122A0FEB6400DEB97D /* ar.alafasy.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B2112A0FEB6400DEB97D /* ar.alafasy.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
 		80F6B20D2A0FE36B00DEB97D /* en.asad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en.asad.json; sourceTree = "<group>"; };
 		80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru.kuliev.json; sourceTree = "<group>"; };
+		80F6B2112A0FEB6400DEB97D /* ar.alafasy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ar.alafasy.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				80F6B20D2A0FE36B00DEB97D /* en.asad.json */,
 				804EBD9329E53F6900355646 /* uz.sodik.json */,
 				804EBD9529E5430F00355646 /* quran.json */,
+				80F6B2112A0FEB6400DEB97D /* ar.alafasy.json */,
 				80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */,
 			);
 			path = Source;
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F6B20E2A0FE36B00DEB97D /* en.asad.json in Resources */,
+				80F6B2122A0FEB6400DEB97D /* ar.alafasy.json in Resources */,
 				804EBD9429E53F6900355646 /* uz.sodik.json in Resources */,
 				8020D97329DBFB2700BC69C5 /* LaunchScreen.storyboard in Resources */,
 				804EBD9629E5430F00355646 /* quran.json in Resources */,

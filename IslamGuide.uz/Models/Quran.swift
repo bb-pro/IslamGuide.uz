@@ -26,6 +26,7 @@ struct Surah: Codable {
 }
 struct Ayah: Codable {
     let number: Int
+    let audio: String?
     let text: String
     let numberInSurah: Int
     let juz: Int

@@ -50,7 +50,7 @@ private extension QuranTableViewController {
         }
     }
     func fetchArabic() {
-        networkManager.getData(for: "quran") { [weak self] result in
+        networkManager.getData(for: "ar.alafasy") { [weak self] result in
             switch result {
                 case .success(let data):
                     self?.arabicResponse = data
