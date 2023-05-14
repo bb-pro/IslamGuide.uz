@@ -14,6 +14,8 @@ final class AyahTableViewController: UITableViewController {
     var arabicAyahs: [Ayah] = []
     private let networkManager = NetworkManager.shared
     private var player: AVPlayer?
+    private var currentIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,12 +27,10 @@ final class AyahTableViewController: UITableViewController {
 // MARK: - Table view data source
 extension AyahTableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 2
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         if section == 0 {
             return 1
         } else {
@@ -63,20 +63,45 @@ extension AyahTableViewController {
 //MARK: - UITableViewDelegate
 extension AyahTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        guard let urlString = arabicAyahs[indexPath.row].audio else { return }
-        guard let audioLink = URL(string: urlString) else { return }
-        print(audioLink)
-        playAudioFromURL(url: audioLink)
+        tableView.deselectRow(at: indexPath, animated: true)
+        currentIndex = indexPath.row
+        playNextAyah()
     }
 }
 
 //MARK: - Networking and AudioPlaying
 private extension AyahTableViewController {
-    
-    func playAudioFromURL(url: URL) {
-        let playerItem = AVPlayerItem(url: url)
+    func playNextAyah() {
+        guard currentIndex < ayahs.count else {
+            print("Finished playing all Ayahs.")
+            return
+        }
+        
+        let currentAyah = ayahs[currentIndex]
+        
+        guard let urlString = arabicAyahs[currentIndex].audio else {
+            currentIndex += 1
+            playNextAyah()
+            return
+        }
+        
+        guard let audioURL = URL(string: urlString) else {
+            currentIndex += 1
+            playNextAyah()
+            return
+        }
+        
+        let playerItem = AVPlayerItem(url: audioURL)
         player = AVPlayer(playerItem: playerItem)
         player?.play()
+        
+        print("Playing Ayah: \(currentAyah.text)")
+        
+        currentIndex += 1
+        
+        // Wait for the current Ayah to finish playing
+        DispatchQueue.main.asyncAfter(deadline: .now() + playerItem.asset.duration.seconds) { [weak self] in
+            self?.playNextAyah()
+        }
     }
 }
