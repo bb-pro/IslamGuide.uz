@@ -34,7 +34,9 @@ final class QuranTableViewController: UIViewController {
         guard let indexPath = tableView.indexPathForSelectedRow?.row else { return }
         ayahVC.ayahs = response?.data.surahs[indexPath].ayahs ?? []
         ayahVC.arabicAyahs = arabicResponse?.data.surahs[indexPath].ayahs ?? []
+        ayahVC.navigationItem.title = response?.data.surahs[indexPath].englishName
     }
+    
     
 }
 
@@ -62,10 +64,7 @@ private extension QuranTableViewController {
             }
         }
     }
-    
-    
 }
-
 
 // MARK: - Table view data source
 extension QuranTableViewController: UITableViewDataSource {
@@ -78,8 +77,6 @@ extension QuranTableViewController: UITableViewDataSource {
         // #warning Incomplete implementation, return the number of rows
             return response?.data.surahs.count ?? 1
     }
-    
-    
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         40

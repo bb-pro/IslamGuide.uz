@@ -9,7 +9,10 @@ import UIKit
 import AVFAudio
 import AVFoundation
 
-final class AyahTableViewController: UITableViewController {
+final class AyahTableViewController: UIViewController {
+    
+    @IBOutlet var tableView: UITableView!
+    
     var ayahs: [Ayah] = []
     var arabicAyahs: [Ayah] = []
     private let networkManager = NetworkManager.shared
@@ -18,51 +21,39 @@ final class AyahTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 800
+    }
+    @IBAction func playButtonPressed() {
+        playNextAyah()
     }
 }
 
 // MARK: - Table view data source
-extension AyahTableViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
+extension AyahTableViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 1
-        } else {
-            return ayahs.count
-        }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ayahs.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 1 {
-            return "Ayahs"
-        } else {
-            return nil
-        }
-    }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ayahCell", for: indexPath) as! AyahCell
-            let ayah = ayahs[indexPath.row]
-            cell.arabicLabel.text = arabicAyahs[indexPath.row].text
-            cell.englishLabel.text = ayah.text
-            return cell
-        }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ayahCell", for: indexPath) as! AyahCell
+        let ayah = ayahs[indexPath.row]
+        cell.arabicLabel.text = arabicAyahs[indexPath.row].text
+        cell.englishLabel.text = ayah.text
+        return cell
     }
 }
 
 //MARK: - UITableViewDelegate
-extension AyahTableViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+extension AyahTableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         currentIndex = indexPath.row
         playNextAyah()
@@ -100,7 +91,7 @@ private extension AyahTableViewController {
         currentIndex += 1
         
         // Wait for the current Ayah to finish playing
-        DispatchQueue.main.asyncAfter(deadline: .now() + playerItem.asset.duration.seconds) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + playerItem.asset.duration.seconds + 1 ) { [weak self] in
             self?.playNextAyah()
         }
     }
