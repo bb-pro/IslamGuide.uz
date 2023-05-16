@@ -71,7 +71,7 @@ private extension AyahTableViewController {
         }
         //Selecting the cell that is being played
         let indexPath = IndexPath(row: currentIndex, section: 0)
-        tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+        tableView.selectRow(at: indexPath, animated: true, scrollPosition: .bottom)
         
         let currentAyah = ayahs[currentIndex]
         
