@@ -560,7 +560,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NY9-U4-6Ud">
                                 <rect key="frame" x="30" y="203" width="370" height="193"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" id="G9x-8j-rMJ" customClass="SettingCell" customModule="IslamGuide_uz" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="370" height="43.333332061767578"/>
@@ -578,7 +578,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-0B-8yf">
                                                     <rect key="frame" x="30" y="10.999999999999998" width="84" height="21.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="tintColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -592,12 +592,13 @@
                                                 <constraint firstItem="iCn-0B-8yf" firstAttribute="top" secondItem="ghF-G4-Brh" secondAttribute="topMargin" id="pEB-9g-5H0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" name="background"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AEI-cr-DVa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="NY9-U4-6Ud" firstAttribute="top" secondItem="AEI-cr-DVa" secondAttribute="top" constant="100" id="Acp-wC-ani"/>
                             <constraint firstItem="NY9-U4-6Ud" firstAttribute="height" secondItem="29N-F4-sUS" secondAttribute="height" multiplier="0.207082" id="KFF-cS-edq"/>
