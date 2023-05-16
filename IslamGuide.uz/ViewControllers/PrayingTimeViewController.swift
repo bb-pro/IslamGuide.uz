@@ -7,29 +7,50 @@
 
 import UIKit
 import Adhan
+import CoreLocation
 
 final class PrayingTimeViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
     private let networkManager = NetworkManager.shared
+    private let locationManager = CLLocationManager()
+    
     private var prayingTime: PrayerTimes?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
-        fetchData()
         
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        
+    }
+}
+
+//MARK: - CLLocationManagerDelegate
+extension PrayingTimeViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            let lat = location.coordinate.latitude
+            let lon = location.coordinate.longitude
+            fetchData(lat: lat, lon: lon)
+            tableView.reloadData()
+        }
+    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Location did fail with error")
     }
 }
 
 //MARK: - Networking
 private extension PrayingTimeViewController {
-    func fetchData() {
+    func fetchData(lat: Double, lon: Double) {
         let cal = Calendar(identifier: Calendar.Identifier.gregorian)
         let date = cal.dateComponents([.year, .month, .day], from: Date())
-        let coordinates = Coordinates(latitude: 40, longitude: 71)
+        let coordinates = Coordinates(latitude: lat, longitude: lon)
         var params = CalculationMethod.moonsightingCommittee.params
         params.madhab = .hanafi
         guard let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params) else { return }
