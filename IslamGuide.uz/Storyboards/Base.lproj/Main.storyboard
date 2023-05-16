@@ -442,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0D-XU-tMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3044.6511627906975" y="-1989.2703862660946"/>
+            <point key="canvasLocation" x="3059" y="-1337"/>
         </scene>
         <!--Ayahs-->
         <scene sceneID="WtI-sp-e1b">
@@ -548,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1az-BF-hz4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3853.953488372093" y="-1985.4077253218886"/>
+            <point key="canvasLocation" x="3921" y="-1337"/>
         </scene>
         <!--Settings-->
         <scene sceneID="WJK-41-WPb">
@@ -613,7 +613,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBO-s7-4qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3058.6046511627906" y="878.75536480686696"/>
+            <point key="canvasLocation" x="3059" y="1016"/>
         </scene>
         <!--Praying Time-->
         <scene sceneID="o7M-Xe-7Lv">
@@ -677,7 +677,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fee-mo-GZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160" y="878.75536480686696"/>
+            <point key="canvasLocation" x="2160" y="1016"/>
         </scene>
         <!--Tasbih-->
         <scene sceneID="kp5-vS-mq0">
