@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -15,20 +15,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-jJ-ULX">
-                                <rect key="frame" x="90" y="139" width="250" height="86.333333333333314"/>
+                                <rect key="frame" x="90" y="80" width="195" height="86.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IslamGuide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d07-yv-qGR">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="33.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="33.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <color key="textColor" name="Titleblue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Quran and Recite once everyday" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvc-WJ-5gX">
-                                        <rect key="frame" x="0.0" y="45.666666666666657" width="250" height="40.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="45.5" width="195" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="SubtitleColor"/>
                                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-d2-rev" customClass="SpringImageView" customModule="SpringAnimation">
-                                <rect key="frame" x="40" y="255.33333333333337" width="350" height="450"/>
+                                <rect key="frame" x="40" y="196.5" width="295" height="322"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,11 +65,11 @@
             <objects>
                 <viewController id="zZB-wg-kRq" customClass="TasbihViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ba0-xu-UKn">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="elw-gs-Zdz">
-                                <rect key="frame" x="150.66666666666666" y="119" width="128.99999999999997" height="50"/>
+                                <rect key="frame" x="123" y="60" width="129" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBI-jc-zYV" customClass="SpringButton" customModule="SpringAnimation">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -101,13 +101,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="fw1-g5-RpW">
-                                <rect key="frame" x="125.33333333333333" y="401.66666666666669" width="179.33333333333337" height="128.66666666666669"/>
+                                <rect key="frame" x="98" y="269.5" width="179" height="128.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M2M-Wj-WP4">
-                                        <rect key="frame" x="0.0" y="0.0" width="179.33333333333334" height="47.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="47.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-To-fBH" customClass="SpringLabel" customModule="SpringAnimation">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="47.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="47.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="xOO-af-oyD"/>
                                                 </constraints>
@@ -119,7 +119,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/  33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mck-AF-dGy">
-                                                <rect key="frame" x="94.666666666666657" y="0.0" width="84.666666666666657" height="47.666666666666664"/>
+                                                <rect key="frame" x="94.5" y="0.0" width="84.5" height="47.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="VXi-Ov-4o9"/>
                                                 </constraints>
@@ -130,7 +130,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-2K-bbp">
-                                        <rect key="frame" x="0.0" y="78.666666666666629" width="179.33333333333334" height="50"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="179" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="kpZ-Au-KD8"/>
                                         </constraints>
@@ -141,7 +141,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-nh-19u">
-                                <rect key="frame" x="182" y="764.66666666666663" width="66.333333333333314" height="34.333333333333371"/>
+                                <rect key="frame" x="154.5" y="533.5" width="66.5" height="34.5"/>
                                 <color key="backgroundColor" name="tintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Press" cornerStyle="capsule">
@@ -185,28 +185,28 @@
             <objects>
                 <viewController id="6Ot-M3-R3N" customClass="PrayingTimeViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o9v-Js-upE">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-7r-Jxq">
-                                <rect key="frame" x="30" y="163" width="370" height="686"/>
+                                <rect key="frame" x="30" y="104" width="315" height="514"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" rowHeight="80" id="47H-Ra-YHd" customClass="PrayingTimeCell" customModule="IslamGuide_uz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="370" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="315" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="47H-Ra-YHd" id="RCW-Bo-NGp">
-                                            <rect key="frame" x="0.0" y="0.0" width="370" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37G-24-Vtg">
-                                                    <rect key="frame" x="40" y="31" width="0.0" height="18"/>
+                                                    <rect key="frame" x="36" y="31" width="0.0" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" name="tintColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-7b-lnz">
-                                                    <rect key="frame" x="330" y="31" width="0.0" height="18"/>
+                                                    <rect key="frame" x="279" y="31" width="0.0" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" name="tintColor"/>
                                                     <nil key="highlightedColor"/>
@@ -267,14 +267,14 @@
             <objects>
                 <viewController id="Blq-tQ-J9o" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bvc-yV-CaD">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1o0-W3-5hZ">
-                                <rect key="frame" x="55" y="323.66666666666669" width="320" height="216.00000000000006"/>
+                                <rect key="frame" x="27.5" y="215.5" width="320" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQl-3e-gxW">
-                                <rect key="frame" x="184.66666666666666" y="748" width="61" height="35"/>
+                                <rect key="frame" x="157" y="532" width="61" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
                             </button>
@@ -324,21 +324,21 @@
             <objects>
                 <viewController id="le7-mx-YL0" customClass="QuranTableViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMa-qA-fhn">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-kq-zHD">
-                                <rect key="frame" x="20" y="143" width="390" height="128"/>
+                                <rect key="frame" x="20" y="84" width="335" height="91.5"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rh9-j9-cqJ">
-                                <rect key="frame" x="10" y="301" width="410" height="548"/>
+                                <rect key="frame" x="10" y="205.5" width="355" height="412.5"/>
                                 <color key="backgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="72" id="yBJ-Jr-iGl" customClass="QuranCell" customModule="IslamGuide_uz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="410" height="72"/>
+                                        <rect key="frame" x="0.0" y="50" width="355" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yBJ-Jr-iGl" id="fZs-4x-nEi">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="35A-Of-tEm">
@@ -350,7 +350,7 @@
                                                             <color key="tintColor" name="tintColor"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5r-6d-o0g">
-                                                            <rect key="frame" x="30.666666666666668" y="26" width="7.6666666666666679" height="20.333333333333329"/>
+                                                            <rect key="frame" x="31" y="26" width="7.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -364,22 +364,22 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMa-lk-Zdv">
-                                                    <rect key="frame" x="286" y="0.0" width="109" height="72"/>
+                                                    <rect key="frame" x="245.5" y="0.0" width="94.5" height="72"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="tintColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="1Y9-MT-QqD">
-                                                    <rect key="frame" x="79" y="0.0" width="197" height="72"/>
+                                                    <rect key="frame" x="79" y="0.0" width="156.5" height="72"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Al-Fatiah          " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCl-D6-ymT">
-                                                            <rect key="frame" x="0.0" y="0.0" width="197" height="29.666666666666668"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="156.5" height="29.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                                             <color key="textColor" name="cellTitle"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 verses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5R-es-txI">
-                                                            <rect key="frame" x="0.0" y="42.666666666666664" width="197" height="29.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="42.5" width="156.5" height="29.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                             <color key="textColor" name="SubtitleColor"/>
                                                             <nil key="highlightedColor"/>
@@ -413,7 +413,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surahs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAp-lT-KP7">
-                                <rect key="frame" x="100" y="193" width="66.666666666666686" height="26.333333333333343"/>
+                                <rect key="frame" x="100" y="134" width="66.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -449,31 +449,31 @@
             <objects>
                 <viewController id="18T-EG-V2X" customClass="AyahTableViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qaK-lG-PYD">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z7z-4o-M9H">
-                                <rect key="frame" x="10" y="103" width="410" height="676"/>
+                                <rect key="frame" x="10" y="44" width="355" height="474"/>
                                 <color key="backgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ayahCell" rowHeight="300" id="cTM-nd-kMm" customClass="AyahCell" customModule="IslamGuide_uz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="410" height="300"/>
+                                        <rect key="frame" x="0.0" y="50" width="355" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cTM-nd-kMm" id="8la-BF-97B">
-                                            <rect key="frame" x="0.0" y="0.0" width="410" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tzu-m2-7SV">
-                                                    <rect key="frame" x="30" y="21" width="350" height="258"/>
+                                                    <rect key="frame" x="26" y="21" width="303" height="258"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlg-bX-UoL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="20.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="303" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" name="Titleblue"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWx-Ap-tD8">
-                                                            <rect key="frame" x="0.0" y="237.66666666666669" width="350" height="20.333333333333314"/>
+                                                            <rect key="frame" x="0.0" y="237.5" width="303" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" name="cellTitle"/>
                                                             <nil key="highlightedColor"/>
@@ -497,10 +497,10 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="GZ7-Pn-YSa">
-                                <rect key="frame" x="150" y="782" width="130" height="80"/>
+                                <rect key="frame" x="122.5" y="517" width="130" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-sK-SCW">
-                                        <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="80"/>
                                         <color key="tintColor" name="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="play" catalog="system">
@@ -511,7 +511,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-FH-9Ra">
-                                        <rect key="frame" x="71.666666666666657" y="0.0" width="58.333333333333343" height="80"/>
+                                        <rect key="frame" x="71.5" y="0.0" width="58.5" height="80"/>
                                         <color key="tintColor" name="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system">
@@ -534,7 +534,7 @@
                             <constraint firstAttribute="bottom" secondItem="GZ7-Pn-YSa" secondAttribute="bottom" constant="70" id="4Dd-Na-f6R"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="leading" secondItem="vnC-KB-cX7" secondAttribute="leading" constant="10" id="A8O-zl-W7n"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="top" secondItem="vnC-KB-cX7" secondAttribute="top" id="TWp-bz-f8e"/>
-                            <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="Z7z-4o-M9H" secondAttribute="bottom" constant="70" id="Twt-yb-Oor"/>
+                            <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="Z7z-4o-M9H" secondAttribute="bottom" constant="100" id="Twt-yb-Oor"/>
                             <constraint firstItem="vnC-KB-cX7" firstAttribute="trailing" secondItem="Z7z-4o-M9H" secondAttribute="trailing" constant="10" id="Zom-gj-hcm"/>
                             <constraint firstItem="GZ7-Pn-YSa" firstAttribute="centerX" secondItem="qaK-lG-PYD" secondAttribute="centerX" id="wwR-2V-cVN"/>
                         </constraints>
@@ -555,28 +555,28 @@
             <objects>
                 <viewController id="TNW-MP-d0Q" customClass="SettingsViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29N-F4-sUS">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NY9-U4-6Ud">
-                                <rect key="frame" x="30" y="203" width="370" height="193"/>
+                                <rect key="frame" x="30" y="144" width="315" height="138"/>
                                 <color key="backgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" id="G9x-8j-rMJ" customClass="SettingCell" customModule="IslamGuide_uz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="370" height="43.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="50" width="315" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G9x-8j-rMJ" id="ghF-G4-Brh">
-                                            <rect key="frame" x="0.0" y="0.0" width="370" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-fK-Z17">
-                                                    <rect key="frame" x="311" y="5.9999999999999982" width="51" height="31.333333333333329"/>
+                                                    <rect key="frame" x="256" y="6" width="51" height="31.5"/>
                                                     <connections>
                                                         <action selector="switchChanged:" destination="G9x-8j-rMJ" eventType="valueChanged" id="vUL-vd-VgR"/>
                                                     </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCn-0B-8yf">
-                                                    <rect key="frame" x="30" y="10.999999999999998" width="84" height="21.333333333333329"/>
+                                                    <rect key="frame" x="26" y="11" width="84" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="tintColor"/>
                                                     <nil key="highlightedColor"/>
@@ -622,7 +622,7 @@
                     <tabBarItem key="tabBarItem" title="Praying Time" image="clock" catalog="system" id="ZfT-LN-iFd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3f8-Bc-Rf1">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" name="Titleblue"/>
@@ -648,7 +648,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ULb-ir-z5V"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0fZ-QH-sea">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -667,7 +667,7 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="h1C-Kc-RcN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="EPy-62-DFI">
-                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
