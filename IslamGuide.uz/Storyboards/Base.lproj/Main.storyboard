@@ -511,39 +511,47 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="kNk-Mu-eE2">
-                                <rect key="frame" x="135" y="804.66666666666663" width="160.33333333333337" height="34.333333333333371"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="GZ7-Pn-YSa">
+                                <rect key="frame" x="150" y="782" width="130" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-sK-SCW">
-                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="80"/>
                                         <color key="tintColor" name="tintColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="play" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="playButtonPressed" destination="18T-EG-V2X" eventType="touchUpInside" id="3JS-c1-prF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-FH-9Ra">
-                                        <rect key="frame" x="113.33333333333334" y="0.0" width="47" height="34.333333333333336"/>
+                                        <rect key="frame" x="71.666666666666657" y="0.0" width="58.333333333333343" height="80"/>
                                         <color key="tintColor" name="tintColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="restartButtonPressed" destination="18T-EG-V2X" eventType="touchUpInside" id="O2U-vL-utx"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="dH0-jt-DQU"/>
+                                    <constraint firstAttribute="height" constant="80" id="sbx-zS-ySo"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vnC-KB-cX7"/>
                         <color key="backgroundColor" name="background"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GZ7-Pn-YSa" secondAttribute="bottom" constant="70" id="4Dd-Na-f6R"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="leading" secondItem="vnC-KB-cX7" secondAttribute="leading" constant="10" id="A8O-zl-W7n"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="top" secondItem="vnC-KB-cX7" secondAttribute="top" id="TWp-bz-f8e"/>
                             <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="Z7z-4o-M9H" secondAttribute="bottom" constant="70" id="Twt-yb-Oor"/>
                             <constraint firstItem="vnC-KB-cX7" firstAttribute="trailing" secondItem="Z7z-4o-M9H" secondAttribute="trailing" constant="10" id="Zom-gj-hcm"/>
-                            <constraint firstItem="kNk-Mu-eE2" firstAttribute="centerX" secondItem="qaK-lG-PYD" secondAttribute="centerX" id="mMc-Sd-QnQ"/>
-                            <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="kNk-Mu-eE2" secondAttribute="bottom" constant="10" id="v25-Av-idq"/>
+                            <constraint firstItem="GZ7-Pn-YSa" firstAttribute="centerX" secondItem="qaK-lG-PYD" secondAttribute="centerX" id="wwR-2V-cVN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ayahs" id="R7K-qE-GMJ"/>
