@@ -188,11 +188,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="praying" translatesAutoresizingMaskIntoConstraints="NO" id="chS-uX-d55">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-7r-Jxq">
-                                <rect key="frame" x="30" y="401" width="370" height="448"/>
+                                <rect key="frame" x="30" y="163" width="370" height="686"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" rowHeight="80" id="47H-Ra-YHd" customClass="PrayingTimeCell" customModule="IslamGuide_uz" customModuleProvider="target">
@@ -204,14 +201,14 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37G-24-Vtg">
                                                     <rect key="frame" x="40" y="31" width="0.0" height="18"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" name="tintColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-7b-lnz">
                                                     <rect key="frame" x="330" y="31" width="0.0" height="18"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" name="tintColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -225,7 +222,7 @@
                                                 <constraint firstItem="ar2-7b-lnz" firstAttribute="top" secondItem="RCW-Bo-NGp" secondAttribute="topMargin" constant="20" id="cHZ-Jn-xlJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.30169104738739011" green="0.31011089090402044" blue="0.32670738299687707" alpha="0.41483372568294702" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <color key="tintColor" name="tintColor"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="37G-24-Vtg" id="a5v-Mh-ohC"/>
@@ -239,26 +236,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:41:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVj-bW-FRd">
-                                <rect key="frame" x="171" y="283" width="88" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="foX-HJ-8MQ"/>
-                        <color key="backgroundColor" name="SubtitleColor"/>
+                        <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="bottom" secondItem="foX-HJ-8MQ" secondAttribute="bottom" id="4aP-Sd-AgA"/>
-                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.480687" id="9va-PD-JwE"/>
-                            <constraint firstItem="fVj-bW-FRd" firstAttribute="top" secondItem="foX-HJ-8MQ" secondAttribute="top" constant="180" id="9zV-DS-oKb"/>
-                            <constraint firstAttribute="bottom" secondItem="chS-uX-d55" secondAttribute="bottom" id="I6p-Am-oP5"/>
                             <constraint firstItem="foX-HJ-8MQ" firstAttribute="trailing" secondItem="FpQ-7r-Jxq" secondAttribute="trailing" constant="30" id="UX9-A2-R0m"/>
-                            <constraint firstItem="chS-uX-d55" firstAttribute="top" secondItem="o9v-Js-upE" secondAttribute="top" id="XIb-VQ-xEl"/>
-                            <constraint firstItem="chS-uX-d55" firstAttribute="trailing" secondItem="foX-HJ-8MQ" secondAttribute="trailing" id="dHi-lp-vql"/>
-                            <constraint firstItem="chS-uX-d55" firstAttribute="leading" secondItem="foX-HJ-8MQ" secondAttribute="leading" id="dzh-bu-d2I"/>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="leading" secondItem="foX-HJ-8MQ" secondAttribute="leading" constant="30" id="lPJ-gO-FKu"/>
-                            <constraint firstItem="fVj-bW-FRd" firstAttribute="centerX" secondItem="o9v-Js-upE" secondAttribute="centerX" id="oWH-jX-EL6"/>
+                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="top" secondItem="foX-HJ-8MQ" secondAttribute="top" constant="60" id="yy5-N8-bzI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Namoz vaqtlari" id="P9R-eC-gHk">
@@ -275,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBb-bt-hzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3046" y="158"/>
+            <point key="canvasLocation" x="3044.6511627906975" y="157.72532188841203"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KnF-qg-pJP">
@@ -639,10 +624,10 @@
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="Titleblue"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="Titleblue"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -704,7 +689,6 @@
         <image name="moon" catalog="system" width="128" height="123"/>
         <image name="octagon" catalog="system" width="128" height="112"/>
         <image name="play" catalog="system" width="117" height="128"/>
-        <image name="praying" width="2886" height="5131"/>
         <namedColor name="SubtitleColor">
             <color red="0.52941176470588236" green="0.53725490196078429" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -720,6 +704,9 @@
         <namedColor name="tintColor">
             <color red="0.40400001406669617" green="0.17299999296665192" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

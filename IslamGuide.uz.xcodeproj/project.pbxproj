@@ -31,6 +31,7 @@
 		808EF3DE29E941F00037A609 /* PrayingTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EF3DD29E941F00037A609 /* PrayingTimeCell.swift */; };
 		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
 		80E979412A1354DD00302E12 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E979402A1354DD00302E12 /* AudioPlayerManager.swift */; };
+		80E979442A13A95400302E12 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 80E979432A13A95400302E12 /* Adhan */; };
 		80F6B20E2A0FE36B00DEB97D /* en.asad.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20D2A0FE36B00DEB97D /* en.asad.json */; };
 		80F6B2102A0FE57700DEB97D /* ru.kuliev.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */; };
 		80F6B2122A0FEB6400DEB97D /* ar.alafasy.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B2112A0FEB6400DEB97D /* ar.alafasy.json */; };
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E979442A13A95400302E12 /* Adhan in Frameworks */,
 				8020D98829DC1A1700BC69C5 /* SpringAnimation in Frameworks */,
 				8020D98529DC1A0000BC69C5 /* Alamofire in Frameworks */,
 			);
@@ -211,6 +213,7 @@
 			packageProductDependencies = (
 				8020D98429DC1A0000BC69C5 /* Alamofire */,
 				8020D98729DC1A1700BC69C5 /* SpringAnimation */,
+				80E979432A13A95400302E12 /* Adhan */,
 			);
 			productName = IslamGuide.uz;
 			productReference = 8020D96029DBFB2400BC69C5 /* IslamGuide.uz.app */;
@@ -243,6 +246,7 @@
 			packageReferences = (
 				8020D98329DC1A0000BC69C5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				8020D98629DC1A1700BC69C5 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+				80E979422A13A95400302E12 /* XCRemoteSwiftPackageReference "adhan-swift" */,
 			);
 			productRefGroup = 8020D96129DBFB2400BC69C5 /* Products */;
 			projectDirPath = "";
@@ -536,6 +540,14 @@
 				minimumVersion = 0.3.0;
 			};
 		};
+		80E979422A13A95400302E12 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/batoulapps/adhan-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -548,6 +560,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8020D98629DC1A1700BC69C5 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
 			productName = SpringAnimation;
+		};
+		80E979432A13A95400302E12 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E979422A13A95400302E12 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
 		};
 /* End XCSwiftPackageProductDependency section */
 
