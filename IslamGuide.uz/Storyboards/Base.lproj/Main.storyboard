@@ -468,7 +468,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z7z-4o-M9H">
-                                <rect key="frame" x="10" y="103" width="410" height="646"/>
+                                <rect key="frame" x="10" y="103" width="410" height="696"/>
                                 <color key="backgroundColor" name="background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ayahCell" rowHeight="300" id="cTM-nd-kMm" customClass="AyahCell" customModule="IslamGuide_uz" customModuleProvider="target">
@@ -511,10 +511,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mup-gi-X1b">
-                                <rect key="frame" x="10" y="795.66666666666663" width="410" height="4"/>
-                                <color key="tintColor" name="tintColor"/>
-                            </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="kNk-Mu-eE2">
                                 <rect key="frame" x="135" y="804.66666666666663" width="160.33333333333337" height="34.333333333333371"/>
                                 <subviews>
@@ -540,13 +536,10 @@
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="leading" secondItem="vnC-KB-cX7" secondAttribute="leading" constant="10" id="A8O-zl-W7n"/>
-                            <constraint firstItem="kNk-Mu-eE2" firstAttribute="top" secondItem="mup-gi-X1b" secondAttribute="bottom" constant="5" id="H8H-BC-UXC"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="top" secondItem="vnC-KB-cX7" secondAttribute="top" id="TWp-bz-f8e"/>
-                            <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="Z7z-4o-M9H" secondAttribute="bottom" constant="100" id="Twt-yb-Oor"/>
+                            <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="Z7z-4o-M9H" secondAttribute="bottom" constant="50" id="Twt-yb-Oor"/>
                             <constraint firstItem="vnC-KB-cX7" firstAttribute="trailing" secondItem="Z7z-4o-M9H" secondAttribute="trailing" constant="10" id="Zom-gj-hcm"/>
                             <constraint firstItem="kNk-Mu-eE2" firstAttribute="centerX" secondItem="qaK-lG-PYD" secondAttribute="centerX" id="mMc-Sd-QnQ"/>
-                            <constraint firstItem="mup-gi-X1b" firstAttribute="leading" secondItem="vnC-KB-cX7" secondAttribute="leading" constant="10" id="nlQ-Ac-lKc"/>
-                            <constraint firstItem="vnC-KB-cX7" firstAttribute="trailing" secondItem="mup-gi-X1b" secondAttribute="trailing" constant="10" id="qEb-BK-pQD"/>
                             <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="kNk-Mu-eE2" secondAttribute="bottom" constant="10" id="v25-Av-idq"/>
                         </constraints>
                     </view>
