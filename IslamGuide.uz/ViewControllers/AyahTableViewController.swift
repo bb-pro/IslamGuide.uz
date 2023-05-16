@@ -18,6 +18,7 @@ final class AyahTableViewController: UIViewController {
     private let networkManager = NetworkManager.shared
     private var player: AVPlayer?
     private var currentIndex = 0
+    private var selectedCell: IndexPath!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ final class AyahTableViewController: UIViewController {
 // MARK: - Table view data source
 extension AyahTableViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,17 +57,21 @@ extension AyahTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         currentIndex = indexPath.row
-        playNextAyah()
+        selectedCell = indexPath
     }
 }
 
 //MARK: - Networking and AudioPlaying
 private extension AyahTableViewController {
     func playNextAyah() {
+        print(ayahs.count)
         guard currentIndex < ayahs.count else {
             print("Finished playing all Ayahs.")
             return
         }
+        //Selecting the cell that is being played
+        let indexPath = IndexPath(row: currentIndex, section: 0)
+        tableView.selectRow(at: indexPath, animated: true, scrollPosition: .top)
         
         let currentAyah = ayahs[currentIndex]
         
@@ -85,13 +90,11 @@ private extension AyahTableViewController {
         let playerItem = AVPlayerItem(url: audioURL)
         player = AVPlayer(playerItem: playerItem)
         player?.play()
-        
         print("Playing Ayah: \(currentAyah.text)")
-        
         currentIndex += 1
-        
+  
         // Wait for the current Ayah to finish playing
-        DispatchQueue.main.asyncAfter(deadline: .now() + playerItem.asset.duration.seconds + 1 ) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + playerItem.asset.duration.seconds + 1.6) { [weak self] in
             self?.playNextAyah()
         }
     }
