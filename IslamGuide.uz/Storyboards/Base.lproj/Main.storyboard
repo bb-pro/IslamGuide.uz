@@ -528,6 +528,9 @@
                                         <color key="tintColor" name="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                        <connections>
+                                            <action selector="restartButtonPressed" destination="18T-EG-V2X" eventType="touchUpInside" id="O2U-vL-utx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -545,6 +548,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ayahs" id="R7K-qE-GMJ"/>
                     <connections>
+                        <outlet property="playButton" destination="TYR-sK-SCW" id="iXn-Ih-3uI"/>
+                        <outlet property="restartButton" destination="YZG-FH-9Ra" id="hwP-73-RRO"/>
                         <outlet property="tableView" destination="Z7z-4o-M9H" id="NP8-To-4CY"/>
                     </connections>
                 </viewController>

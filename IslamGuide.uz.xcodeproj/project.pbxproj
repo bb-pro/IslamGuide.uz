@@ -30,6 +30,7 @@
 		8081A63629DFDE5800E06DC4 /* AyahCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081A63529DFDE5800E06DC4 /* AyahCell.swift */; };
 		808EF3DE29E941F00037A609 /* PrayingTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EF3DD29E941F00037A609 /* PrayingTimeCell.swift */; };
 		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
+		80E979412A1354DD00302E12 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E979402A1354DD00302E12 /* AudioPlayerManager.swift */; };
 		80F6B20E2A0FE36B00DEB97D /* en.asad.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20D2A0FE36B00DEB97D /* en.asad.json */; };
 		80F6B2102A0FE57700DEB97D /* ru.kuliev.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */; };
 		80F6B2122A0FEB6400DEB97D /* ar.alafasy.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B2112A0FEB6400DEB97D /* ar.alafasy.json */; };
@@ -59,6 +60,7 @@
 		8081A63529DFDE5800E06DC4 /* AyahCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahCell.swift; sourceTree = "<group>"; };
 		808EF3DD29E941F00037A609 /* PrayingTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayingTimeCell.swift; sourceTree = "<group>"; };
 		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
+		80E979402A1354DD00302E12 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		80F6B20D2A0FE36B00DEB97D /* en.asad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en.asad.json; sourceTree = "<group>"; };
 		80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru.kuliev.json; sourceTree = "<group>"; };
 		80F6B2112A0FEB6400DEB97D /* ar.alafasy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ar.alafasy.json; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8020D98929DC1F2E00BC69C5 /* NetworkManager.swift */,
+				80E979402A1354DD00302E12 /* AudioPlayerManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				808EF3DE29E941F00037A609 /* PrayingTimeCell.swift in Sources */,
 				80334AC42A039DC3004886A8 /* SettingCell.swift in Sources */,
 				80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */,
+				80E979412A1354DD00302E12 /* AudioPlayerManager.swift in Sources */,
 				804EBD9829E54DFA00355646 /* TasbihViewController.swift in Sources */,
 				8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */,
 				8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */,
