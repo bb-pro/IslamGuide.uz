@@ -32,6 +32,7 @@ final class AyahTableViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 800
     }
+    
     @IBAction func playButtonPressed() {
         if !isAudioStarted && isAudioPaused {
             playButton.setImage(UIImage(systemName: "pause"), for: .normal)
@@ -48,8 +49,8 @@ final class AyahTableViewController: UIViewController {
             isAudioPaused = false
             audioPlayerManager.player?.play()
         }
-        
     }
+    
     @IBAction func restartButtonPressed() {
         
         audioPlayerManager.player?.seek(to: .zero)

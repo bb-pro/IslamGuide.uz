@@ -14,7 +14,6 @@ final class QuranTableViewController: UIViewController {
     private let networkManager = NetworkManager.shared
     @IBOutlet var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -36,12 +35,9 @@ final class QuranTableViewController: UIViewController {
         ayahVC.arabicAyahs = arabicResponse?.data.surahs[indexPath].ayahs ?? []
         ayahVC.navigationItem.title = response?.data.surahs[indexPath].englishName
     }
-    
-    
 }
 
 //MARK: - Private Methods
-
 private extension QuranTableViewController {
     func fetchTranslation() {
         networkManager.getData(for: "en.asad") { [weak self] result in
@@ -107,7 +103,6 @@ extension QuranTableViewController: UITableViewDataSource {
         cell.number.text = String(surah.number)
         cell.numberOfVerses.text = String("Number of ayahs: \(surah.ayahs.count)")
         return cell
-        
     }
 }
 
@@ -116,6 +111,5 @@ extension QuranTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }
 

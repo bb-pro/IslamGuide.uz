@@ -54,28 +54,16 @@ private extension PrayingTimeViewController {
         var params = CalculationMethod.moonsightingCommittee.params
         params.madhab = .hanafi
         guard let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params) else { return }
-
-     
-//        print("fajr \(formatter.string(from: prayers.fajr))")
-//        print("sunrise \(formatter.string(from: prayers.sunrise))")
-//        print("dhuhr \(formatter.string(from: prayers.dhuhr))")
-//        print("asr \(formatter.string(from: prayers.asr))")
-//        print("maghrib \(formatter.string(from: prayers.maghrib))")
-//        print("isha \(formatter.string(from: prayers.isha))")
-        
         prayingTime = prayers
-        
-        
-        
     }
 }
 
 //MARK: - UITableViewDataSource
 extension PrayingTimeViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         6
     }
-  
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath) as! PrayingTimeCell

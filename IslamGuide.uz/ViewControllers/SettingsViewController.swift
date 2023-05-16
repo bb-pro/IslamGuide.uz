@@ -9,15 +9,12 @@ import UIKit
 
 final class SettingsViewController: UIViewController {
 
-    
-    
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
     }
-    
 }
 
 //MARK: - UITableViewDataSource
