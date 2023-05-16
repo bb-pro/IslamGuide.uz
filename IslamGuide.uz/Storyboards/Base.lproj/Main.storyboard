@@ -69,7 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="elw-gs-Zdz">
-                                <rect key="frame" x="123" y="60" width="129" height="50"/>
+                                <rect key="frame" x="123" y="104" width="129" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBI-jc-zYV" customClass="SpringButton" customModule="SpringAnimation">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -168,7 +168,7 @@
                             <constraint firstItem="uoj-nh-19u" firstAttribute="centerX" secondItem="ba0-xu-UKn" secondAttribute="centerX" id="xBT-RQ-BS5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tasbih" image="moon" catalog="system" id="5oZ-DG-Ylz"/>
+                    <navigationItem key="navigationItem" title="Tasbih" id="rGf-UB-IiA"/>
                     <connections>
                         <outlet property="countLabel" destination="c4l-To-fBH" id="leL-M6-Ui5"/>
                         <outlet property="numberButton" destination="KBI-jc-zYV" id="O08-qV-dOX"/>
@@ -178,9 +178,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCG-6T-lgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160" y="-577.46781115879833"/>
+            <point key="canvasLocation" x="3098.4000000000001" y="-577.9610194902549"/>
         </scene>
-        <!--Namoz vaqtlari-->
+        <!--Prayer Times-->
         <scene sceneID="iwe-SK-LpX">
             <objects>
                 <viewController id="6Ot-M3-R3N" customClass="PrayingTimeViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
@@ -246,7 +246,7 @@
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="top" secondItem="foX-HJ-8MQ" secondAttribute="top" constant="60" id="yy5-N8-bzI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Namoz vaqtlari" id="P9R-eC-gHk">
+                    <navigationItem key="navigationItem" title="Prayer Times" id="P9R-eC-gHk">
                         <barButtonItem key="rightBarButtonItem" image="gear" catalog="system" id="rSk-Wh-8nv">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -310,7 +310,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="sQp-Pj-gcv" kind="relationship" relationship="viewControllers" id="6SW-nD-sDe"/>
-                        <segue destination="zZB-wg-kRq" kind="relationship" relationship="viewControllers" id="S1h-rY-yy8"/>
+                        <segue destination="BfS-CQ-0gp" kind="relationship" relationship="viewControllers" id="S1h-rY-yy8"/>
                         <segue destination="fGu-4r-cWR" kind="relationship" relationship="viewControllers" id="IIM-Rr-irT"/>
                         <segue destination="x1h-YW-BUV" kind="relationship" relationship="viewControllers" id="fZJ-Ps-emk"/>
                     </connections>
@@ -625,7 +625,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="Titleblue"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" name="Titleblue"/>
@@ -678,6 +678,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fee-mo-GZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2160" y="878.75536480686696"/>
+        </scene>
+        <!--Tasbih-->
+        <scene sceneID="kp5-vS-mq0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BfS-CQ-0gp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tasbih" image="moon" catalog="system" id="5oZ-DG-Ylz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQ0-Co-YHK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zZB-wg-kRq" kind="relationship" relationship="rootViewController" id="GuE-l0-O3R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aM7-E8-UG0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159.1999999999998" y="-577.9610194902549"/>
         </scene>
     </scenes>
     <resources>
