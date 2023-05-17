@@ -508,7 +508,7 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="GZ7-Pn-YSa">
-                                <rect key="frame" x="150" y="822" width="130" height="70"/>
+                                <rect key="frame" x="150" y="857" width="130" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-sK-SCW">
                                         <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="70"/>
@@ -542,7 +542,7 @@
                         <viewLayoutGuide key="safeArea" id="vnC-KB-cX7"/>
                         <color key="backgroundColor" name="barBG"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="GZ7-Pn-YSa" secondAttribute="bottom" constant="40" id="4Dd-Na-f6R"/>
+                            <constraint firstAttribute="bottom" secondItem="GZ7-Pn-YSa" secondAttribute="bottom" constant="5" id="4Dd-Na-f6R"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="leading" secondItem="vnC-KB-cX7" secondAttribute="leading" id="A8O-zl-W7n"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="top" secondItem="vnC-KB-cX7" secondAttribute="top" id="TWp-bz-f8e"/>
                             <constraint firstItem="vnC-KB-cX7" firstAttribute="bottom" secondItem="Z7z-4o-M9H" secondAttribute="bottom" constant="60" id="Twt-yb-Oor"/>

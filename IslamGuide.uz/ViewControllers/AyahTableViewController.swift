@@ -132,7 +132,7 @@ private extension AyahTableViewController {
         NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
         
         // Wait for a short delay before playing the next Ayah
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now()) { [weak self] in
             self?.playNextAyah()
         }
     }
