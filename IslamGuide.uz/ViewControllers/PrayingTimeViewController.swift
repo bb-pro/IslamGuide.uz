@@ -26,6 +26,7 @@ final class PrayingTimeViewController: UIViewController {
         
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+        tableView.reloadData()
         
     }
 }
