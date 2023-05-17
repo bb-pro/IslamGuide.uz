@@ -16,7 +16,7 @@ final class PrayingTimeViewController: UIViewController {
     private let networkManager = NetworkManager.shared
     private let locationManager = CLLocationManager()
     
-    private var prayingTime: PrayerTimes?
+    private var prayingTime: PrayerTimes!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +24,7 @@ final class PrayingTimeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-        tableView.reloadData()
-        
     }
 }
 
@@ -38,7 +35,6 @@ extension PrayingTimeViewController: CLLocationManagerDelegate {
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             fetchData(lat: lat, lon: lon)
-            tableView.reloadData()
         }
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -56,6 +52,7 @@ private extension PrayingTimeViewController {
         params.madhab = .hanafi
         guard let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params) else { return }
         prayingTime = prayers
+        tableView.reloadData()
     }
 }
 
@@ -66,35 +63,42 @@ extension PrayingTimeViewController: UITableViewDataSource {
         6
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        60
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath) as! PrayingTimeCell
         
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm" // Hours and minutes format
         
-        guard let prayingTime else { return cell }
-        
-        switch indexPath.row {
-            case 0:
-                cell.nameLabel.text = "Fajr"
-                cell.timeLabel.text = formatter.string(from: prayingTime.fajr)
-            case 1:
-                cell.nameLabel.text = "Sunrise"
-                cell.timeLabel.text = formatter.string(from: prayingTime.sunrise)
-            case 2:
-                cell.nameLabel.text = "Dhuhr"
-                cell.timeLabel.text = formatter.string(from: prayingTime.dhuhr)
-            case 3:
-                cell.nameLabel.text = "Asr"
-                cell.timeLabel.text = formatter.string(from: prayingTime.asr)
-            case 4:
-                cell.nameLabel.text = "Maghrib"
-                cell.timeLabel.text = formatter.string(from: prayingTime.maghrib)
-            default:
-                cell.nameLabel.text = "Isha"
-                cell.timeLabel.text = formatter.string(from: prayingTime.isha)
+        if prayingTime != nil {
+            
+            switch indexPath.row {
+                case 0:
+                    cell.nameLabel.text = "Fajr"
+                    cell.timeLabel.text = formatter.string(from: prayingTime.fajr)
+                case 1:
+                    cell.nameLabel.text = "Sunrise"
+                    cell.timeLabel.text = formatter.string(from: prayingTime.sunrise)
+                case 2:
+                    cell.nameLabel.text = "Dhuhr"
+                    cell.timeLabel.text = formatter.string(from: prayingTime.dhuhr)
+                case 3:
+                    cell.nameLabel.text = "Asr"
+                    cell.timeLabel.text = formatter.string(from: prayingTime.asr)
+                case 4:
+                    cell.nameLabel.text = "Maghrib"
+                    cell.timeLabel.text = formatter.string(from: prayingTime.maghrib)
+                default:
+                    cell.nameLabel.text = "Isha"
+                    cell.timeLabel.text = formatter.string(from: prayingTime.isha)
+            }
+            return cell
+        } else {
+            return cell
         }
-        return cell
     }
 
 }

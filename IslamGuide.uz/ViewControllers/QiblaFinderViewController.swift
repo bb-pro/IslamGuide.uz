@@ -51,20 +51,28 @@ class QiblaFinderViewController: UIViewController {
     
     private func rotateCircleView(angle: Double) {
         let rotationAngle = CGFloat(angle.radians)
-        circleView.transform = CGAffineTransform(rotationAngle: rotationAngle)
-        
-        // Add the following code to show the mark at the top of the circle
-        let markImageView = UIImageView(image: UIImage(systemName: "book")) // Replace "qibla_mark" with the actual image name
-        markImageView.contentMode = .center
-        markImageView.frame = CGRect(x: 0, y: 0, width: circleView.bounds.width, height: circleView.bounds.height)
-        markImageView.transform = CGAffineTransform(rotationAngle: -rotationAngle)
         
         // Remove existing mark image view if it exists
         circleView.subviews.filter { $0 is UIImageView }.forEach { $0.removeFromSuperview() }
         
         // Add the mark image view to the circle view
+        let markImageView = UIImageView(image: UIImage(systemName: "book")) // Replace "book" with the actual image name
+        markImageView.contentMode = .top
+        markImageView.frame = circleView.bounds
+        markImageView.transform = CGAffineTransform(rotationAngle: -rotationAngle)
+        
+        // Calculate the position for the mark image view at the top of the circle
+        let circleCenter = CGPoint(x: circleView.bounds.midX, y: circleView.bounds.midY)
+        let radius = circleView.bounds.width / 2.0
+        let markViewRadius = markImageView.bounds.width / 2.0
+        let markCenterX = circleCenter.x + sin(rotationAngle) * (radius - markViewRadius)
+        let markCenterY = circleCenter.y - cos(rotationAngle) * (radius - markViewRadius)
+        markImageView.center = CGPoint(x: markCenterX, y: markCenterY)
+        
         circleView.addSubview(markImageView)
     }
+
+
 
 }
 

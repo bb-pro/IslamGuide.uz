@@ -34,6 +34,7 @@ final class QuranTableViewController: UIViewController {
         ayahVC.ayahs = response?.data.surahs[indexPath].ayahs ?? []
         ayahVC.arabicAyahs = arabicResponse?.data.surahs[indexPath].ayahs ?? []
         ayahVC.navigationItem.title = response?.data.surahs[indexPath].englishName
+        ayahVC.hidesBottomBarWhenPushed = true
     }
 }
 
