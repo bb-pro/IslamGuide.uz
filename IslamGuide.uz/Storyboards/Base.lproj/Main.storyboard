@@ -654,38 +654,6 @@
             </objects>
             <point key="canvasLocation" x="3058.6046511627906" y="157.72532188841203"/>
         </scene>
-        <!--Qibla Finder View Controller-->
-        <scene sceneID="hhL-yJ-qZE">
-            <objects>
-                <viewController id="uJn-Id-EGq" customClass="QiblaFinderViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DXA-BD-SE7">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-gH-MBV">
-                                <rect key="frame" x="115" y="366" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="AF1-Q7-F9Z"/>
-                                    <constraint firstAttribute="height" constant="200" id="yJ1-Hc-1Kd"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="csT-tu-Oaf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="SS0-gH-MBV" firstAttribute="centerX" secondItem="DXA-BD-SE7" secondAttribute="centerX" id="0EH-0f-iCb"/>
-                            <constraint firstItem="SS0-gH-MBV" firstAttribute="centerY" secondItem="DXA-BD-SE7" secondAttribute="centerY" id="eDo-ZM-2Sp"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="6jW-wD-h6F"/>
-                    <connections>
-                        <outlet property="circleView" destination="SS0-gH-MBV" id="9MF-ph-oSZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aWe-xX-1aX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1794.4186046511627" y="664.37768240343348"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="jMb-vb-ZjJ">
             <objects>
@@ -736,12 +704,28 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="uJn-Id-EGq" kind="relationship" relationship="rootViewController" id="Dwc-kF-myA"/>
+                        <segue destination="qrp-wz-1zU" kind="relationship" relationship="rootViewController" id="3Cx-QJ-rGb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vj-Z7-6bC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="895.81395348837214" y="664.37768240343348"/>
+        </scene>
+        <!--Qibla Finder View Controller-->
+        <scene sceneID="E5z-JV-8KJ">
+            <objects>
+                <viewController id="qrp-wz-1zU" customClass="QiblaFinderViewController" customModule="IslamGuide_uz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eEm-up-gpW">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="n7M-Uh-fgg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s2q-iM-FcM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBn-hs-4ty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="661"/>
         </scene>
         <!--Quran-->
         <scene sceneID="XQ5-iT-0Fq">
@@ -776,7 +760,6 @@
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
         <image name="bg" width="326" height="131"/>
         <image name="book" catalog="system" width="128" height="99"/>
-        <image name="compass" width="225" height="225"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="location.magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="moon" catalog="system" width="128" height="123"/>
