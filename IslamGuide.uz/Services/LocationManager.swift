@@ -7,7 +7,6 @@
 
 import CoreLocation
 
-
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var currentHeading: Double = 0.0
     
