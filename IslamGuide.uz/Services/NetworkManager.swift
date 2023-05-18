@@ -43,17 +43,6 @@ final class NetworkManager {
     
     private init() {}
     
-    func playAudioFromAPI(apiURL: URL, completion: @escaping (Result<Data, Error>) -> Void) {
-           AF.download(apiURL).responseData { response in
-               switch response.result {
-               case .success(let audioData):
-                   completion(.success(audioData))
-               case .failure(let error):
-                   completion(.failure(error))
-               }
-           }
-       }
-   
     func fetch<T: Decodable>(_ type: T.Type, from url: URL, completion: @escaping(Result<T, NetworkError>)->Void) {
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data else {

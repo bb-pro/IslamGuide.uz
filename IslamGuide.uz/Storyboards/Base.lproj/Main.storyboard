@@ -101,10 +101,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="fw1-g5-RpW">
-                                <rect key="frame" x="125.33333333333333" y="401.66666666666669" width="179.33333333333337" height="128.66666666666669"/>
+                                <rect key="frame" x="125" y="401.66666666666669" width="180" height="128.66666666666669"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M2M-Wj-WP4">
-                                        <rect key="frame" x="0.0" y="0.0" width="179.33333333333334" height="47.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="47.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-To-fBH" customClass="SpringLabel" customModule="SpringAnimation">
                                                 <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="47.666666666666664"/>
@@ -119,7 +119,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/  33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mck-AF-dGy">
-                                                <rect key="frame" x="94.666666666666657" y="0.0" width="84.666666666666657" height="47.666666666666664"/>
+                                                <rect key="frame" x="94.666666666666657" y="0.0" width="85.333333333333343" height="47.666666666666664"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="VXi-Ov-4o9"/>
                                                 </constraints>
@@ -130,7 +130,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-2K-bbp">
-                                        <rect key="frame" x="0.0" y="78.666666666666629" width="179.33333333333334" height="50"/>
+                                        <rect key="frame" x="0.0" y="78.666666666666629" width="180" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84.666666666666671" id="kpZ-Au-KD8"/>
                                         </constraints>
@@ -199,16 +199,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="370" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37G-24-Vtg">
-                                                    <rect key="frame" x="40" y="31" width="45" height="20.333333333333329"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                    <color key="textColor" name="tintColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37G-24-Vtg">
+                                                    <rect key="frame" x="40" y="31" width="0.0" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-7b-lnz">
-                                                    <rect key="frame" x="295" y="31" width="35" height="21.666666666666671"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-7b-lnz">
+                                                    <rect key="frame" x="330" y="31" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" name="tintColor"/>
+                                                    <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -220,7 +220,7 @@
                                                 <constraint firstItem="37G-24-Vtg" firstAttribute="top" secondItem="RCW-Bo-NGp" secondAttribute="topMargin" constant="20" id="g4e-pI-8U9"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="backgroundColor" name="background"/>
                                         <color key="tintColor" name="tintColor"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="37G-24-Vtg" id="a5v-Mh-ohC"/>
@@ -312,11 +312,9 @@
                     <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="n4A-dJ-0gW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="barBG"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <tabBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" name="barBG"/>
-                        </tabBarAppearance>
+                        <color key="backgroundColor" name="background"/>
+                        <color key="selectedImageTintColor" name="tintColor"/>
+                        <tabBarAppearance key="standardAppearance"/>
                     </tabBar>
                     <connections>
                         <segue destination="2Hz-Qg-DcQ" kind="relationship" relationship="viewControllers" id="RsC-mA-b4J"/>
@@ -431,7 +429,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="idi-jH-TPd"/>
-                        <color key="backgroundColor" name="barBG"/>
+                        <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="zAp-lT-KP7" firstAttribute="leading" secondItem="idi-jH-TPd" secondAttribute="leading" constant="100" id="90l-RR-SkE"/>
                             <constraint firstItem="Rh9-j9-cqJ" firstAttribute="centerX" secondItem="6G2-kq-zHD" secondAttribute="centerX" id="AfN-q9-qdw"/>
@@ -512,7 +510,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-sK-SCW">
                                         <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="70"/>
-                                        <color key="tintColor" name="background"/>
+                                        <color key="tintColor" name="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="play" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
@@ -523,7 +521,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-FH-9Ra">
                                         <rect key="frame" x="71.666666666666657" y="0.0" width="58.333333333333343" height="70"/>
-                                        <color key="tintColor" name="background"/>
+                                        <color key="tintColor" name="tintColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
@@ -540,7 +538,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vnC-KB-cX7"/>
-                        <color key="backgroundColor" name="barBG"/>
+                        <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="GZ7-Pn-YSa" secondAttribute="bottom" constant="5" id="4Dd-Na-f6R"/>
                             <constraint firstItem="Z7z-4o-M9H" firstAttribute="leading" secondItem="vnC-KB-cX7" secondAttribute="leading" id="A8O-zl-W7n"/>
@@ -559,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1az-BF-hz4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4321" y="-1458"/>
+            <point key="canvasLocation" x="4320" y="-1458.1545064377683"/>
         </scene>
         <!--Settings-->
         <scene sceneID="WJK-41-WPb">
@@ -636,10 +634,10 @@
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="cellTitle"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" name="Titleblue"/>
+                            <color key="textColor" name="cellTitle"/>
                         </textAttributes>
                         <navigationBarAppearance key="standardAppearance">
                             <color key="backgroundColor" name="background"/>
@@ -660,9 +658,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x1h-YW-BUV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="h1C-Kc-RcN"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="EPy-62-DFI">
-                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EPy-62-DFI">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="cellTitle"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -682,6 +683,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQ0-Co-YHK">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="cellTitle"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -701,6 +705,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xy2-xT-ZZK">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="cellTitle"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -736,12 +743,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YLD-Cj-BIw">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="barBG"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background"/>
+                        <color key="tintColor" name="cellTitle"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="cellTitle"/>
+                        </textAttributes>
                         <navigationBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" name="barBG"/>
+                            <color key="backgroundColor" name="background"/>
                             <textAttributes key="titleTextAttributes">
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="cellTitle"/>
                             </textAttributes>
                         </navigationBarAppearance>
                     </navigationBar>
@@ -757,16 +767,16 @@
     </scenes>
     <resources>
         <image name="Group 36" width="314" height="450"/>
-        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="arrow.clockwise" catalog="system" width="108" height="128"/>
         <image name="bg" width="326" height="131"/>
-        <image name="book" catalog="system" width="128" height="99"/>
-        <image name="gear" catalog="system" width="128" height="122"/>
-        <image name="location.magnifyingglass" catalog="system" width="128" height="117"/>
-        <image name="moon" catalog="system" width="128" height="123"/>
-        <image name="octagon" catalog="system" width="128" height="112"/>
-        <image name="play" catalog="system" width="117" height="128"/>
+        <image name="book" catalog="system" width="128" height="100"/>
+        <image name="gear" catalog="system" width="128" height="128"/>
+        <image name="location.magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="moon" catalog="system" width="128" height="128"/>
+        <image name="octagon" catalog="system" width="128" height="110"/>
+        <image name="play" catalog="system" width="112" height="128"/>
         <image name="prayerTimes" width="620" height="330"/>
-        <image name="timer" catalog="system" width="128" height="123"/>
+        <image name="timer" catalog="system" width="128" height="128"/>
         <namedColor name="SubtitleColor">
             <color red="0.52941176470588236" green="0.53725490196078429" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -776,18 +786,12 @@
         <namedColor name="background">
             <color red="0.84700000286102295" green="0.87099999189376831" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="barBG">
-            <color red="0.53786861900000005" green="0.35339629649999998" blue="0.78852939609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="cellTitle">
             <color red="0.14117647058823529" green="0.058823529411764705" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="tintColor">
             <color red="0.40400001406669617" green="0.17299999296665192" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
