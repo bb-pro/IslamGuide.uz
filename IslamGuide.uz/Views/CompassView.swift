@@ -7,95 +7,66 @@
 import SwiftUI
 import CoreLocation
 import Adhan
-import Foundation
-
-extension Double {
-    func toRadians() -> Double {
-        return self * .pi / 180.0
-    }
-
-    func toDegrees() -> Double {
-        return self * 180.0 / .pi
-    }
-}
-
-class LocationDelegate: NSObject, CLLocationManagerDelegate, ObservableObject {
-    @Published var qiblaDirection: CLLocationDirection = 0.0
-
-    private let locationManager = CLLocationManager()
-
-    override init() {
-        super.init()
-        locationManager.delegate = self
-    }
-
-    func startUpdatingHeading() {
-        locationManager.startUpdatingHeading()
-    }
-
-    func stopUpdatingHeading() {
-        locationManager.stopUpdatingHeading()
-    }
-
-    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        updateQiblaDirection(manager.location?.coordinate)
-    }
-
-    func updateQiblaDirection(_ userCoordinates: CLLocationCoordinate2D?) {
-        guard let userCoordinates = userCoordinates else { return }
-
-        let qiblaCoordinates = CLLocationCoordinate2D(latitude: 21.4225, longitude: 39.8262) // Coordinates for the Kaaba in Mecca
-
-        let qiblaAngle = bearingBetweenLocations(userCoordinates, qiblaCoordinates)
-        qiblaDirection = qiblaAngle
-    }
-
-    private func bearingBetweenLocations(_ source: CLLocationCoordinate2D, _ destination: CLLocationCoordinate2D) -> CLLocationDirection {
-        let lat1 = source.latitude.toRadians()
-        let lon1 = source.longitude.toRadians()
-
-        let lat2 = destination.latitude.toRadians()
-        let lon2 = destination.longitude.toRadians()
-
-        let dLon = lon2 - lon1
-
-        let y = sin(dLon) * cos(lat2)
-        let x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(dLon)
-        let radiansBearing = atan2(y, x)
-
-        let degreesBearing = radiansBearing.toDegrees()
-        let positiveDegreesBearing = (degreesBearing.truncatingRemainder(dividingBy: 360) + 360).truncatingRemainder(dividingBy: 360)
-
-        return positiveDegreesBearing
-    }
-}
 
 struct CompassView: View {
-    @ObservedObject private var locationDelegate = LocationDelegate()
-
+    @StateObject private var locationManager = LocationManager()
+    @State private var qiblaDirection: Double?
+    
     var body: some View {
-        VStack {
-            Text("Qibla Direction: \(locationDelegate.qiblaDirection, specifier: "%.2f")°")
-                .font(.headline)
-                .padding()
-
-            Spacer()
-
-            Image(systemName: "location.north.fill")
-                .font(.system(size: 120))
-                .rotationEffect(Angle(degrees: locationDelegate.qiblaDirection), anchor: .center)
-
-            Spacer()
+        
+        Image("qiblaFinder")
+            .imageScale(.small)
+            .font(.system(size: 100))
+            .rotationEffect(getQiblaRotationAngle())
+            .animation(.default)
+            .onAppear {
+                calculateQiblaDirection()
+            }
+    }
+    
+    
+    
+    
+    
+    func getQiblaRotationAngle() -> Angle {
+        guard let heading = locationManager.currentHeading?.trueHeading,
+              let qiblaDirection = qiblaDirection else {
+            return .zero
         }
-        .onAppear {
-            locationDelegate.startUpdatingHeading()
+        
+        let rotationAngle = qiblaDirection - heading
+        return .degrees(rotationAngle)
+    }
+    
+    func getQiblaDirection() -> String {
+        guard let qiblaDirection = qiblaDirection else {
+            return "Unknown"
         }
-        .onDisappear {
-            locationDelegate.stopUpdatingHeading()
+        
+        let directionDifference = abs(qiblaDirection)
+        let formattedDifference = String(format: "%.1f", directionDifference)
+        
+        if directionDifference < 5 {
+            return "Facing Qibla"
+        } else {
+            return "Turn \(formattedDifference)°"
         }
     }
+    
+    func calculateQiblaDirection() {
+        guard let currentLocation = locationManager.currentLocation?.coordinate else {
+            return
+        }
+        
+        let coordinates = Coordinates(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+        let qiblaDirection = Qibla(coordinates: coordinates).direction
+        
+        let qiblaDirectionDegrees = qiblaDirection * 180.0 / .pi
+        self.qiblaDirection = qiblaDirectionDegrees
+    }
 }
-struct CompassView_Previews: PreviewProvider {
+
+struct QiblaView_Previews: PreviewProvider {
     static var previews: some View {
         CompassView()
     }

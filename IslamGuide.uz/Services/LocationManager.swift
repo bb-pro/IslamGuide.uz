@@ -5,33 +5,31 @@
 //  Created by Bektemur Mamashayev on 17/05/23.
 //
 
+import SwiftUI
+import Adhan
 import CoreLocation
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-    @Published var currentHeading: Double = 0.0
-    
     private let locationManager = CLLocationManager()
+    
+    @Published var currentHeading: CLHeading?
+    @Published var currentLocation: CLLocation?
     
     override init() {
         super.init()
         locationManager.delegate = self
-    }
-    
-    func startHeadingUpdates() {
-        guard CLLocationManager.headingAvailable() else {
-            print("Compass is not available on this device.")
-            return
-        }
-        
-        locationManager.headingFilter = 1
         locationManager.startUpdatingHeading()
-    }
-    
-    func stopHeadingUpdates() {
-        locationManager.stopUpdatingHeading()
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        currentHeading = newHeading.trueHeading
+        currentHeading = newHeading
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        currentLocation = location
     }
 }
+
