@@ -14,8 +14,7 @@ struct CompassView: View {
     
     var body: some View {
         
-        Image("qiblaFinder")
-            .imageScale(.small)
+        Image("compass")
             .font(.system(size: 100))
             .rotationEffect(getQiblaRotationAngle())
             .animation(.default)
