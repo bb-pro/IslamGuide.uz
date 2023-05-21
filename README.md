@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>IslamGuide.uz - Your Comprehensive Islamic Guide</title>
-</head>
 <body>
   <header>
     <h1>IslamGuide.uz - Your Comprehensive Islamic Guide</h1>
