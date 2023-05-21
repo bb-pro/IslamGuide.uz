@@ -5,7 +5,6 @@
 </head>
 <body>
   <header>
-    <img src="https://github.com/bb-pro/IslamGuide.uz/raw/main/assets/123092077/74e451dd-70d2-4df5-8e16-fe7228d79ffa.png" alt="App Logo">
     <h1>IslamGuide.uz - Your Comprehensive Islamic Guide</h1>
   </header>
   <section>
