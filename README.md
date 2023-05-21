@@ -1,7 +1,3 @@
-The first version of the IslamGuide app is a comprehensive guide to the Quran, designed to help users deepen their understanding and knowledge of this important religious text. The app utilizes the Quran API to provide users with easy access to the Quran's verses, translations, and commentary. Moreover it shows the praying times for the chosen location
-
-More functionalities such as choosing app language, saving the parts of Quran and choosing praying times location will be added at later versions
-
 
 <!DOCTYPE html>
 <html>
@@ -9,8 +5,9 @@ More functionalities such as choosing app language, saving the parts of Quran an
   <title>IslamGuide.uz - Your Comprehensive Islamic Guide</title>
 </head>
 <body>
-  <header>
-    <img src="app-logo.png" alt="App Logo">
+  <header>!
+
+    <img src=[ramadan](https://github.com/bb-pro/IslamGuide.uz/assets/123092077/74e451dd-70d2-4df5-8e16-fe7228d79ffa) alt="App Logo">
     <h1>IslamGuide.uz - Your Comprehensive Islamic Guide</h1>
   </header>
   <section>
