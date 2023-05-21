@@ -8,7 +8,8 @@
     <h2>Discover the beauty and wisdom of Islam with IslamGuide.uz, your go-to app for Islamic knowledge and resources.</h2>
     <p>IslamGuide.uz is a website designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam.</p>
 
-    Features:
+    Features:![Uploading Screen Shot 2023-05-21 at 16.57.08.png…]()
+
 <ul>
   <li>Access to the Quran with translations in multiple languages</li>
   <li>Daily prayer timings and reminders</li>
