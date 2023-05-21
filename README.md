@@ -42,10 +42,9 @@
   <footer>
     <nav>
       <ul>
-        <li><a href="about-us">About Us</a></li>
-        <li><a href="privacy-policy">Privacy Policy</a></li>
-        <li><a href="terms-of-service">Terms of Service</a></li>
-        <li><a href="contact-us">Contact Us</a></li>
+        <li><a href="github.com/bb-pro">About Us</a></li>
+        <li><a href="https://docs.google.com/document/d/1XinI8cPBo5pb4NfkMdjjW8E9lNsDqTnQyBlNaDBNEww/edit?usp=sharing">Privacy Policy</a></li>
+        <li><a href="bektemurmamashayev07@gmail.com">Contact Us</a></li>
       </ul>
     </nav>
   </footer>
