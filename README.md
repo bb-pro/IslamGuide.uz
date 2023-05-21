@@ -12,16 +12,17 @@
     <p>IslamGuide.uz is a website designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam.</p>
 
     <h3>Key Features:</h3>
-    <ul>
-      <li>Access to the Quran with translations in multiple languages</li>
-      <li>Daily prayer timings and reminders</li>
-      <li>Educational articles and videos on various Islamic topics</li>
-      <li>Qibla direction finder for accurate prayer direction</li>
-      <li>Islamic calendar with important dates and events</li>
-      <li>Audio recitations of the Quran</li>
-      <li>Duas (supplications) for different occasions</li>
-      <li>Personalization options for a tailored experience</li>
-    </ul>
+<ul>
+  <li>Access to the Quran with translations in multiple languages</li>
+  <li>Daily prayer timings and reminders</li>
+  <li>Educational articles and videos on various Islamic topics</li>
+  <li>Qibla direction finder for accurate prayer direction</li>
+  <li>Islamic calendar with important dates and events</li>
+  <li>Audio recitations of the Quran</li>
+  <li>Duas (supplications) for different occasions</li>
+  <li>Personalization options for a tailored experience</li>
+</ul>
+
 
     <a href="app-store-link" class="cta-button">Download on the App Store</a>
   </section>
