@@ -1,35 +1,30 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>IslamGuide.uz - Your Comprehensive Islamic Guide</title>
 </head>
 <body>
-  <header>!
-
-    <img src="[ramadan](https://github.com/bb-pro/IslamGuide.uz/assets/123092077/74e451dd-70d2-4df5-8e16-fe7228d79ffa)" alt="App Logo">
+  <header>
+    <img src="https://github.com/bb-pro/IslamGuide.uz/raw/main/assets/123092077/74e451dd-70d2-4df5-8e16-fe7228d79ffa.png" alt="App Logo">
     <h1>IslamGuide.uz - Your Comprehensive Islamic Guide</h1>
   </header>
   <section>
     <h2>Discover the beauty and wisdom of Islam with IslamGuide.uz, your go-to app for Islamic knowledge and resources.</h2>
     <p>IslamGuide.uz is a website designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam.</p>
 
-less
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Access to the Quran with translations in multiple languages</li>
+      <li>Daily prayer timings and reminders</li>
+      <li>Educational articles and videos on various Islamic topics</li>
+      <li>Qibla direction finder for accurate prayer direction</li>
+      <li>Islamic calendar with important dates and events</li>
+      <li>Audio recitations of the Quran</li>
+      <li>Duas (supplications) for different occasions</li>
+      <li>Personalization options for a tailored experience</li>
+    </ul>
 
-<h3>Key Features:</h3>
-<ul>
-  <li>Access to the Quran with translations in multiple languages</li>
-  <li>Daily prayer timings and reminders</li>
-  <li>Educational articles and videos on various Islamic topics</li>
-  <li>Qibla direction finder for accurate prayer direction</li>
-  <li>Islamic calendar with important dates and events</li>
-  <li>Audio recitations of the Quran</li>
-  <li>Duas (supplications) for different occasions</li>
-  <li>Personalization options for a tailored experience</li>
-</ul>
-
-<a href="app-store-link" class="cta-button">Download on the App Store</a>
-
+    <a href="app-store-link" class="cta-button">Download on the App Store</a>
   </section>
   <section>
     <h3>Testimonials:</h3>
