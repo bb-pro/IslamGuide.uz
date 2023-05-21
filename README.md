@@ -42,7 +42,7 @@
   <footer>
     <nav>
       <ul>
-        <li><a href="github.com/bb-pro">About Us</a></li>
+        <li><a href="https://github.com/bb-pro">About Us</a></li>
         <li><a href="https://docs.google.com/document/d/1XinI8cPBo5pb4NfkMdjjW8E9lNsDqTnQyBlNaDBNEww/edit?usp=sharing">Privacy Policy</a></li>
         <li><a href="bektemurmamashayev07@gmail.com">Contact Us</a></li>
       </ul>
