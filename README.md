@@ -3,7 +3,7 @@
 <html>
 <body>
   <header>
-    <h1>IslamGuide.uz - Your Comprehensive Islamic Guide</h1>
+    <h1>IslamGuide - Your Comprehensive Islamic Guide</h1>
   </header>
   <section>
     <h2>Discover the beauty and wisdom of Islam with IslamGuide.uz, your go-to app for Islamic knowledge and resources.</h2>
