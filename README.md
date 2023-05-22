@@ -26,7 +26,7 @@
 </ul>
 
 
-    <a href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909" class="cta-button">Download on the App Store</a>
+    <li><a href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909" class="cta-button">Download on the App Store</a></li>
   </section>
   <section>
     <h3>Testimonials:</h3>
