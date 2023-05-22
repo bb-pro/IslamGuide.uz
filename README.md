@@ -22,8 +22,7 @@
       Duas (supplications) for different occasions
       Personalization options for a tailored experience
 
-
-    href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909" class="cta-button">Download on the App Store
+    <li><a href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909">App Store</a></li>
   </section>
   <section>
     <h3>Testimonials:</h3>
