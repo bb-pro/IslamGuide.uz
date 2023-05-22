@@ -13,14 +13,14 @@
     
     <h3>Features:</h3>
  
-      <li>Access to the Quran with translations in multiple languages</li>
-      <li>Daily prayer timings and reminders</li>
-      <li>Educational articles and videos on various Islamic topics</li>
-      <li>Qibla direction finder for accurate prayer direction</li>
-      <li>Islamic calendar with important dates and events</li>
-      <li>Audio recitations of the Quran</li>
-      <li>Duas (supplications) for different occasions</li>
-      <li>Personalization options for a tailored experience</li>
+      Access to the Quran with translations in multiple languages
+      Daily prayer timings and reminders
+      Educational articles and videos on various Islamic topics
+      Qibla direction finder for accurate prayer direction
+      Islamic calendar with important dates and events
+      Audio recitations of the Quran
+      Duas (supplications) for different occasions
+      Personalization options for a tailored experience
 
 
     <h3><a href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909" class="cta-button">Download on the App Store</a></h3>
