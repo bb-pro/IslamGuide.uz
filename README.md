@@ -12,7 +12,7 @@
  
     
     <h3>Features:</h3>
-    <ul>
+ 
       <li>Access to the Quran with translations in multiple languages</li>
       <li>Daily prayer timings and reminders</li>
       <li>Educational articles and videos on various Islamic topics</li>
@@ -21,7 +21,7 @@
       <li>Audio recitations of the Quran</li>
       <li>Duas (supplications) for different occasions</li>
       <li>Personalization options for a tailored experience</li>
-    </ul>
+
 
     <h3><a href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909" class="cta-button">Download on the App Store</a></h3>
   </section>
