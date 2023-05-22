@@ -23,7 +23,7 @@
       Personalization options for a tailored experience
 
 
-    <h3><a href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909" class="cta-button">Download on the App Store</a></h3>
+    <a href="https://apps.apple.com/uz/app/islamguide-learn-quran/id6449399909" class="cta-button">Download on the App Store</a>
   </section>
   <section>
     <h3>Testimonials:</h3>
