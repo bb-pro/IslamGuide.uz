@@ -11,7 +11,7 @@
      <img width="1192" alt="Screen Shot 2023-05-21 at 16 57 08" src="https://github.com/bb-pro/IslamGuide.uz/assets/123092077/6096318d-3c7c-4328-99e7-7ab30100a5ea">
  
     
-    <h3>Features:</h3>
+    Features:
  
       Access to the Quran with translations in multiple languages
       Daily prayer timings and reminders
