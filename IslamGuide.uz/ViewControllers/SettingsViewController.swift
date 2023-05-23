@@ -58,6 +58,7 @@ extension SettingsViewController: UITableViewDelegate {
             default:
                 tableView.deselectRow(at: indexPath, animated: true)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
