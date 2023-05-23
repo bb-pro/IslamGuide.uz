@@ -264,6 +264,37 @@
             </objects>
             <point key="canvasLocation" x="3943.2558139534885" y="157.72532188841203"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="EeD-Nq-IhC">
+            <objects>
+                <viewController id="DDE-q2-I4s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6y-b7-dBa">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4K-zj-Mcz">
+                                <rect key="frame" x="50" y="153" width="330" height="646"/>
+                                <string key="text">IslamGuide is a mobile app designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="cellTitle"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VIl-1A-ym7"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="u4K-zj-Mcz" firstAttribute="leading" secondItem="S6y-b7-dBa" secondAttribute="leading" constant="50" id="8bF-pO-kVq"/>
+                            <constraint firstAttribute="trailing" secondItem="u4K-zj-Mcz" secondAttribute="trailing" constant="50" id="dT8-Xj-BrF"/>
+                            <constraint firstItem="u4K-zj-Mcz" firstAttribute="top" secondItem="VIl-1A-ym7" secondAttribute="top" constant="50" id="ebP-a7-fGl"/>
+                            <constraint firstItem="VIl-1A-ym7" firstAttribute="bottom" secondItem="u4K-zj-Mcz" secondAttribute="bottom" constant="50" id="mRp-8D-ym5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="lY0-qk-5ex"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zo-9k-WjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5726.5116279069771" y="1015.8798283261804"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
             <objects>
@@ -676,6 +707,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="2Be-GI-Wce"/>
                     <connections>
                         <outlet property="tableView" destination="NY9-U4-6Ud" id="eKQ-Ey-eVF"/>
+                        <segue destination="eC0-4i-pDd" kind="show" identifier="showInfo" id="wPx-aZ-dTj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBO-s7-4qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -821,6 +853,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFR-xm-J43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2425" y="-1458"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vki-yZ-QYA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eC0-4i-pDd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="m3r-ND-DSc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="91R-yb-VEM">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DDE-q2-I4s" kind="relationship" relationship="rootViewController" id="GBW-d7-Dtw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGh-QA-AXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4827.9069767441861" y="1015.8798283261804"/>
         </scene>
     </scenes>
     <resources>
