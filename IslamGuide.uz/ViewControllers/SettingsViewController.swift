@@ -20,12 +20,26 @@ final class SettingsViewController: UIViewController {
 //MARK: - UITableViewDataSource
 extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell", for: indexPath) as! SettingCell
-        return cell
+        
+        switch indexPath.row {
+            case 0:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell", for: indexPath) as! SettingCell
+                cell.styleView()
+                return cell
+            case 1:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "shareCell", for: indexPath) as! SettingCell
+                return cell
+            case 2:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! SettingCell
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! SettingCell
+                return cell
+        }
     }
 }
 

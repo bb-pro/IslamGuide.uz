@@ -7,18 +7,33 @@
 
 import UIKit
 
-final class SettingCell: UITableViewCell {
-
+class SettingCell: UITableViewCell {
+    
+    @IBOutlet var styleSwitch: UISwitch!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     @IBAction func switchChanged(_ sender: UISwitch) {
         if !sender.isOn {
-            window?.overrideUserInterfaceStyle = .light
+            UIApplication.shared.windows.first?.overrideUserInterfaceStyle = .light
         } else {
-            window?.overrideUserInterfaceStyle = .dark
+            UIApplication.shared.windows.first?.overrideUserInterfaceStyle = .dark
+        }
+        
+    }
+    
+    func styleView() {
+        var osTheme: UIUserInterfaceStyle {
+            return UIScreen.main.traitCollection.userInterfaceStyle
+        }
+        if osTheme == .dark {
+            styleSwitch.setOn(true, animated: true)
+        } else {
+            styleSwitch.setOn(false, animated: true)
         }
     }
+    
 }

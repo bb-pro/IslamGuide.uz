@@ -13,14 +13,22 @@ struct CompassView: View {
     @State private var qiblaDirection: Double?
     
     var body: some View {
-        
-        Image("compass")
-            .font(.system(size: 100))
-            .rotationEffect(getQiblaRotationAngle())
-            .animation(.default)
-            .onAppear {
-                calculateQiblaDirection()
-            }
+        ZStack {
+            Color("background")
+                .ignoresSafeArea()
+            Image("qiblaDirection")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 250, height: 250)
+                .rotationEffect(getQiblaRotationAngle())
+                .animation(.default)
+                .onAppear {
+                    calculateQiblaDirection()
+                }
+                .clipShape(Circle())
+                .ignoresSafeArea()
+        }
+        .aspectRatio(contentMode: .fill)
     }
     
     
