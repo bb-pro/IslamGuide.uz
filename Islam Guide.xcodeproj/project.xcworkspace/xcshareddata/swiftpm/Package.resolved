@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "adhan-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/batoulapps/adhan-swift",
+      "state" : {
+        "revision" : "6dc8309951fdaa0cd124c52b9a8de7e0da1ff2ce",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "0c8cb78d05b6d067ee331c05058ff4dedcb45ffa",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "springanimation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/LexDeBash/SpringAnimation",
+      "state" : {
+        "revision" : "93c90034c94d0374f634d7f29950655933b9045a",
+        "version" : "0.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}

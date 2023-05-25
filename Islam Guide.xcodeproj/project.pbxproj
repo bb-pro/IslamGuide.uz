@@ -41,7 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8020D96029DBFB2400BC69C5 /* IslamGuide.uz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslamGuide.uz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8020D96029DBFB2400BC69C5 /* Islam Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Islam Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8020D96329DBFB2400BC69C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8020D96529DBFB2400BC69C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8020D96729DBFB2400BC69C5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		8020D96129DBFB2400BC69C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8020D96029DBFB2400BC69C5 /* IslamGuide.uz.app */,
+				8020D96029DBFB2400BC69C5 /* Islam Guide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8020D95F29DBFB2400BC69C5 /* IslamGuide.uz */ = {
+		8020D95F29DBFB2400BC69C5 /* Islam Guide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8020D97729DBFB2700BC69C5 /* Build configuration list for PBXNativeTarget "IslamGuide.uz" */;
+			buildConfigurationList = 8020D97729DBFB2700BC69C5 /* Build configuration list for PBXNativeTarget "Islam Guide" */;
 			buildPhases = (
 				8020D95C29DBFB2400BC69C5 /* Sources */,
 				8020D95D29DBFB2400BC69C5 /* Frameworks */,
@@ -218,14 +218,14 @@
 			);
 			dependencies = (
 			);
-			name = IslamGuide.uz;
+			name = "Islam Guide";
 			packageProductDependencies = (
 				8020D98429DC1A0000BC69C5 /* Alamofire */,
 				8020D98729DC1A1700BC69C5 /* SpringAnimation */,
 				80E979432A13A95400302E12 /* Adhan */,
 			);
 			productName = IslamGuide.uz;
-			productReference = 8020D96029DBFB2400BC69C5 /* IslamGuide.uz.app */;
+			productReference = 8020D96029DBFB2400BC69C5 /* Islam Guide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -243,7 +243,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8020D95B29DBFB2400BC69C5 /* Build configuration list for PBXProject "IslamGuide.uz" */;
+			buildConfigurationList = 8020D95B29DBFB2400BC69C5 /* Build configuration list for PBXProject "Islam Guide" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8020D95F29DBFB2400BC69C5 /* IslamGuide.uz */,
+				8020D95F29DBFB2400BC69C5 /* Islam Guide */,
 			);
 		};
 /* End PBXProject section */
@@ -515,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8020D95B29DBFB2400BC69C5 /* Build configuration list for PBXProject "IslamGuide.uz" */ = {
+		8020D95B29DBFB2400BC69C5 /* Build configuration list for PBXProject "Islam Guide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8020D97529DBFB2700BC69C5 /* Debug */,
@@ -524,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8020D97729DBFB2700BC69C5 /* Build configuration list for PBXNativeTarget "IslamGuide.uz" */ = {
+		8020D97729DBFB2700BC69C5 /* Build configuration list for PBXNativeTarget "Islam Guide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8020D97829DBFB2700BC69C5 /* Debug */,
