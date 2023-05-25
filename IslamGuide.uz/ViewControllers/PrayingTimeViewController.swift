@@ -21,10 +21,11 @@ final class PrayingTimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
+        locationManager.requestLocation()
         tableView.dataSource = self
         tableView.delegate = self
         
-        locationManager.requestLocation()
+        
     }
 }
 
