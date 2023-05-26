@@ -70,8 +70,5 @@ final class TasbihViewController: UIViewController {
     
     private func vibrateDevice() {
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
-        }
     }
 }

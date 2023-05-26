@@ -78,6 +78,8 @@
 		80C9669C2A20C24A001E5FC9 /* uz-Cyrl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-Cyrl"; path = "uz-Cyrl.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
 		80E64E042A20DA280082732B /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		80E64E062A20E08D0082732B /* uz */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uz; path = uz.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80E64E072A20E0980082732B /* uz */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uz; path = uz.lproj/Main.strings; sourceTree = "<group>"; };
 		80E979402A1354DD00302E12 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		80F6B20D2A0FE36B00DEB97D /* en.asad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en.asad.json; sourceTree = "<group>"; };
 		80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru.kuliev.json; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 				8020D96A29DBFB2400BC69C5 /* Base */,
 				80C9668E2A20C1D9001E5FC9 /* ru */,
 				80C966902A20C1FB001E5FC9 /* uz-Cyrl */,
+				80E64E072A20E0980082732B /* uz */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				80C966982A20C247001E5FC9 /* en */,
 				80C9669A2A20C248001E5FC9 /* ru */,
 				80C9669C2A20C24A001E5FC9 /* uz-Cyrl */,
+				80E64E062A20E08D0082732B /* uz */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
