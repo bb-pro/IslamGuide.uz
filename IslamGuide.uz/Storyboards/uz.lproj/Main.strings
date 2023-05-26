@@ -1,0 +1,102 @@
+
+/* Class = "UINavigationItem"; title = "Quran"; ObjectID = "0C2-OJ-7mu"; */
+"0C2-OJ-7mu.title" = "Quran";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "2Be-GI-Wce"; */
+"2Be-GI-Wce.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Tasbih"; ObjectID = "5oZ-DG-Ylz"; */
+"5oZ-DG-Ylz.title" = "Tasbih";
+
+/* Class = "UILabel"; text = "👨‍💻     Contact the developer"; ObjectID = "7gP-MX-caZ"; */
+"7gP-MX-caZ.text" = "👨‍💻     Contact the developer";
+
+/* Class = "UILabel"; text = "✨     About the app"; ObjectID = "Ddx-Ob-Jec"; */
+"Ddx-Ob-Jec.text" = "✨     About the app";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Jlg-bX-UoL"; */
+"Jlg-bX-UoL.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "33"; ObjectID = "KBI-jc-zYV"; */
+"KBI-jc-zYV.configuration.title" = "33";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KBI-jc-zYV"; */
+"KBI-jc-zYV.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Prayer Times"; ObjectID = "P9R-eC-gHk"; */
+"P9R-eC-gHk.title" = "Prayer Times";
+
+/* Class = "UINavigationItem"; title = "Ayahs"; ObjectID = "R7K-qE-GMJ"; */
+"R7K-qE-GMJ.title" = "Ayahs";
+
+/* Class = "UITabBarItem"; title = "QiblaFinder"; ObjectID = "RBh-ix-fqq"; */
+"RBh-ix-fqq.title" = "QiblaFinder";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TYR-sK-SCW"; */
+"TYR-sK-SCW.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VMa-lk-Zdv"; */
+"VMa-lk-Zdv.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YZG-FH-9Ra"; */
+"YZG-FH-9Ra.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Praying Time"; ObjectID = "ZfT-LN-iFd"; */
+"ZfT-LN-iFd.title" = "Praying Time";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "c4l-To-fBH"; */
+"c4l-To-fBH.text" = "0";
+
+/* Class = "UILabel"; text = "IslamGuide"; ObjectID = "d07-yv-qGR"; */
+"d07-yv-qGR.text" = "IslamGuide";
+
+/* Class = "UILabel"; text = "7 verses"; ObjectID = "f5R-es-txI"; */
+"f5R-es-txI.text" = "7 verses";
+
+/* Class = "UILabel"; text = "Al-Fatiah          "; ObjectID = "fCl-D6-ymT"; */
+"fCl-D6-ymT.text" = "Al-Fatiah          ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fJC-yq-gLd"; */
+"fJC-yq-gLd.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "h1C-Kc-RcN"; */
+"h1C-Kc-RcN.title" = "Settings";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hWx-Ap-tD8"; */
+"hWx-Ap-tD8.text" = "Label";
+
+/* Class = "UILabel"; text = "🌓     Dark Mode"; ObjectID = "iCn-0B-8yf"; */
+"iCn-0B-8yf.text" = "🌓     Dark Mode";
+
+/* Class = "UINavigationItem"; title = "Info"; ObjectID = "lY0-qk-5ex"; */
+"lY0-qk-5ex.title" = "Info";
+
+/* Class = "UILabel"; text = "/  33"; ObjectID = "mck-AF-dGy"; */
+"mck-AF-dGy.text" = "/  33";
+
+/* Class = "UILabel"; text = "Learn Quran and Recite once everyday"; ObjectID = "nvc-WJ-5gX"; */
+"nvc-WJ-5gX.text" = "Learn Quran and Recite once everyday";
+
+/* Class = "UINavigationItem"; title = "Tasbih"; ObjectID = "rGf-UB-IiA"; */
+"rGf-UB-IiA.title" = "Tasbih";
+
+/* Class = "UITabBarItem"; title = "Quran"; ObjectID = "sgJ-Vz-VVk"; */
+"sgJ-Vz-VVk.title" = "Quran";
+
+/* Class = "UILabel"; text = "IslamGuide is a mobile app designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam."; ObjectID = "u4K-zj-Mcz"; */
+"u4K-zj-Mcz.text" = "IslamGuide is a mobile app designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam.";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "u5r-6d-o0g"; */
+"u5r-6d-o0g.text" = "1";
+
+/* Class = "UIButton"; configuration.title = "Press"; ObjectID = "uoj-nh-19u"; */
+"uoj-nh-19u.configuration.title" = "Press";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uoj-nh-19u"; */
+"uoj-nh-19u.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "💫     Share the app "; ObjectID = "wed-oz-ZBf"; */
+"wed-oz-ZBf.text" = "💫     Share the app ";
+
+/* Class = "UILabel"; text = "Surahs"; ObjectID = "zAp-lT-KP7"; */
+"zAp-lT-KP7.text" = "Surahs";

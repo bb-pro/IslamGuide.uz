@@ -46,7 +46,7 @@ struct CompassView: View {
     }
     
     private var buttonTitle: String {
-        isCalculating ? "Stop" : "Find Qibla"
+        isCalculating ? "Stop".localize() : "Find Qibla".localize()
     }
     
     private func toggleCalculation() {

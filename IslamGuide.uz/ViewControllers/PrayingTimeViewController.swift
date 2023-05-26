@@ -75,25 +75,25 @@ extension PrayingTimeViewController: UITableViewDataSource {
         formatter.dateFormat = "HH:mm" // Hours and minutes format
         
         if prayingTime != nil {
-            
+            print(prayingTime.currentPrayer())
             switch indexPath.row {
                 case 0:
-                    cell.nameLabel.text = "Fajr"
+                    cell.nameLabel.text = "fajr".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.fajr)
                 case 1:
-                    cell.nameLabel.text = "Sunrise"
+                    cell.nameLabel.text = "sunrise".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.sunrise)
                 case 2:
-                    cell.nameLabel.text = "Dhuhr"
+                    cell.nameLabel.text = "dhuhr".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.dhuhr)
                 case 3:
-                    cell.nameLabel.text = "Asr"
+                    cell.nameLabel.text = "asr".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.asr)
                 case 4:
-                    cell.nameLabel.text = "Maghrib"
+                    cell.nameLabel.text = "maghrib".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.maghrib)
                 default:
-                    cell.nameLabel.text = "Isha"
+                    cell.nameLabel.text = "isha".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.isha)
             }
             return cell

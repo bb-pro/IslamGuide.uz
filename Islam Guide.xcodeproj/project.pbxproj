@@ -32,7 +32,9 @@
 		80C7313D2A1504DD00D6D4A2 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7313C2A1504DD00D6D4A2 /* CompassView.swift */; };
 		80C7313F2A15164100D6D4A2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C7313E2A15164100D6D4A2 /* LocationManager.swift */; };
 		80C731412A15293E00D6D4A2 /* QiblaFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C731402A15293E00D6D4A2 /* QiblaFinderViewController.swift */; };
+		80C966972A20C247001E5FC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80C966992A20C247001E5FC9 /* Localizable.strings */; };
 		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
+		80E64E052A20DA280082732B /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E64E042A20DA280082732B /* Extension + String.swift */; };
 		80E979412A1354DD00302E12 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E979402A1354DD00302E12 /* AudioPlayerManager.swift */; };
 		80E979442A13A95400302E12 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 80E979432A13A95400302E12 /* Adhan */; };
 		80F6B20E2A0FE36B00DEB97D /* en.asad.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20D2A0FE36B00DEB97D /* en.asad.json */; };
@@ -66,7 +68,16 @@
 		80C7313C2A1504DD00D6D4A2 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		80C7313E2A15164100D6D4A2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		80C731402A15293E00D6D4A2 /* QiblaFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaFinderViewController.swift; sourceTree = "<group>"; };
+		80C9668E2A20C1D9001E5FC9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		80C9668F2A20C1DA001E5FC9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		80C966902A20C1FB001E5FC9 /* uz-Cyrl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-Cyrl"; path = "uz-Cyrl.lproj/Main.strings"; sourceTree = "<group>"; };
+		80C966912A20C1FB001E5FC9 /* uz-Cyrl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-Cyrl"; path = "uz-Cyrl.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		80C966932A20C216001E5FC9 /* uz */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uz; path = uz.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		80C966982A20C247001E5FC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80C9669A2A20C248001E5FC9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80C9669C2A20C24A001E5FC9 /* uz-Cyrl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-Cyrl"; path = "uz-Cyrl.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
+		80E64E042A20DA280082732B /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
 		80E979402A1354DD00302E12 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		80F6B20D2A0FE36B00DEB97D /* en.asad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en.asad.json; sourceTree = "<group>"; };
 		80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru.kuliev.json; sourceTree = "<group>"; };
@@ -106,6 +117,8 @@
 		8020D96229DBFB2400BC69C5 /* IslamGuide.uz */ = {
 			isa = PBXGroup;
 			children = (
+				80E64E032A20DA110082732B /* Extensions */,
+				80C966942A20C223001E5FC9 /* Localizations */,
 				804EBD9229E53F5400355646 /* Source */,
 				8020D97A29DBFD8A00BC69C5 /* App */,
 				8020D98029DC163A00BC69C5 /* Views */,
@@ -203,6 +216,22 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		80C966942A20C223001E5FC9 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				80C966992A20C247001E5FC9 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		80E64E032A20DA110082732B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80E64E042A20DA280082732B /* Extension + String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,6 +279,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				"uz-Cyrl",
+				uz,
 			);
 			mainGroup = 8020D95729DBFB2400BC69C5;
 			packageReferences = (
@@ -275,6 +307,7 @@
 				80F6B2122A0FEB6400DEB97D /* ar.alafasy.json in Resources */,
 				804EBD9429E53F6900355646 /* uz.sodik.json in Resources */,
 				8020D97329DBFB2700BC69C5 /* LaunchScreen.storyboard in Resources */,
+				80C966972A20C247001E5FC9 /* Localizable.strings in Resources */,
 				804EBD9629E5430F00355646 /* quran.json in Resources */,
 				8020D97029DBFB2700BC69C5 /* Assets.xcassets in Resources */,
 				8020D96B29DBFB2400BC69C5 /* Main.storyboard in Resources */,
@@ -303,6 +336,7 @@
 				80C7313F2A15164100D6D4A2 /* LocationManager.swift in Sources */,
 				80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */,
 				80E979412A1354DD00302E12 /* AudioPlayerManager.swift in Sources */,
+				80E64E052A20DA280082732B /* Extension + String.swift in Sources */,
 				804EBD9829E54DFA00355646 /* TasbihViewController.swift in Sources */,
 				8020D98E29DC1F5800BC69C5 /* Quran.swift in Sources */,
 				8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */,
@@ -319,6 +353,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				8020D96A29DBFB2400BC69C5 /* Base */,
+				80C9668E2A20C1D9001E5FC9 /* ru */,
+				80C966902A20C1FB001E5FC9 /* uz-Cyrl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -327,8 +363,21 @@
 			isa = PBXVariantGroup;
 			children = (
 				8020D97229DBFB2700BC69C5 /* Base */,
+				80C9668F2A20C1DA001E5FC9 /* ru */,
+				80C966912A20C1FB001E5FC9 /* uz-Cyrl */,
+				80C966932A20C216001E5FC9 /* uz */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		80C966992A20C247001E5FC9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80C966982A20C247001E5FC9 /* en */,
+				80C9669A2A20C248001E5FC9 /* ru */,
+				80C9669C2A20C24A001E5FC9 /* uz-Cyrl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -398,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
