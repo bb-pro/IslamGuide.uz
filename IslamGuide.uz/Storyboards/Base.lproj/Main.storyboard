@@ -6,28 +6,29 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="Islam_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InitialViewController" id="BYZ-38-t0r" customClass="StartViewController" customModule="Islam_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-jJ-ULX">
-                                <rect key="frame" x="90" y="139" width="250" height="86.333333333333314"/>
+                                <rect key="frame" x="90" y="139" width="250" height="82.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IslamGuide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d07-yv-qGR">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="33.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" name="Titleblue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn Quran and Recite once everyday" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvc-WJ-5gX">
-                                        <rect key="frame" x="0.0" y="45.666666666666657" width="250" height="40.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="42" width="250" height="40.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="SubtitleColor"/>
                                         <nil key="highlightedColor"/>
@@ -35,7 +36,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-d2-rev" customClass="SpringImageView" customModule="SpringAnimation">
-                                <rect key="frame" x="40" y="255.33333333333337" width="350" height="450"/>
+                                <rect key="frame" x="40" y="251.66666666666663" width="350" height="450"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -191,7 +192,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FpQ-7r-Jxq">
-                                <rect key="frame" x="30" y="363" width="370" height="359"/>
+                                <rect key="frame" x="30" y="363" width="370" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" rowHeight="250" id="47H-Ra-YHd" customClass="PrayingTimeCell" customModule="Islam_Guide" customModuleProvider="target">
@@ -252,10 +253,10 @@
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="top" secondItem="uXA-IF-G1Z" secondAttribute="bottom" constant="50" id="CBm-je-dcO"/>
                             <constraint firstItem="foX-HJ-8MQ" firstAttribute="trailing" secondItem="FpQ-7r-Jxq" secondAttribute="trailing" constant="30" id="GJs-iK-lsp"/>
                             <constraint firstItem="uXA-IF-G1Z" firstAttribute="leading" secondItem="foX-HJ-8MQ" secondAttribute="leading" constant="30" id="gPh-bN-dDy"/>
+                            <constraint firstItem="foX-HJ-8MQ" firstAttribute="bottom" secondItem="FpQ-7r-Jxq" secondAttribute="bottom" constant="20" id="gum-GD-uG8"/>
                             <constraint firstItem="uXA-IF-G1Z" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.160944" id="hm5-Xv-DpQ"/>
                             <constraint firstItem="FpQ-7r-Jxq" firstAttribute="leading" secondItem="foX-HJ-8MQ" secondAttribute="leading" constant="30" id="oQp-78-3XX"/>
                             <constraint firstItem="foX-HJ-8MQ" firstAttribute="trailing" secondItem="uXA-IF-G1Z" secondAttribute="trailing" constant="30" id="qtY-1N-LMV"/>
-                            <constraint firstItem="FpQ-7r-Jxq" firstAttribute="height" secondItem="o9v-Js-upE" secondAttribute="height" multiplier="0.532189" constant="-137" id="vpq-IX-4SJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Prayer Times" id="P9R-eC-gHk"/>
@@ -296,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zo-9k-WjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5726.5116279069771" y="1015.8798283261804"/>
+            <point key="canvasLocation" x="5245" y="630"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dsJ-RT-pcY">
@@ -470,14 +471,14 @@
                                                     <rect key="frame" x="30" y="41" width="370" height="238"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlg-bX-UoL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="370" height="20.333333333333332"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="370" height="27.666666666666668"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                             <color key="textColor" name="Titleblue"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWx-Ap-tD8">
-                                                            <rect key="frame" x="0.0" y="217.66666666666669" width="370" height="20.333333333333343"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="0.0" y="220" width="370" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" name="cellTitle"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -562,7 +563,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NY9-U4-6Ud">
-                                <rect key="frame" x="30" y="203" width="370" height="313"/>
+                                <rect key="frame" x="30" y="203" width="370" height="596"/>
                                 <color key="backgroundColor" name="background"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
@@ -604,14 +605,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shareCell" id="Syu-XN-Aey" customClass="SettingCell" customModule="Islam_Guide" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="102.66666412353516" width="330" height="42.666667938232422"/>
+                                        <rect key="frame" x="20" y="102.66666412353516" width="330" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Syu-XN-Aey" id="cCs-vK-L9b">
-                                            <rect key="frame" x="0.0" y="0.0" width="330" height="42.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💫     Share the app " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wed-oz-ZBf">
-                                                    <rect key="frame" x="30" y="11.000000000000002" width="156" height="20.666666666666671"/>
+                                                    <rect key="frame" x="30" y="11.000000000000002" width="156" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
@@ -626,14 +627,14 @@
                                         <color key="backgroundColor" name="background"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" id="bOm-7a-Uxs" customClass="SettingCell" customModule="Islam_Guide" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="145.33333206176758" width="330" height="42.666667938232422"/>
+                                        <rect key="frame" x="20" y="146.33333206176758" width="330" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bOm-7a-Uxs" id="un2-TM-UkI">
-                                            <rect key="frame" x="0.0" y="0.0" width="330" height="42.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✨     About the app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddx-Ob-Jec">
-                                                    <rect key="frame" x="30" y="11.000000000000002" width="153" height="20.666666666666671"/>
+                                                    <rect key="frame" x="30" y="11.000000000000002" width="153" height="21.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
@@ -648,14 +649,14 @@
                                         <color key="backgroundColor" name="background"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" id="CHZ-hD-C9e" customClass="SettingCell" customModule="Islam_Guide" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="188" width="330" height="43.333332061767578"/>
+                                        <rect key="frame" x="20" y="190" width="330" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CHZ-hD-C9e" id="1re-H7-llq">
-                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👨‍💻     Contact the developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gP-MX-caZ">
-                                                    <rect key="frame" x="30" y="10.999999999999998" width="215" height="21.333333333333329"/>
+                                                    <rect key="frame" x="30" y="11" width="215" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="cellTitle"/>
                                                     <nil key="highlightedColor"/>
@@ -669,6 +670,28 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="background"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="languageCell" id="VNb-gF-Mbo" customClass="SettingCell" customModule="Islam_Guide" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="233" width="330" height="43.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VNb-gF-Mbo" id="EIG-Kh-5Pl">
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌍     Change Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mN-kT-M4T">
+                                                    <rect key="frame" x="30" y="10.999999999999998" width="184" height="21.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="cellTitle"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7mN-kT-M4T" firstAttribute="leading" secondItem="EIG-Kh-5Pl" secondAttribute="leadingMargin" constant="10" id="Ww2-Ih-Syg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7mN-kT-M4T" secondAttribute="bottom" id="Xro-Ug-0de"/>
+                                                <constraint firstItem="7mN-kT-M4T" firstAttribute="top" secondItem="EIG-Kh-5Pl" secondAttribute="topMargin" id="gzE-Jn-w1l"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="background"/>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -676,20 +699,73 @@
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="NY9-U4-6Ud" firstAttribute="top" secondItem="AEI-cr-DVa" secondAttribute="top" constant="100" id="Acp-wC-ani"/>
-                            <constraint firstItem="NY9-U4-6Ud" firstAttribute="height" secondItem="29N-F4-sUS" secondAttribute="height" multiplier="0.335837" id="Cvb-e9-3Dr"/>
                             <constraint firstItem="NY9-U4-6Ud" firstAttribute="leading" secondItem="AEI-cr-DVa" secondAttribute="leading" constant="30" id="OGt-lq-Sar"/>
                             <constraint firstItem="AEI-cr-DVa" firstAttribute="trailing" secondItem="NY9-U4-6Ud" secondAttribute="trailing" constant="30" id="cvM-p6-wYz"/>
+                            <constraint firstItem="AEI-cr-DVa" firstAttribute="bottom" secondItem="NY9-U4-6Ud" secondAttribute="bottom" constant="50" id="vfG-Ji-4sP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="2Be-GI-Wce"/>
                     <connections>
                         <outlet property="tableView" destination="NY9-U4-6Ud" id="eKQ-Ey-eVF"/>
-                        <segue destination="eC0-4i-pDd" kind="show" identifier="showInfo" id="wPx-aZ-dTj"/>
+                        <segue destination="3c5-hl-r8H" kind="show" identifier="showLanguages" id="Sa1-N0-Feb"/>
+                        <segue destination="DDE-q2-I4s" kind="show" identifier="showInfo" id="nbu-H3-v19"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBO-s7-4qC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3957.2093023255816" y="1015.8798283261804"/>
+            <point key="canvasLocation" x="4063" y="890"/>
+        </scene>
+        <!--Choose Language View Controller-->
+        <scene sceneID="ZpY-ti-Se7">
+            <objects>
+                <viewController id="3c5-hl-r8H" customClass="ChooseLanguageViewController" customModule="Islam_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xrq-cG-lo0">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xH4-H1-fo2">
+                                <rect key="frame" x="55" y="253" width="320" height="216"/>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Bxq-Mq-c4q">
+                                <rect key="frame" x="176.66666666666666" y="654.33333333333337" width="76.666666666666657" height="94.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHG-g3-BF0">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="34.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelAction" destination="3c5-hl-r8H" eventType="touchUpInside" id="FpJ-bd-tJE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP0-fc-UZB">
+                                        <rect key="frame" x="0.0" y="60.333333333333258" width="76.666666666666671" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed" destination="3c5-hl-r8H" eventType="touchUpInside" id="Zyl-ir-1Pi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zer-kp-N7D"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="zer-kp-N7D" firstAttribute="bottom" secondItem="Bxq-Mq-c4q" secondAttribute="bottom" constant="100" id="F6U-yo-c3W"/>
+                            <constraint firstItem="Bxq-Mq-c4q" firstAttribute="centerX" secondItem="xrq-cG-lo0" secondAttribute="centerX" id="Irc-2c-xJq"/>
+                            <constraint firstItem="xH4-H1-fo2" firstAttribute="centerX" secondItem="xrq-cG-lo0" secondAttribute="centerX" id="tNV-9u-JMl"/>
+                            <constraint firstItem="xH4-H1-fo2" firstAttribute="top" secondItem="zer-kp-N7D" secondAttribute="top" constant="150" id="uZn-b0-UTM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QyQ-wr-wWD"/>
+                    <connections>
+                        <outlet property="pickerView" destination="xH4-H1-fo2" id="B17-jG-crM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0A-Mu-jAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5244" y="1299"/>
         </scene>
         <!--Praying Time-->
         <scene sceneID="o7M-Xe-7Lv">
@@ -831,25 +907,6 @@
             </objects>
             <point key="canvasLocation" x="2425" y="-1458"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Vki-yZ-QYA">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eC0-4i-pDd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="m3r-ND-DSc"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="91R-yb-VEM">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="DDE-q2-I4s" kind="relationship" relationship="rootViewController" id="GBW-d7-Dtw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AGh-QA-AXZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4827.9069767441861" y="1015.8798283261804"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Group 36" width="314" height="450"/>
@@ -878,5 +935,8 @@
         <namedColor name="tintColor">
             <color red="0.40392156862745099" green="0.17254901960784313" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

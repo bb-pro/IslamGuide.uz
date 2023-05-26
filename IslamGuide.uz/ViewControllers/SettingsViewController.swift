@@ -20,7 +20,7 @@ final class SettingsViewController: UIViewController {
 //MARK: - UITableViewDataSource
 extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        4
+        5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,8 +36,11 @@ extension SettingsViewController: UITableViewDataSource {
             case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as! SettingCell
                 return cell
-            default:
+            case 3:
                 let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! SettingCell
+                return cell
+            default:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "languageCell", for: indexPath) as! SettingCell
                 return cell
         }
     }
@@ -59,7 +62,7 @@ extension SettingsViewController: UITableViewDelegate {
             case 3:
                 openLink(urlString: "https://www.linkedin.com/in/bektemur-mamashaev-674a42216/")
             default:
-                tableView.deselectRow(at: indexPath, animated: true)
+                performSegue(withIdentifier: "showLanguages", sender: nil)
         }
         tableView.deselectRow(at: indexPath, animated: true)
     }
