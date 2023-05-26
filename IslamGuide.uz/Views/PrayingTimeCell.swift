@@ -11,5 +11,5 @@ final class PrayingTimeCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var timeLabel: UILabel!
-    
+    @IBOutlet var imageSymbol: UIImageView!
 }
