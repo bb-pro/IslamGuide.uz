@@ -13,6 +13,12 @@ final class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let preferredLanguages = UserDefaults.standard.array(forKey: "AppleLanguages") as? [String],
+           let preferredLanguage = preferredLanguages.first {
+            print("Preferred Language: \(preferredLanguage)")
+        } else {
+            print("Preferred Language not found.")
+        }
         animate()
     }
     

@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Islam Guide
+
+  Created by Bektemur Mamashayev on 26/05/23.
+  
+*/
+
+"fajr" = "Фаджр";
+"sunrise" = "Восход";
+"dhuhr" = "Зухр";
+"asr" = "Аср";
+"maghrib" = "Магриб";
+"isha" = "Иша";
+"Find Qibla" = "Кибла";
+"Stop" = "Стоп";
+"Alert" = "Внимание";
+"The language of the app is changed to see the updated version please reopen the app" = "Язык приложения изменен, чтобы увидеть обновленную версию, пожалуйста, снова откройте приложение";

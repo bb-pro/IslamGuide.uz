@@ -9,7 +9,7 @@
 "5oZ-DG-Ylz.title" = "Тасбих";
 
 /* Class = "UILabel"; text = "👨‍💻     Contact the developer"; ObjectID = "7gP-MX-caZ"; */
-"7gP-MX-caZ.text" = "👨‍💻     Написать разработчику";
+"7gP-MX-caZ.text" = "👨‍💻    Написать разработчику";
 
 /* Class = "UILabel"; text = "✨     About the app"; ObjectID = "Ddx-Ob-Jec"; */
 "Ddx-Ob-Jec.text" = "✨     О приложении";
@@ -30,7 +30,7 @@
 "R7K-qE-GMJ.title" = "Аяты";
 
 /* Class = "UITabBarItem"; title = "QiblaFinder"; ObjectID = "RBh-ix-fqq"; */
-"RBh-ix-fqq.title" = "Поиск киблы";
+"RBh-ix-fqq.title" = "Кибла";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TYR-sK-SCW"; */
 "TYR-sK-SCW.normalTitle" = "Button";
@@ -48,7 +48,7 @@
 "c4l-To-fBH.text" = "0";
 
 /* Class = "UILabel"; text = "IslamGuide"; ObjectID = "d07-yv-qGR"; */
-"d07-yv-qGR.text" = "Гид по исламу";
+"d07-yv-qGR.text" = "Гид Ислама";
 
 /* Class = "UILabel"; text = "7 verses"; ObjectID = "f5R-es-txI"; */
 "f5R-es-txI.text" = "7 verses";
@@ -69,28 +69,28 @@
 "iCn-0B-8yf.text" = "🌓     Темный режим";
 
 /* Class = "UINavigationItem"; title = "Info"; ObjectID = "lY0-qk-5ex"; */
-"lY0-qk-5ex.title" = "Информация";
+"lY0-qk-5ex.title" = "О приложении";
 
 /* Class = "UILabel"; text = "/  33"; ObjectID = "mck-AF-dGy"; */
 "mck-AF-dGy.text" = "/  33";
 
 /* Class = "UILabel"; text = "Learn Quran and Recite once everyday"; ObjectID = "nvc-WJ-5gX"; */
-"nvc-WJ-5gX.text" = "Изучайте Коран и Ислам";
+"nvc-WJ-5gX.text" = "Изучайте Коран ";
 
 /* Class = "UINavigationItem"; title = "Tasbih"; ObjectID = "rGf-UB-IiA"; */
 "rGf-UB-IiA.title" = "Тасбих";
 
 /* Class = "UITabBarItem"; title = "Quran"; ObjectID = "sgJ-Vz-VVk"; */
-"sgJ-Vz-VVk.title" = "Коран";
+"sgJ-Vz-VVk.title" = "Қоран";
 
 /* Class = "UILabel"; text = "IslamGuide is a mobile app designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam."; ObjectID = "u4K-zj-Mcz"; */
-"u4K-zj-Mcz.text" = "Islam Guide - это мобильное приложение, разработанное для предоставления исчерпывающего руководства по исламским учениям, практикам и ресурсам. Независимо от того, являетесь ли вы новичком или опытным мусульманином, этот веб-сайт предлагает множество информации и функций для углубления вашего понимания ислама и связи с ним";
+"u4K-zj-Mcz.text" = "Путеводитель по исламу — это мобильное приложение, предназначенное для предоставления исчерпывающего руководства по исламским учениям, практикам и ресурсам. Независимо от того, являетесь ли вы новичком или опытным мусульманином, этот веб-сайт предлагает множество информации и возможностей для углубления вашего понимания и связи с исламом.";
 
 /* Class = "UILabel"; text = "1"; ObjectID = "u5r-6d-o0g"; */
 "u5r-6d-o0g.text" = "1";
 
 /* Class = "UIButton"; configuration.title = "Press"; ObjectID = "uoj-nh-19u"; */
-"uoj-nh-19u.configuration.title" = "Считать";
+"uoj-nh-19u.configuration.title" = "Старт";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uoj-nh-19u"; */
 "uoj-nh-19u.normalTitle" = "Button";
@@ -100,3 +100,18 @@
 
 /* Class = "UILabel"; text = "Surahs"; ObjectID = "zAp-lT-KP7"; */
 "zAp-lT-KP7.text" = "Суры";
+
+/* Class = "UILabel"; text = "🌍     Change Language"; ObjectID = "7mN-kT-M4T"; */
+"7mN-kT-M4T.text" = "🌍     Изменить язык";
+
+"qP0-fc-UZB.configuration.title" = "Сохранить";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qP0-fc-UZB"; */
+"qP0-fc-UZB.normalTitle" = "Button";
+
+/* Class = "UI
+ /* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "SHG-g3-BF0"; */
+ "SHG-g3-BF0.configuration.title" = "Назад";
+
+ /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SHG-g3-BF0"; */
+ "SHG-g3-BF0.normalTitle" = "Button";

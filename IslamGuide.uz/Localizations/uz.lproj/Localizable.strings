@@ -5,3 +5,13 @@
   Created by Bektemur Mamashayev on 26/05/23.
   
 */
+"fajr" = "Тонг";
+"sunrise" = "Қуёш";
+"dhuhr" = "Пешин";
+"asr" = "Аср";
+"maghrib" = "Шом";
+"isha" = "Хуфтон";
+"Find Qibla" = "Кибла";
+"Stop" = "Стоп";
+"Alert" = "Диккат";
+"The language of the app is changed to see the updated version please reopen the app" = "дастур тили ўзгартирилди, янгиланган версияни кўриш учун дастурни кайта ишга туширинг";

@@ -10,7 +10,6 @@
 		8020D96429DBFB2400BC69C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96329DBFB2400BC69C5 /* AppDelegate.swift */; };
 		8020D96629DBFB2400BC69C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96529DBFB2400BC69C5 /* SceneDelegate.swift */; };
 		8020D96829DBFB2400BC69C5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96729DBFB2400BC69C5 /* StartViewController.swift */; };
-		8020D96B29DBFB2400BC69C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D96929DBFB2400BC69C5 /* Main.storyboard */; };
 		8020D96E29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8020D96C29DBFB2500BC69C5 /* IslamGuide_uz.xcdatamodeld */; };
 		8020D97029DBFB2700BC69C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8020D96F29DBFB2700BC69C5 /* Assets.xcassets */; };
 		8020D97329DBFB2700BC69C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D97129DBFB2700BC69C5 /* LaunchScreen.storyboard */; };
@@ -35,6 +34,9 @@
 		80C966972A20C247001E5FC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80C966992A20C247001E5FC9 /* Localizable.strings */; };
 		80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8BB0129DD617300712543 /* AyahTableViewController.swift */; };
 		80E64E052A20DA280082732B /* Extension + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E64E042A20DA280082732B /* Extension + String.swift */; };
+		80E64E092A21014C0082732B /* ChooseLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E64E082A21014B0082732B /* ChooseLanguageViewController.swift */; };
+		80E64E0B2A2104D00082732B /* LanguageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E64E0A2A2104D00082732B /* LanguageOptions.swift */; };
+		80E64E112A2116220082732B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8020D96929DBFB2400BC69C5 /* Main.storyboard */; };
 		80E979412A1354DD00302E12 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E979402A1354DD00302E12 /* AudioPlayerManager.swift */; };
 		80E979442A13A95400302E12 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 80E979432A13A95400302E12 /* Adhan */; };
 		80F6B20E2A0FE36B00DEB97D /* en.asad.json in Resources */ = {isa = PBXBuildFile; fileRef = 80F6B20D2A0FE36B00DEB97D /* en.asad.json */; };
@@ -68,7 +70,6 @@
 		80C7313C2A1504DD00D6D4A2 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		80C7313E2A15164100D6D4A2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		80C731402A15293E00D6D4A2 /* QiblaFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaFinderViewController.swift; sourceTree = "<group>"; };
-		80C9668E2A20C1D9001E5FC9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		80C9668F2A20C1DA001E5FC9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		80C966902A20C1FB001E5FC9 /* uz-Cyrl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-Cyrl"; path = "uz-Cyrl.lproj/Main.strings"; sourceTree = "<group>"; };
 		80C966912A20C1FB001E5FC9 /* uz-Cyrl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-Cyrl"; path = "uz-Cyrl.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -78,6 +79,11 @@
 		80C9669C2A20C24A001E5FC9 /* uz-Cyrl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-Cyrl"; path = "uz-Cyrl.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		80D8BB0129DD617300712543 /* AyahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyahTableViewController.swift; sourceTree = "<group>"; };
 		80E64E042A20DA280082732B /* Extension + String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + String.swift"; sourceTree = "<group>"; };
+		80E64E062A20E08D0082732B /* uz */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uz; path = uz.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80E64E072A20E0980082732B /* uz */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uz; path = uz.lproj/Main.strings; sourceTree = "<group>"; };
+		80E64E082A21014B0082732B /* ChooseLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLanguageViewController.swift; sourceTree = "<group>"; };
+		80E64E0A2A2104D00082732B /* LanguageOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageOptions.swift; sourceTree = "<group>"; };
+		80E64E132A2116490082732B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		80E979402A1354DD00302E12 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		80F6B20D2A0FE36B00DEB97D /* en.asad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en.asad.json; sourceTree = "<group>"; };
 		80F6B20F2A0FE57700DEB97D /* ru.kuliev.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ru.kuliev.json; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				80548C9E29E8065D001B23A7 /* PrayingTimeViewController.swift */,
 				80334AC52A03E64F004886A8 /* SettingsViewController.swift */,
 				80C731402A15293E00D6D4A2 /* QiblaFinderViewController.swift */,
+				80E64E082A21014B0082732B /* ChooseLanguageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 			children = (
 				8020D98D29DC1F5800BC69C5 /* Quran.swift */,
 				80548CA029E80809001B23A7 /* Praying.swift */,
+				80E64E0A2A2104D00082732B /* LanguageOptions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -309,8 +317,8 @@
 				8020D97329DBFB2700BC69C5 /* LaunchScreen.storyboard in Resources */,
 				80C966972A20C247001E5FC9 /* Localizable.strings in Resources */,
 				804EBD9629E5430F00355646 /* quran.json in Resources */,
+				80E64E112A2116220082732B /* Main.storyboard in Resources */,
 				8020D97029DBFB2700BC69C5 /* Assets.xcassets in Resources */,
-				8020D96B29DBFB2400BC69C5 /* Main.storyboard in Resources */,
 				80F6B2102A0FE57700DEB97D /* ru.kuliev.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,10 +337,12 @@
 				8081A63629DFDE5800E06DC4 /* AyahCell.swift in Sources */,
 				8020D96829DBFB2400BC69C5 /* StartViewController.swift in Sources */,
 				8020D98A29DC1F2E00BC69C5 /* NetworkManager.swift in Sources */,
+				80E64E092A21014C0082732B /* ChooseLanguageViewController.swift in Sources */,
 				8020D98229DC165600BC69C5 /* QuranCell.swift in Sources */,
 				80334AC62A03E64F004886A8 /* SettingsViewController.swift in Sources */,
 				808EF3DE29E941F00037A609 /* PrayingTimeCell.swift in Sources */,
 				80334AC42A039DC3004886A8 /* SettingCell.swift in Sources */,
+				80E64E0B2A2104D00082732B /* LanguageOptions.swift in Sources */,
 				80C7313F2A15164100D6D4A2 /* LocationManager.swift in Sources */,
 				80D8BB0229DD617300712543 /* AyahTableViewController.swift in Sources */,
 				80E979412A1354DD00302E12 /* AudioPlayerManager.swift in Sources */,
@@ -353,8 +363,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				8020D96A29DBFB2400BC69C5 /* Base */,
-				80C9668E2A20C1D9001E5FC9 /* ru */,
 				80C966902A20C1FB001E5FC9 /* uz-Cyrl */,
+				80E64E072A20E0980082732B /* uz */,
+				80E64E132A2116490082732B /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -376,6 +387,7 @@
 				80C966982A20C247001E5FC9 /* en */,
 				80C9669A2A20C248001E5FC9 /* ru */,
 				80C9669C2A20C24A001E5FC9 /* uz-Cyrl */,
+				80E64E062A20E08D0082732B /* uz */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
