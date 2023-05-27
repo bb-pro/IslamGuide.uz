@@ -8,8 +8,8 @@
   <section>
     <h2>Discover the beauty and wisdom of Islam with IslamGuide.uz, your go-to app for Islamic knowledge and resources.</h2>
     <p>IslamGuide is a mobile app designed to provide a comprehensive guide to Islamic teachings, practices, and resources. Whether you're a beginner or an experienced Muslim, this website offers a wealth of information and features to deepen your understanding and connection with Islam.</p>
-     <img width="1192" alt="Screen Shot 2023-05-21 at 16 57 08" src="https://github.com/bb-pro/IslamGuide.uz/assets/123092077/6096318d-3c7c-4328-99e7-7ab30100a5ea">
- 
+   <img width="802" alt="Screen Shot 2023-05-27 at 18 41 53" src="https://github.com/bb-pro/IslamGuide.uz/assets/123092077/655a3e5a-1980-4ee5-bb41-835ca4046888">
+
     
     Features:
  
