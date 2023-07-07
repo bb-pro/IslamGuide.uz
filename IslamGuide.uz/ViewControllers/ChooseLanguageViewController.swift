@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 final class ChooseLanguageViewController: UIViewController, UIPickerViewDelegate {
 
     @IBOutlet var pickerView: UIPickerView!
