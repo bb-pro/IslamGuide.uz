@@ -24,8 +24,6 @@ final class PrayingTimeViewController: UIViewController {
         locationManager.requestLocation()
         tableView.dataSource = self
         tableView.delegate = self
-        
-        
     }
 }
 
@@ -79,22 +77,28 @@ extension PrayingTimeViewController: UITableViewDataSource {
             switch indexPath.row {
                 case 0:
                     cell.nameLabel.text = "fajr".localize()
+                    cell.imageSymbol.image = UIImage(systemName: "sunrise")
                     cell.timeLabel.text = formatter.string(from: prayingTime.fajr)
                 case 1:
+                    cell.imageSymbol.image = UIImage(systemName: "sunrise.fill")
                     cell.nameLabel.text = "sunrise".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.sunrise)
                 case 2:
                     cell.nameLabel.text = "dhuhr".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.dhuhr)
+                    cell.imageSymbol.image = UIImage(systemName: "sun.max.fill")
                 case 3:
                     cell.nameLabel.text = "asr".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.asr)
+                    cell.imageSymbol.image = UIImage(systemName: "sun.max")
                 case 4:
                     cell.nameLabel.text = "maghrib".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.maghrib)
+                    cell.imageSymbol.image = UIImage(systemName: "sunset.fill")
                 default:
                     cell.nameLabel.text = "isha".localize()
                     cell.timeLabel.text = formatter.string(from: prayingTime.isha)
+                    cell.imageSymbol.image = UIImage(systemName: "moon")
             }
             return cell
         } else {

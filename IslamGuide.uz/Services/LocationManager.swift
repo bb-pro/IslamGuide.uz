@@ -18,8 +18,8 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.startUpdatingHeading()
         locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingHeading()
         locationManager.startUpdatingLocation()
     }
     
